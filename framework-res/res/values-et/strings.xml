@@ -1,0 +1,1084 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Tühista</string>
+    <string name="copy">Kopeeri</string>
+    <string name="copyUrl">Kopeeri URL</string>
+    <string name="cut">Lõika</string>
+    <string name="defaultVoiceMailAlphaTag">Kõnepost</string>
+    <string name="defaultMsisdnAlphaTag">MSISDN1</string>
+    <string name="emptyPhoneNumber">(Telefoninumbrit pole)</string>
+    <string name="httpErrorBadUrl">Veebilehte ei saanud avada, sest URL on vale.</string>
+    <string name="httpErrorUnsupportedScheme">Protokolli ei toetata.</string>
+    <string name="no">Tühista</string>
+    <string name="ok">OK</string>
+    <string name="paste">Kleebi</string>
+    <string name="search_go">Otsi</string>
+    <string name="selectAll">Vali kõik</string>
+    <string name="unknownName">(Teadmata)</string>
+    <string name="untitled">&lt;pealkirjata></string>
+    <string name="VideoView_error_button">OK</string>
+    <string name="VideoView_error_text_unknown">Kahjuks ei saa seda videot esitada.</string>
+    <string name="VideoView_error_title">Videot ei saa esitada</string>
+    <string name="yes">OK</string>
+    <string name="dialog_alert_title">NB!</string>
+    <string name="VideoView_error_text_invalid_progressive_playback">"Kahjuks ei saa seda videot  selles seadmes voogesitada."</string>
+    <string name="month_long_standalone_january">Jaanuar</string>
+    <string name="month_long_standalone_february">Veebruar</string>
+    <string name="month_long_standalone_march">Märts</string>
+    <string name="month_long_standalone_april">Aprill</string>
+    <string name="month_long_standalone_may">Mai</string>
+    <string name="month_long_standalone_june">Juuni</string>
+    <string name="month_long_standalone_july">Juuli</string>
+    <string name="month_long_standalone_august">August</string>
+    <string name="month_long_standalone_september">September</string>
+    <string name="month_long_standalone_october">Oktoober</string>
+    <string name="month_long_standalone_november">November</string>
+    <string name="month_long_standalone_december">Detsember</string>
+    <string name="month_long_january">Jaanuar</string>
+    <string name="month_long_february">Veebruar</string>
+    <string name="month_long_march">Märts</string>
+    <string name="month_long_april">Aprill</string>
+    <string name="month_long_may">Mai</string>
+    <string name="month_long_june">Juuni</string>
+    <string name="month_long_july">Juuli</string>
+    <string name="month_long_august">August</string>
+    <string name="month_long_september">September</string>
+    <string name="month_long_october">Oktoober</string>
+    <string name="month_long_november">November</string>
+    <string name="month_long_december">Detsember</string>
+    <string name="month_medium_january">Jaan</string>
+    <string name="month_medium_february">Veebr</string>
+    <string name="month_medium_march">Märts</string>
+    <string name="month_medium_april">Apr</string>
+    <string name="month_medium_may">Mai</string>
+    <string name="month_medium_june">Juuni</string>
+    <string name="month_medium_july">Juuli</string>
+    <string name="month_medium_august">Aug</string>
+    <string name="month_medium_september">Sept</string>
+    <string name="month_medium_october">Okt</string>
+    <string name="month_medium_november">Nov</string>
+    <string name="month_medium_december">Dets</string>
+    <string name="month_shortest_january">J</string>
+    <string name="month_shortest_february">V</string>
+    <string name="month_shortest_march">M</string>
+    <string name="month_shortest_april">A</string>
+    <string name="month_shortest_may">M</string>
+    <string name="month_shortest_june">J</string>
+    <string name="month_shortest_july">J</string>
+    <string name="month_shortest_august">A</string>
+    <string name="month_shortest_september">S</string>
+    <string name="month_shortest_october">O</string>
+    <string name="month_shortest_november">N</string>
+    <string name="month_shortest_december">D</string>
+    <string name="day_of_week_long_sunday">Pühapäev</string>
+    <string name="day_of_week_long_monday">Esmaspäev</string>
+    <string name="day_of_week_long_tuesday">teisipäev</string>
+    <string name="day_of_week_long_wednesday">Kolmapäev</string>
+    <string name="day_of_week_long_thursday">Neljapäev</string>
+    <string name="day_of_week_long_friday">Reede</string>
+    <string name="day_of_week_long_saturday">Laupäev</string>
+    <string name="day_of_week_medium_sunday">püh</string>
+    <string name="day_of_week_medium_monday">esm</string>
+    <string name="day_of_week_medium_tuesday">teis</string>
+    <string name="day_of_week_medium_wednesday">kolm</string>
+    <string name="day_of_week_medium_thursday">nelj</string>
+    <string name="day_of_week_medium_friday">reede</string>
+    <string name="day_of_week_medium_saturday">laup</string>
+    <string name="day_of_week_short_sunday">Pü</string>
+    <string name="day_of_week_short_monday">Es</string>
+    <string name="day_of_week_short_tuesday">Te</string>
+    <string name="day_of_week_short_wednesday">Ko</string>
+    <string name="day_of_week_short_thursday">Ne</string>
+    <string name="day_of_week_short_friday">Re</string>
+    <string name="day_of_week_short_saturday">La</string>
+    <string name="day_of_week_shortest_sunday">P</string>
+    <string name="day_of_week_shortest_monday">E</string>
+    <string name="day_of_week_shortest_tuesday">T</string>
+    <string name="day_of_week_shortest_wednesday">K</string>
+    <string name="day_of_week_shortest_thursday">N</string>
+    <string name="day_of_week_shortest_friday">R</string>
+    <string name="day_of_week_shortest_saturday">L</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="yesterday">Eile</string>
+    <string name="today">Täna</string>
+    <string name="tomorrow">Homme</string>
+    <string name="byteShort">B</string>
+    <string name="kilobyteShort">kB</string>
+    <string name="megabyteShort">MB</string>
+    <string name="gigabyteShort">GB</string>
+    <string name="terabyteShort">TB</string>
+    <string name="petabyteShort">PB</string>
+    <string name="ellipsis">…</string>
+    <string name="mmiError">Ühendusprobleem või kehtetu MMI-kood.</string>
+    <string name="mmiFdnError">Toiming on lubatud ainult fikseeritud valimisnumbritega.</string>
+    <string name="serviceEnabled">Teenus on lubatud.</string>
+    <string name="serviceEnabledFor">Teenus on lubatud:</string>
+    <string name="serviceDisabled">Teenus on keelatud.</string>
+    <string name="serviceRegistered">Registreerimine õnnestus.</string>
+    <string name="serviceErased">Kustutamine õnnestus.</string>
+    <string name="passwordIncorrect">Parool on vale.</string>
+    <string name="mmiComplete">MMI kaudu edukalt lõpule jõudnud.</string>
+    <string name="badPin">Vana sisestatud PIN-kood on vale.</string>
+    <string name="badPuk">Sisestatud PUK-kood on vale.</string>
+    <string name="mismatchPin">Sisestatud PIN-koodid ei ühti.</string>
+    <string name="invalidPin">Sisestage 4-8 numbrist koosnev PIN-kood</string>
+    <string name="needPuk">SIM-kaart on PUK-koodiga lukustatud. Avamiseks sisestage PUK-kood.</string>
+    <string name="needPuk2">SIM-kaardi avamiseks sisestage PUK2-kood</string>
+    <string name="ClipMmi">Helistaja numbrinäit (sissetulev)</string>
+    <string name="ClirMmi">Helistaja numbrinäit (väljaminev)</string>
+    <string name="CfMmi">Kõnede edasisuunamine</string>
+    <string name="CwMmi">Kõne ootel</string>
+    <string name="BaMmi">Kõnepiirang</string>
+    <string name="PwdMmi">Parooli muutmine</string>
+    <string name="PinMmi">PIN-koodi muutmine</string>
+    <string name="CnipMmi">Helistaja number nähtav</string>
+    <string name="CnirMmi">Helistaja number varjatud</string>
+    <string name="ThreeWCMmi">Konverentskõne</string>
+    <string name="RuacMmi">Soovimatutest kõnedest keeldumine</string>
+    <string name="CndMmi">Helistaja numbrinäit</string>
+    <string name="DndMmi">Mitte segada</string>
+    <string name="CLIRDefaultOnNextCallOn">Helistaja numbrinäit on vaikimisi varjatud. Järgmine kõne: number varjatud</string>
+    <string name="CLIRDefaultOnNextCallOff">Helistaja numbrinäit on vaikimisi varjatud. Järgmine kõne: number nähtav</string>
+    <string name="CLIRDefaultOffNextCallOn">Helistaja numbrinäit on vaikimisi nähtav. Järgmine kõne: number varjatud</string>
+    <string name="CLIRDefaultOffNextCallOff">Helistaja numbrinäit on vaikimisi nähtav. Järgmine kõne: number nähtav</string>
+    <string name="serviceNotProvisioned">Teenust ei pakuta.</string>
+    <string name="CLIRPermanent">Helistaja numbrinäidu seadeid ei saa muuta.</string>
+    <string name="RestrictedChangedTitle">Piiratud juurdepääsu muudatus</string>
+    <string name="RestrictedOnData">Andmesideteenus on keelatud.</string>
+    <string name="RestrictedOnEmergency">Hädaabiteenus on keelatud.</string>
+    <string name="RestrictedOnNormal">Kõneteenus on keelatud.</string>
+    <string name="RestrictedOnAllVoice">Kõik kõneteenused on keelatud.</string>
+    <string name="RestrictedOnSms">SMS-teenus on keelatud.</string>
+    <string name="RestrictedOnVoiceData">Kõne-/andmesideteenused on keelatud.</string>
+    <string name="RestrictedOnVoiceSms">Kõne-/SMS-teenused on keelatud.</string>
+    <string name="RestrictedOnAll">Kõik kõne-/andmeside-/SMS-teenused on keelatud.</string>
+    <string name="serviceClassVoice">Kõne</string>
+    <string name="serviceClassData">Andmeside</string>
+    <string name="serviceClassFAX">FAKS</string>
+    <string name="serviceClassSMS">SMS</string>
+    <string name="serviceClassDataAsync">Asünkroonne</string>
+    <string name="serviceClassDataSync">Sünkroonne</string>
+    <string name="serviceClassPacket">Pakett</string>
+    <string name="serviceClassPAD">PAD</string>
+    <string name="roamingText0">Rändluse märgutuli sees</string>
+    <string name="roamingText1">Rändluse märgutuli väljas</string>
+    <string name="roamingText2">Rändluse märgutuli välgub</string>
+    <string name="roamingText3">Naabruskonnast väljas</string>
+    <string name="roamingText4">Hoonest väljas</string>
+    <string name="roamingText5">Rändlus - eelistatud süsteem</string>
+    <string name="roamingText6">Rändlus - saadaolev süsteem</string>
+    <string name="roamingText7">Rändlus - kontsernipartner</string>
+    <string name="roamingText8">Rändlus - eelispartner</string>
+    <string name="roamingText9">Rändlus - täisfunktsionaalne teenus</string>
+    <string name="roamingText10">Rändlus - teenus osaliselt funktsionaalne</string>
+    <string name="roamingText11">Rändluse bänner sees</string>
+    <string name="roamingText12">Rändluse bänner väljas</string>
+    <string name="roamingTextSearching">Teenuseotsing</string>
+    <string name="cfTemplateNotForwarded">{0}: ei edastatud</string>
+    <string name="cfTemplateForwarded">{0}:{1}</string>
+    <string name="cfTemplateForwardedTime">{0}:{1}pärast{2}sekundit</string>
+    <string name="cfTemplateRegistered">{0}: ei edastatud</string>
+    <string name="cfTemplateRegisteredTime">{0}: ei edastatud</string>
+    <string name="fcComplete">Funktsioonikood lõpule viidud.</string>
+    <string name="fcError">Ühendusprobleem või kehtetu funktsioonikood.</string>
+    <string name="httpErrorOk">OK</string>
+    <string name="httpError">Veebilehetõrge.</string>
+    <string name="httpErrorLookup">URL-i ei leitud.</string>
+    <string name="httpErrorUnsupportedAuthScheme">Veebilehe autentimisprogrammi ei toetata.</string>
+    <string name="httpErrorAuth">Autentimine nurjus.</string>
+    <string name="httpErrorProxyAuth">Autentimine puhverserveri kaudu nurjus.</string>
+    <string name="httpErrorConnect">Serveriga ei saanud ühendust.</string>
+    <string name="httpErrorIO">Server ei vastanud. Proovige hiljem uuesti.</string>
+    <string name="httpErrorTimeout">Serveriühenduse ajalõpp.</string>
+    <string name="httpErrorRedirectLoop">Sellel lehel on liiga palju serveri ümbersuunamisi.</string>
+    <string name="httpErrorFailedSslHandshake">Turvalise ühenduse loomine nurjus.</string>
+    <string name="httpErrorFile">Failile ei pääse juurde.</string>
+    <string name="httpErrorFileNotFound">Soovitud faili ei leitud.</string>
+    <string name="httpErrorTooManyRequests">Liiga palju taotlusi on töötluses. Proovige hiljem uuesti.</string>
+    <string name="notification_title">Sisselogimistõrge:%1$s</string>
+    <string name="contentServiceSync">Sünkroonne</string>
+    <string name="contentServiceSyncNotificationTitle">Sünkroonimine</string>
+    <string name="contentServiceTooManyDeletesNotificationDesc">Liiga palju kustutamisi:%s.</string>
+    <string name="low_memory">Telefonimälu on täis. Salvestusruumi vabastamiseks kustutage mõni fail.</string>
+    <string name="me">Mina</string>
+    <string name="power_dialog">Telefoni valikud</string>
+    <string name="silent_mode">Vaikne režiim</string>
+    <string name="turn_on_radio">Lülita traadita side sisse</string>
+    <string name="turn_off_radio">Lülita traadita side välja</string>
+    <string name="screen_lock">Ekraanilukk</string>
+    <string name="power_off">Lülita välja</string>
+    <string name="shutdown_progress">Väljalülitumine…</string>
+    <string name="shutdown_confirm">Telefon lülitub välja.</string>
+    <string name="recent_tasks_title">Viimatised</string>
+    <string name="no_recent_tasks">Viimatikasutatud rakendusi pole.</string>
+    <string name="global_actions">Telefoni valikud</string>
+    <string name="global_action_lock">Ekraanilukk</string>
+    <string name="global_action_power_off">Lülita välja</string>
+    <string name="global_action_toggle_silent_mode">Vaikne režiim</string>
+    <string name="global_action_silent_mode_on_status">Heli on VÄLJAS</string>
+    <string name="global_action_silent_mode_off_status">Heli on SEES</string>
+    <string name="global_actions_toggle_airplane_mode">Lennukirežiim</string>
+    <string name="global_actions_airplane_mode_on_status">Lennukirežiim on SEES</string>
+    <string name="global_actions_airplane_mode_off_status">Lennukirežiim on VÄLJAS</string>
+    <string name="safeMode">Turberežiim</string>
+    <string name="android_system_label">Opsüsteem Android</string>
+    <string name="permgrouplab_costMoney">Tasulised teenused</string>
+    <string name="permgroupdesc_costMoney">"Rakendustele tasuliste toimingute tegemiseks
+        loa andmine."</string>
+    <string name="permgrouplab_messages">Teie sõnumid</string>
+    <string name="permgroupdesc_messages">"Saate lugeda ja kirjutada SMS-e,
+        e-kirju ja muid sõnumeid."</string>
+    <string name="permgrouplab_personalInfo">Isiklikud andmed</string>
+    <string name="permgroupdesc_personalInfo">"Otsejuurdepääs telefoni salvestatud
+        kontaktidele ja kalendrile."</string>
+    <string name="permgrouplab_location">Teie asukoht</string>
+    <string name="permgroupdesc_location">Saate jälgida oma geograafilist asukohta</string>
+    <string name="permgrouplab_network">Võrguside</string>
+    <string name="permgroupdesc_network">"Saate rakendustele lubada juurdepääsu
+    võrgufunktsioonidele."</string>
+    <string name="permgrouplab_accounts">Teie kontod</string>
+    <string name="permgroupdesc_accounts">Juurdepääs saadaolevatele kontodele.</string>
+    <string name="permgrouplab_hardwareControls">Riistvara juhtnupud</string>
+    <string name="permgroupdesc_hardwareControls">"Otsejuurdepääs riistvarale
+    telefoni kaudu."</string>
+    <string name="permgrouplab_phoneCalls">Telefonikõned</string>
+    <string name="permgroupdesc_phoneCalls">"Telefonikõnede jälgimine, salvestamine ja
+        töötlemine."</string>
+    <string name="permgrouplab_systemTools">Süsteemiriistad</string>
+    <string name="permgroupdesc_systemTools">"Madalama taseme juurdepääs ja süsteemi
+        juhtimine."</string>
+    <string name="permgrouplab_developmentTools">Arendusriistad</string>
+    <string name="permgroupdesc_developmentTools">"Funktsioonid, mida vajavad ainult
+        rakenduste arendajad."</string>
+    <string name="permgrouplab_storage">Mälu</string>
+    <string name="permgroupdesc_storage">Juurdepääs SD-kaardile.</string>
+    <string name="permlab_statusBar">Muuda või keela olekuriba</string>
+    <string name="permdesc_statusBar">"Lubab rakendusel keelata
+        olekuriba või lisada ja eemaldada süsteemikoone."</string>
+    <string name="permlab_statusBarService">olekuriba</string>
+    <string name="permdesc_statusBarService">Lubab rakendusel olla olekuriba.</string>
+    <string name="permlab_expandStatusBar">Laienda/ahenda olekuriba</string>
+    <string name="permdesc_expandStatusBar">"Lubab rakendusel
+        olekuriba laiendada või ahendada."</string>
+    <string name="permlab_processOutgoingCalls">Kuula pealt väljaminevaid kõnesid</string>
+    <string name="permdesc_processOutgoingCalls">"Lubab rakendusel
+        töödelda väljaminevaid kõnesid ja muuta valitavat numbrit.  Pahavararakendused
+        võivad väljaminevaid kõnesid jälgida, ümber suunata või takistada."</string>
+    <string name="permlab_receiveSms">Võta SMS vastu</string>
+    <string name="permdesc_receiveSms">"Lubab rakendusel vastu võtta
+      ja töödelda SMS-sõnumeid. Pahavararakendused võivad teie sõnumeid
+      jälgida või need ilma teile näitamata ära kustutada."</string>
+    <string name="permlab_receiveMms">Võta MMS vastu</string>
+    <string name="permdesc_receiveMms">"Lubab rakendusel vastu võtta
+      ja töödelda MMS-sõnumeid. Pahavararakendused võivad teie sõnumeid
+      jälgida või need ilma teile näitamata ära kustutada."</string>
+    <string name="permlab_sendSms">Saada SMS-sõnumeid</string>
+    <string name="permdesc_sendSms">"Lubab rakendusel saata 
+      SMS-sõnumeid. Pahavararakendused võivad teile lisakulutusi tekitada, saates sõnumeid
+      teilt luba küsimata."</string>
+    <string name="permlab_readSms">Loe SMS-e või MMS-e</string>
+    <string name="permdesc_readSms">"Lubab rakendusel lugeda
+      telefonis või SIM-kaardil talletatavaid SMS-sõnumeid. Pahavararakendused
+      võivad lugeda teie konfidentsiaalseid sõnumeid."</string>
+    <string name="permlab_writeSms">Muuda SMS-e või MMS-e</string>
+    <string name="permdesc_writeSms">"Lubab rakendusel
+      telefonis või SIM-kaardil talletatavatesse SMS-sõnumitesse kirjutada. Pahavararakendused
+      võivad teie sõnumid ära kustutada."</string>
+    <string name="permlab_receiveWapPush">Võta WAP vastu</string>
+    <string name="permdesc_receiveWapPush">"Lubab rakendusel vastu võtta
+      ja töödelda WAP-sõnumeid. Pahavararakendused võivad teie sõnumeid
+      jälgida või need ilma teile näitamata ära kustutada."</string>
+    <string name="permlab_getTasks">Jälgi töötavaid rakendusi</string>
+    <string name="permdesc_getTasks">"Lubab rakendusel koguda
+        teavet parajasti toimuvate ja viimatiste toimingute kohta. Võib juhtuda,
+        et pahavararakendused avastavad teiste rakenduste kohta salastatud teavet."</string>
+    <string name="permlab_reorderTasks">Sordi töötavaid rakendusi</string>
+    <string name="permdesc_reorderTasks">"Lubab rakendusel tõsta
+        ülesandeid esiplaanile või taustale. Pahavararakendused võivad end teie loata
+        esiplaanile suruda."</string>
+    <string name="permlab_setDebugApp">Luba rakenduste silumine</string>
+    <string name="permdesc_setDebugApp">"Lubab ühel rakendusel teise rakenduse
+        silumisfunktsiooni sisse lülitada. Pahavararakendused võivad seda kasutada
+        teiste rakenduste hävitamiseks."</string>
+    <string name="permlab_changeConfiguration">Muuda kasutajaliidese seadeid</string>
+    <string name="permdesc_changeConfiguration">"Lubab rakendusel
+        praegust konfiguratsiooni muuta, nt piirkonna- ja keeleseadeid või üldist fondisuurust."</string>
+    <string name="permlab_enableCarMode">Luba autorežiim</string>
+    <string name="permdesc_enableCarMode">"Lubab rakendusel
+        autorežiimi sisse lülitada."</string>
+    <string name="permlab_killBackgroundProcesses">Sule taustprotsessid</string>
+    <string name="permdesc_killBackgroundProcesses">"Lubab rakendusel
+        sulgeda teiste rakenduste taustprotsessid isegi kui
+        mälu on piisavalt."</string>
+    <string name="permlab_forceStopPackages">Sunni muud rakendused sulguma</string>
+    <string name="permdesc_forceStopPackages">"Lubab rakendusel
+        muud rakendused jõuga sulgeda."</string>
+    <string name="permlab_forceBack">Sunni rakendust sulguma</string>
+    <string name="permdesc_forceBack">"Lubab rakendusel saata ükskõik milline
+        esiplaanil toimuv tegevus taustale, et see sulgeda ja tagasi minna.
+        Seda ei peaks tavarakendus kunagi tegema."</string>
+    <string name="permlab_dump">Jälgi süsteemi sisemist olekut</string>
+    <string name="permdesc_dump">"Lubab rakendusel koguda
+        teavet süsteemi sisemise oleku kohta. Pahavararakendused võivad koguda
+        mitmesugust konfidentsiaalset ja turbeteavet, mida neil ei tohiks
+        tavaolukorras vaja minna."</string>
+    <string name="permlab_shutdown">Osaline väljalülitumine</string>
+    <string name="permdesc_shutdown">"Sunnib Tegevusehalduri välja
+        lülituma.  Ei soorita täielikku väljalülitust."</string>
+    <string name="permlab_stopAppSwitches">Keela rakenduste aktiveerimine</string>
+    <string name="permdesc_stopAppSwitches">Takistab kasutajal teise rakenduse aktiveerimist.</string>
+    <string name="permlab_runSetActivityWatcher">Jägi ja juhi kõigi rakenduste käivitamist</string>
+    <string name="permdesc_runSetActivityWatcher">"Lubab rakendusel
+        jälgida ja juhtida süsteemi tegevuste käivitamist.
+        Pahavararakendused võivad süsteemi täielikult rikkuda. See
+        luba on vajalik ainult arendustegevuseks ja mitte kunagi telefoni
+        tavapäraseks kasutamiseks."</string>
+    <string name="permlab_broadcastPackageRemoved">Saada eemaldatud paketi kohta teade</string>
+    <string name="permdesc_broadcastPackageRemoved">"Lubab rakendusel
+        saata teate rakenduse paketi eemaldamise kohta.
+        Pahavararakendused võivad kasutada seda muude töötavate 
+        rakenduste hävitamiseks."</string>
+    <string name="permlab_broadcastSmsReceived">Saada SMS-i vastuvõtmise teade</string>
+    <string name="permdesc_broadcastSmsReceived">"Lubab rakendusel
+        saata teate SMS-sõnumi vastuvõtmise kohta.
+        Pahavararakendused võivad kasutada seda saabuvate SMS-sõnumite võltsimiseks."</string>
+    <string name="permlab_broadcastWapPush">Saada WAP-tõukesõnumi saamise teade</string>
+    <string name="permdesc_broadcastWapPush">"Lubab rakendusel
+        saata teate WAP-tõukesõnumi vastuvõtmise kohta.
+        Pahavararakendused võivad kasutada seda MMS-sõnumi kohaletoimetamisteate võltsimiseks või 
+        asendada märkamatult ükskõik millise veebilehe sisu pahatahtlike variantidega."</string>
+    <string name="permlab_setProcessLimit">Piira töötavate protsesside arvu</string>
+    <string name="permdesc_setProcessLimit">"Lubab rakendusel
+        määrata töötavate protsesside piirarvu. Seda ei vaja 
+        tavarakendused kunagi."</string>
+    <string name="permlab_setAlwaysFinish">Sule kõik taustal töötavad rakendused</string>
+    <string name="permdesc_setAlwaysFinish">"Lubab rakendusel
+        määrata. kas tegevused lõpetatakse kohe,  kui nad taustal töötavad. Seda ei vaja tavarakendused kunagi."</string>
+    <string name="permlab_batteryStats">Muuda aku kasutuse andmeid</string>
+    <string name="permdesc_batteryStats">"Lubab muuta kogutud 
+        akukasutusandmeid. Tavarakendused seda ei kasuta."</string>
+    <string name="permlab_backup">Juhi süsteemi varundust ja taastet</string>
+    <string name="permdesc_backup">"Lubab rakendusel määrata süsteemi varunduse ja taastemehhanismi.  Tavarakendused seda ei kasuta."</string>
+    <string name="permlab_internalSystemWindow">Kuva keelatud aknad</string>
+    <string name="permdesc_internalSystemWindow">"Lubab luua
+        aknaid, mis on mõeldud kasutamiseks sisemise süsteemi
+        kasutajaliidesele. Tavarakendused seda ei kasuta."</string>
+    <string name="permlab_systemAlertWindow">Kuva süsteemitaseme hoiatusi</string>
+    <string name="permdesc_systemAlertWindow">"Lubab rakendusel
+        kuvada süsteemi hoiatusaknaid. Pahavararakendused hõivavad
+        kogu telefoniekraani."</string>
+    <string name="permlab_setAnimationScale">Muuda üldist animatsioonikiirust</string>
+    <string name="permdesc_setAnimationScale">"Lubab rakendusel muuta
+        igal ajal üldist animatsioonikiirust (kiiremaks või aeglasemaks)."</string>
+    <string name="permlab_manageAppTokens">Halda rakenduse lube</string>
+    <string name="permdesc_manageAppTokens">"Lubab rakendustel
+        ise oma lube luua ja hallata, eirates nende tavapärast
+        järjestust. Seda ei peaks tavarakendus kunagi tegema."</string>
+    <string name="permlab_injectEvents">Vajuta klahve ja juhtnuppe</string>
+    <string name="permdesc_injectEvents">"Lubab rakendusel muudes rakendustes
+        ise sisendsündmusi (klahvivajutusi jne) tekitada. Pahavararakendused
+        kasutavad seda telefoni üle kontrolli saavutamiseks."</string>
+    <string name="permlab_readInputState">Salvesta klahvivajutused ja toimingud</string>
+    <string name="permdesc_readInputState">"Lubab rakenduse jälgida,
+        milliseid klahve te vajutate teiste rakendustega suhtlemisel (nt
+        parooli sisestamine). Seda ei peaks tavarakendus kunagi tegema."</string>
+    <string name="permlab_bindInputMethod">Seo sisestusviis</string>
+    <string name="permdesc_bindInputMethod">"Lubab valdajal siduda sisestusviisi kõrgema taseme
+        liidesega. Seda ei peaks tavarakendus kunagi tegema."</string>
+    <string name="permlab_bindWallpaper">Seo taustpilt</string>
+    <string name="permdesc_bindWallpaper">"Lubab valdajal siduda taustpildi kõrgema taseme
+        liidesega. Seda ei peaks tavarakendus kunagi tegema."</string>
+    <string name="permlab_bindDeviceAdmin">Suhtle seadmehalduriga</string>
+    <string name="permdesc_bindDeviceAdmin">"Lubab valdajal süsteemihaldurile
+        kavatsusi saata. Seda ei peaks tavarakendus kunagi tegema."</string>
+    <string name="permlab_setOrientation">Muuda ekraani paigutust</string>
+    <string name="permdesc_setOrientation">"Lubab rakendusel igal ajal muuta
+        ekraani paigutust. Seda ei peaks tavarakendused
+        kunagi tegema."</string>
+    <string name="permlab_signalPersistentProcesses">Saada rakendustele Linuxi signaale</string>
+    <string name="permdesc_signalPersistentProcesses">"Lubab rakendusel taotleda pakutava signaali
+        saatmist kõigile püsiprotsessidele."</string>
+    <string name="permlab_persistentActivity">Hoia rakendused pidevalt käimas</string>
+    <string name="permdesc_persistentActivity">"Lubab rakendusel muuta
+        osa endast püsivaks, nii et süsteem ei saa seda teiste rakenduste
+        jaoks kasutada."</string>
+    <string name="permlab_deletePackages">Kustuta rakendused</string>
+    <string name="permdesc_deletePackages">"Lubab rakendusel Androidi pakette
+        kustutada. Pahavararakendused võivad kasutada seda tähtsate rakenduste kustutamiseks."</string>
+    <string name="permlab_clearAppUserData">Kustuta muude rakenduste andmed</string>
+    <string name="permdesc_clearAppUserData">Lubab rakendusel kasutajaandmed kustutada.</string>
+    <string name="permlab_deleteCacheFiles">Kustuta muude rakenduste vahemälu</string>
+    <string name="permdesc_deleteCacheFiles">"Lubab rakendusel vahemälu faile
+        kustutada."</string>
+    <string name="permlab_getPackageSize">Mõõda rakenduse salvestusmahtu</string>
+    <string name="permdesc_getPackageSize">"Lubab rakendusel koguda teavet
+        koodi, andmete ja vahemälu mahu kohta."</string>
+    <string name="permlab_installPackages">Installi rakendused otse</string>
+    <string name="permdesc_installPackages">"Lubab rakendusel installida uusi või uuendatud
+        Androidi pakette. Pahavararakendused võivad seda kasutada lubamatult suurte õigustega uute
+        rakenduste lisamiseks."</string>
+    <string name="permlab_clearAppCache">Kustuta kõik rakenduse vahemälus olevad andmed</string>
+    <string name="permdesc_clearAppCache">"Lubab rakendusel vabastada telefoni mälumahtu,
+        kustutades rakenduse vahemälukataloogi failid. Juurdepääs on väga
+        piiratud, tavaliselt lubatud ainult süsteemiprotsessidele."</string>
+    <string name="permlab_movePackage">Teisalda rakenduse ressursid</string>
+    <string name="permdesc_movePackage">Lubab rakendusel teisaldada rakenduse ressursse sisemistelt kandjatelt väliskandjatele või vastupidi.</string>
+    <string name="permlab_readLogs">Loe süsteemi logifaile</string>
+    <string name="permdesc_readLogs">"Lubab rakendusel lugeda mitmesuguseid
+        süsteemi logifaile.  See võimaldab koguda üldteavet
+        selle kohta, mida te telefoniga teete, aga ei tohiks sisaldada
+        isikuandmeid ega konfidentsiaalset teavet."</string>
+    <string name="permlab_diagnostic">Loe diagnostikaressursse ja kirjuta neisse</string>
+    <string name="permdesc_diagnostic">"Lubab rakendusel lugeda ja kirjutada 
+    ükskõik millisesse diagnostikarühma kuuluvat ressurssi, nt arendusfaile. See võib
+    mõjutada süsteemi stabiilsust ja turvalisust. Seda tohib kasutada AINULT tootja või operaator
+    riistvara diagnostikaks."</string>
+    <string name="permlab_changeComponentState">Luba või keela rakenduse komponente</string>
+    <string name="permdesc_changeComponentState">"Lubab rakendusel määrata, kas muu rakenduse
+        komponent on lubatud või mitte. Pahavararakendused võivad seda kasutada
+        telefoni tähtsate funktsioonide halvamiseks. Seda õigust tuleb kasutada ettevaatlikult, sest
+        rakenduse komponendid võivad muutuda kasutuskõlbmatuks, vastuoluliseks või ebastabiilseks."</string>
+    <string name="permlab_setPreferredApplications">Määra eelistatud rakendused</string>
+    <string name="permdesc_setPreferredApplications">"Lubab rakendusel
+        muuta teie eelistatud rakendusi. See võimaldab pahavararakendustel
+        töötavaid rakendusi märkamatult muuta, rikkudes teie olemasolevaid
+        rakendusi, nii et nad hakkavad teilt konfidentsiaalseid andmeid koguma."</string>
+    <string name="permlab_writeSettings">Muuda süsteemi üldseadeid</string>
+    <string name="permdesc_writeSettings">"Lubab rakendusel muuta
+        süsteemiseadete andmeid. Pahavararakendused võivad teie süsteemi konfiguratsiooni
+        rikkuda."</string>
+    <string name="permlab_writeSecureSettings">Muuda süsteemi turbeseadeid</string>
+    <string name="permdesc_writeSecureSettings">"Lubab rakendusel muuta
+        süsteemi turbeseadete andmeid. Tavarakendused seda ei kasuta."</string>
+    <string name="permlab_writeGservices">"Muuda Google'i teenustekaarti"</string>
+    <string name="permdesc_writeGservices">"Lubab rakendusel muuta
+        Google'i teenustekaarti.  Tavarakendused seda ei kasuta."</string>
+    <string name="permlab_receiveBootCompleted">Automaatkäivitus alglaadimisel</string>
+    <string name="permdesc_receiveBootCompleted">"Lubab rakendusel
+        end ise käivitada kohe, kui süsteemi alglaadimine on lõppenud.
+        See muudab telefoni sisselülitamise aeglasemaks ja võimaldab 
+        rakendusel telefoni tööd aeglustada, sest rakendus on kogu aeg töös."</string>
+    <string name="permlab_broadcastSticky">Saada pseudo-leviedastus</string>
+    <string name="permdesc_broadcastSticky">"Lubab rakendusel saata
+        leviedastusi, mis jäävad avatuks isegi pärast edastuse lõppu.
+        Pahavararakendused võivad muuta telefoni aeglaseks või ebastabiilseks,
+        sundides seda liiga palju mälu kasutama."</string>
+    <string name="permlab_readContacts">Loe kontaktide andmeid</string>
+    <string name="permdesc_readContacts">"Lubab rakendusel lugeda kõiki
+        telefonis salvestatud kontaktide (aadressi-) andmeid. Pahavararakendused
+        võivad selle abil teie andmed teistele inimestele saata."</string>
+    <string name="permlab_writeContacts">Kirjuta kontaktide andmeid</string>
+    <string name="permdesc_writeContacts">"Lubab rakendusel muuta
+        telefonis salvestatud kontaktide (aadressi-) andmeid. Pahavararakendused
+        võivad seda kasutada teie kontaktide andmete kustutamiseks või muutmiseks."</string>
+    <string name="permlab_readCalendar">Loe kalendrisündmusi</string>
+    <string name="permdesc_readCalendar">"Lubab rakendusel lugeda kõiki
+        telefoni salvestatud kalendrisündmusi. Pahavararakendused
+        võivad selle abil teie kalendrisündmused teistele inimestele saata."</string>
+    <string name="permlab_writeCalendar">Muuda või lisa kalendrisündmusi ja saada külalistele e-kirju</string>
+    <string name="permdesc_writeCalendar">"Lubab rakendusel lisada või muuta 
+        teie kalendrisündmusi, mis võib põhjustada külalistele e-kirjade saatmise. Pahavararakendused võivad seda kasutada
+        teie kalendrisündmuste kustutamiseks või muutmiseks või külalistele e-kirjade saatmiseks."</string>
+    <string name="permlab_accessMockLocation">Võltsi testimiseks mõeldud asukohaandmed</string>
+    <string name="permdesc_accessMockLocation">"Testimiseks valede asukohaandmete loomine.
+        Pahavararakendused võivad seda kasutada GPS- või võrguteenusepakkujate saadetud
+        tegelike asukohaandmete asendamiseks."</string>
+    <string name="permlab_accessLocationExtraCommands">Juurdepääs asukohateabe pakkuja lisakäskudele</string>
+    <string name="permdesc_accessLocationExtraCommands">"Juurdepääs asukohateabe pakkuja lisakäskudele.
+        Pahavararakendused võivad kasutada seda GPS-i või muu asukohaallika
+        töö segamiseks."</string>
+    <string name="permlab_installLocationProvider">Asukohateabe pakkuja installimise luba</string>
+    <string name="permdesc_installLocationProvider">"Testimiseks valede asukohaandmete loomine.
+        Pahavararakendused võivad seda kasutada GPS- või võrguteenusepakkujate saadetud
+        tegelike asukohaandmete asendamiseks ja edastada teie asukoha välisele allikale."</string>
+    <string name="permlab_accessFineLocation">Täpne (GPS) asukoht</string>
+    <string name="permdesc_accessFineLocation">"Juurdepääs telefoni täpsetele asukohaandmetele
+        nt globaalsele positsioneerimissüsteemile, kui see on telefonis olemas.
+        Pahavararakendused võivad selle abil kindlaks teha, kus te viibite
+        ja kulutavad akutoidet."</string>
+    <string name="permlab_accessCoarseLocation">Umbkaudne (võrgupõhine) asukoht</string>
+    <string name="permdesc_accessCoarseLocation">"Juurdepääs umbkaudsetele asukohaandmetele, nt
+        võrgu andmebaasile, mille olemasolu korral saab määrata telefoni umbkaudse asukoha. Pahavararakendused
+        võivad selle abil teie umbkaudse asukoha kindlaks määrata."</string>
+    <string name="permlab_accessSurfaceFlinger">Juurdepääs SurfaceFlingerile</string>
+    <string name="permdesc_accessSurfaceFlinger">"Lubab rakendusel kasutada
+        SurfaceFlingeri madalama taseme funktsioone."</string>
+    <string name="permlab_readFrameBuffer">Pildimälu lugemine</string>
+    <string name="permdesc_readFrameBuffer">"Lubab rakendusel
+        pildimälu sisu lugeda."</string>
+    <string name="permlab_modifyAudioSettings">Muuda heliseadeid</string>
+    <string name="permdesc_modifyAudioSettings">"Lubab rakendusel muuta
+        üldisi heliseadeid, nt helitugevust ja -väljundit."</string>
+    <string name="permlab_recordAudio">Salvesta heli</string>
+    <string name="permdesc_recordAudio">"Võimaldab rakendustele juurdepääsu
+        heli salvestusteele."</string>
+    <string name="permlab_camera">Pildista</string>
+    <string name="permdesc_camera">"Lubab rakendusel kaameraga
+        pildistada. See lubab rakendusel igal ajal koguda
+        kaamerasilma ees olevaid kujutisi."</string>
+    <string name="permlab_brick">Desaktiveeri telefon püsivalt</string>
+    <string name="permdesc_brick">"Lubab rakendusel
+        telefoni püsivalt desaktiveerida. See on väga ohtlik."</string>
+    <string name="permlab_reboot">Sunni telefon taaskäivituma</string>
+    <string name="permdesc_reboot">"Lubab rakendusel
+        sundida telefoni taaskäivituma."</string>
+    <string name="permlab_mount_unmount_filesystems">Ühenda ja lahuta failisüsteemid</string>
+    <string name="permdesc_mount_unmount_filesystems">"Lubab rakendusel irdmäluseadmete jaoks 
+        failisüsteeme ühendada ja lahutada."</string>
+    <string name="permlab_mount_format_filesystems">Vorminda väliseid mäluseadmeid</string>
+    <string name="permdesc_mount_format_filesystems">Lubab rakendusel irdmäluseadmeid vormindada.</string>
+    <string name="permlab_asec_access">Hangi teavet turbemälu kohta</string>
+    <string name="permdesc_asec_access">Lubab rakendusel turbemälu kohta teavet koguda.</string>
+    <string name="permlab_asec_create">Loo turbemälu</string>
+    <string name="permdesc_asec_create">Lubab rakendusel turbemälu luua.</string>
+    <string name="permlab_asec_destroy">Hävita turbemälu</string>
+    <string name="permdesc_asec_destroy">Lubab rakendusel turbemälu hävitada.</string>
+    <string name="permlab_asec_mount_unmount">Ühenda/lahuta turbemälu</string>
+    <string name="permdesc_asec_mount_unmount">Lubab rakendusel turbemälu ühendada/lahutada.</string>
+    <string name="permlab_asec_rename">Nimeta turbemälu ümber</string>
+    <string name="permdesc_asec_rename">Lubab rakendusel turbemälu ümber nimetada.</string>
+    <string name="permlab_vibrate">Juhi värinat</string>
+    <string name="permdesc_vibrate">"Lubab rakendusel
+        värinat juhtida."</string>
+    <string name="permlab_flashlight">Juhi taskulampi</string>
+    <string name="permdesc_flashlight">"Lubab rakendusel
+        taskulampi juhtida."</string>
+    <string name="permlab_hardware_test">Testi riistvara</string>
+    <string name="permdesc_hardware_test">"Lubab rakendusel
+        juhtida erinevaid välisseadmeid riistvara testimise eemärgil."</string>
+    <string name="permlab_callPhone">Helista otse elefoninumbritel</string>
+    <string name="permdesc_callPhone">"Lubab rakendusel helistada
+        telefoninumbritel ilma teie sekkumiseta. Pahavararakendused võivad
+        teile ootamatuid kulusid tekitada. NB! See funktsioon ei luba 
+        rakendusel helistada hädaabinumbritel."</string>
+    <string name="permlab_callPrivileged">Helista otse kõigil telefoninumbritel</string>
+    <string name="permdesc_callPrivileged">"Lubab rakendusel helistada
+        ükskõik millisel telefoninumbril, sh hädaabinumbritel, ilma teie sekkumiseta.
+        Pahavararakendused võivad teha hädaabinumbritel mittevajalikke ja ebaseaduslikke
+        kõnesid."</string>
+    <string name="permlab_performCdmaProvisioning">CDMA-telefoniseadistuse otsekäivitus</string>
+    <string name="permdesc_performCdmaProvisioning">"Lubab rakendusel käivitada CDMA-tehnoloogia.
+        Pahavararakendused võivad CDMA-tehnoloogia käivitada, kuigi selleks puudub vajadus"</string>
+    <string name="permlab_locationUpdates">Juhi asukohateabe uuendamise teateid</string>
+    <string name="permdesc_locationUpdates">"Võimaldab asukohateabe uuendamise teateid raadio
+        kaudu lubada/keelata.  Tavarakendused seda ei kasuta."</string>
+    <string name="permlab_checkinProperties">Juurdepääs checkini (uuenduste allalaadimise) atribuutidele</string>
+    <string name="permdesc_checkinProperties">"Lubab checkini (uuenduste allalaadimise) teenuse üleslaaditud atribuutide
+        lugemist/kirjutamist.  Tavarakendused seda
+        ei kasuta."</string>
+    <string name="permlab_bindGadget">Vali vidinad</string>
+    <string name="permdesc_bindGadget">"Lubab rakendusel süsteemile öelda,
+        millised rakendused milliseid vidinaid kasutavad.  Selle õiguse kaudu saavad
+        rakendused anda teistele rakendustele juurdepääsu isikuandmetele.
+        Tavarakendused seda ei kasuta."</string>
+    <string name="permlab_modifyPhoneState">Muuda telefoni olekut</string>
+    <string name="permdesc_modifyPhoneState">"Lubab rakendusel juhtida
+        seadme telefonifunktsioone. Selle õigusega rakendus saab vahetada
+        võrku, lülitada telefoni raadio sisse ja välja jms ilma teid sellest
+        teavitamata."</string>
+    <string name="permlab_readPhoneState">Loe telefoni olekut ja identiteeti</string>
+    <string name="permdesc_readPhoneState">"Võimaldab rakenduse juurdepääsu
+        seadme telefonifunktsioonidele.  Selle õigusega rakendus saab määrata telefoni numbri ja
+        seerianumbri, kõne aktiivsuse, telefoninumbri, millega see kõne ühendatud on
+        jms."</string>
+    <string name="permlab_wakeLock">Keela telefoni unerežiim</string>
+    <string name="permdesc_wakeLock">"Lubab rakendusel takistada
+        telefoni unerežiimi aktiveerimist."</string>
+    <string name="permlab_devicePower">Lülita telefon sisse ja välja</string>
+    <string name="permdesc_devicePower">"Lubab rakendusel telefoni
+        sisse ja välja lülitada."</string>
+    <string name="permlab_factoryTest">Käivita tehase testrežiimis</string>
+    <string name="permdesc_factoryTest">"Käivitab tootja madalama taseme testi,
+        mis võimaldab täielikku juurdepääsu telefoni riistvarale. Saadaval ainult siis,
+        kui telefon on lülitatud tootja testrežiimile."</string>
+    <string name="permlab_setWallpaper">Määra taustpildiks</string>
+    <string name="permdesc_setWallpaper">"Lubab rakendusel määrata
+        süsteemi taustpildi."</string>
+    <string name="permlab_setWallpaperHints">Määra taustpildi suuruse näpunäited</string>
+    <string name="permdesc_setWallpaperHints">"Lubab rakendusel seada
+        süsteemi taustpildi suuruse näpunäited."</string>
+    <string name="permlab_masterClear">Lähtesta opsüsteemi tehaseseaded</string>
+    <string name="permdesc_masterClear">"Lubab rakendusel täielikult
+        lähtestada opsüsteemis tehaseseaded süsteemis, kustutades kõik andmed,
+        konfiguratsiooni ja installitud rakendused."</string>
+    <string name="permlab_setTime">Määra kellaaeg</string>
+    <string name="permdesc_setTime">"Lubab rakendusel muuta
+        telefoni kellaaega."</string>
+    <string name="permlab_setTimeZone">Määra ajavöönd</string>
+    <string name="permdesc_setTimeZone">"Lubab rakendusel muuta
+        telefoni ajavööndit."</string>
+    <string name="permlab_accountManagerService">Liidese AccountManagerService kasutamine</string>
+    <string name="permdesc_accountManagerService">"Lubab
+    rakendusel helistada kontoautentijatele"</string>
+    <string name="permlab_getAccounts">Avasta tuntud kontod</string>
+    <string name="permdesc_getAccounts">"Lubab rakendusel otsida
+      telefonile tuntud kontode loendi."</string>
+    <string name="permlab_authenticateAccounts">Kontoautentijaks olemine</string>
+    <string name="permdesc_authenticateAccounts">"Lubab rakendusel
+    kasutada funktsiooni AccountManager kontoautentija võimalusi
+    sh kontode loomine, neile paroolide saamine ja
+    määramine."</string>
+    <string name="permlab_manageAccounts">Halda kontoloendit</string>
+    <string name="permdesc_manageAccounts">"Lubab rakendusel
+    teha toiminguid, nagu kontode lisamine, eemaldamine ja paroolide
+    kustutamine."</string>
+    <string name="permlab_useCredentials">Kasuta konto autentimisandmeid</string>
+    <string name="permdesc_useCredentials">"Lubab rakendusel
+    taotleda autentimislube."</string>
+    <string name="permlab_accessNetworkState">Vaata võrgu olekut</string>
+    <string name="permdesc_accessNetworkState">"Lubab rakendusel vaadata
+      kõigi võrkude olekut."</string>
+    <string name="permlab_createNetworkSockets">Täielik juurdepääs Internetile</string>
+    <string name="permdesc_createNetworkSockets">"Lubab rakendusel
+      luua võrgusokleid."</string>
+    <string name="permlab_writeApnSettings">Kirjuta pääsupunktinime seadeid</string>
+    <string name="permdesc_writeApnSettings">"Lubab rakendusel muuta APN-i (pääsupunktinime)
+        seadeid, nt ükskõik millise APN-i puhverserveri ja pordi seadeid."</string>
+    <string name="permlab_changeNetworkState">Muuda võrguühenduvust</string>
+    <string name="permdesc_changeNetworkState">"Lubab rakendusel muuta
+      võrguühenduvuse olekut."</string>
+    <string name="permlab_changeTetherState">Muuda edasijagatud ühenduvust</string>
+    <string name="permdesc_changeTetherState">"Lubab rakendusel muuta
+      edasijagatud ühenduvuse olekut."</string>
+    <string name="permlab_changeBackgroundDataSetting">Muuda taustandmete kasutuse seadeid</string>
+    <string name="permdesc_changeBackgroundDataSetting">"Lubab rakendusel muuta
+      taustandmete kasutuse seadeid."</string>
+    <string name="permlab_accessWifiState">Vaata WiFi olekut</string>
+    <string name="permdesc_accessWifiState">"Lubab rakendusel vaadata
+      WiFi oleku teavet."</string>
+    <string name="permlab_changeWifiState">Muuda WiFi olek</string>
+    <string name="permdesc_changeWifiState">"Lubab rakendusel WiFi pöörduspunktidega ühenduse luua ja selle katkestada ning muuta
+      konfigureeritud WiFi-võrke."</string>
+    <string name="permlab_changeWifiMulticastState">"WiFi mitmikedastuse vastuvõtu
+      lubamine"</string>
+    <string name="permdesc_changeWifiMulticastState">"Lubab rakendusel
+      vastu võtta pakette, mis pole otseselt teie seadmele mõeldud.  See võib osutuda
+      kasulikuks läheduses pakutavate teenuste avastamisel.  Kasutab rohkem toidet kui
+      tavaline edastusrežiim."</string>
+    <string name="permlab_bluetoothAdmin">Bluetoothi haldamine</string>
+    <string name="permdesc_bluetoothAdmin">"Lubab rakendusel konfigureerida
+      kohalikku Bluetoothi kasutavat telefoni, otsida kaugseadmeid ja nendega ühenduse luua."</string>
+    <string name="permlab_bluetooth">Bluetooth-ühenduste loomine</string>
+    <string name="permdesc_bluetooth">"Lubab rakendusel vaadata
+      kohaliku Bluetoothi kasutava telefoni konfiguratsiooni ja luua ühenduse seotud seadmetega."</string>
+    <string name="permlab_nfc">juhi lähiväljasidet</string>
+    <string name="permdesc_nfc">"Lubab rakendusel suhelda
+      lähiväljaside (NFC) siltide, kaartide ja lugejatega."</string>
+    <string name="permlab_disableKeyguard">Klahviluku keelamine</string>
+    <string name="permdesc_disableKeyguard">"Lubab rakendusel keelata
+      klahviluku jm parooliturbe. Sobiv näide on
+      telefonis klahviluku keelamine sissetuleva kõne vastuvõtmisel
+       ja klahviluku taaslubamine kõne lõpetamisel."</string>
+    <string name="permlab_readSyncSettings">Sünkroonimisseadete lugemine</string>
+    <string name="permdesc_readSyncSettings">"Lubab rakendusel lugeda sünkroonimisseadeid,
+        nt kas kontaktide sünkroonimine on lubatud."</string>
+    <string name="permlab_writeSyncSettings">Kirjuta sünkroonimisseaded üle</string>
+    <string name="permdesc_writeSyncSettings">"Lubab rakendusel muuta sünkroonimisseadeid,
+        nt kas kontaktide sünkroonimine on lubatud."</string>
+    <string name="permlab_readSyncStats">Loe sünkroonimisstatistikat</string>
+    <string name="permdesc_readSyncStats">"Lubab rakendusel lugeda sünkroonimisstatistikat, 
+        nt kõigi toimunud sünkroonimiste ajalugu."</string>
+    <string name="permlab_subscribedFeedsRead">Loe tellitud kanalite andmeid</string>
+    <string name="permdesc_subscribedFeedsRead">Lubab rakendusel otsida praegu sünkroonitud kanalite üksikasju.</string>
+    <string name="permlab_subscribedFeedsWrite">Kirjuta tellitud kanalite andmed üle</string>
+    <string name="permdesc_subscribedFeedsWrite">"Lubab rakendusel muuta
+      praegu sünkroonitud kanaleid. See võimaldab pahavararakendustel
+      sünkroonitud kanaleid muuta."</string>
+    <string name="permlab_readDictionary">Loe kasutajasõnastikku</string>
+    <string name="permdesc_readDictionary">"Lubab rakendusel lugeda konfidentsiaalseid
+      sõnu, nimesid ja fraase, mida kasutaja on kasutajasõnastikus talletanud."</string>
+    <string name="permlab_writeDictionary">Kirjuta kasutajasõnastikku</string>
+    <string name="permdesc_writeDictionary">"Lubab rakendusel kasutajasõnastikku uusi sõnu
+      kirjutada."</string>
+    <string name="permlab_sdcardWrite">Muuda/kustuta SD-kaardi sisu</string>
+    <string name="permdesc_sdcardWrite">Lubab rakendusel SD-kaardile kirjutada.</string>
+    <string name="permlab_cache_filesystem">Juurdepääs vahemälu failisüsteemile</string>
+    <string name="permdesc_cache_filesystem">Lubab rakendusel lugeda ja kirjutada vahemälu failisüsteemi.</string>
+    <string name="permlab_use_sip">tee/võta vastu Interneti-kõnesid</string>
+    <string name="permdesc_use_sip">Lubab rakendusel kasutada Interneti-kõnede tegemiseks/vastu võtmiseks SIP-teenust.</string>
+    <string name="policylab_limitPassword">Paroolipiirang</string>
+    <string name="policydesc_limitPassword">"Lubatud paroolide
+        piirang."</string>
+    <string name="policylab_watchLogin">Sisselogimiskatsete vaatamine</string>
+    <string name="policydesc_watchLogin">"Mingi tegevuse tegemiseks seadmesse sisselogimise 
+        nurjunud katsete jälgimine."</string>
+    <string name="policylab_resetPassword">Lähtesta parool</string>
+    <string name="policydesc_resetPassword">"Jõuga parooli muutmine,
+        mistõttu haldur peab teile enne sisselogimist
+        uue parooli andma."</string>
+    <string name="policylab_forceLock">Sunni lukustuma</string>
+    <string name="policydesc_forceLock">"Seadme lukustumise juhtimine, 
+        mistõttu tuleb parool uuesti sisestada."</string>
+    <string name="policylab_wipeData">Kustuta kõik andmed</string>
+    <string name="policydesc_wipeData">"Tehaseseadete taastamine, 
+        kõik andmed kustutatakse kinnitust küsimata."</string>
+    <string name="phoneTypeCustom">Kohandatud</string>
+    <string name="phoneTypeHome">Kodu</string>
+    <string name="phoneTypeMobile">Mobiiltelef.</string>
+    <string name="phoneTypeWork">Töö</string>
+    <string name="phoneTypeFaxWork">Töökoha faks</string>
+    <string name="phoneTypeFaxHome">Kodune faks</string>
+    <string name="phoneTypePager">Piipar</string>
+    <string name="phoneTypeOther">Muu</string>
+    <string name="phoneTypeCallback">Tagasihelistamine</string>
+    <string name="phoneTypeCar">Autotelefon</string>
+    <string name="phoneTypeCompanyMain">Ettevõtte üldtelefoni number</string>
+    <string name="phoneTypeIsdn">ISDN</string>
+    <string name="phoneTypeMain">Üldine</string>
+    <string name="phoneTypeOtherFax">Teine faks</string>
+    <string name="phoneTypeRadio">Raadiotelefon</string>
+    <string name="phoneTypeTelex">Teleks</string>
+    <string name="phoneTypeTtyTdd">Tekstitelefon</string>
+    <string name="phoneTypeWorkMobile">Töökoha mobiiltelefon</string>
+    <string name="phoneTypeWorkPager">Töökoha piipar</string>
+    <string name="phoneTypeAssistant">Assistent</string>
+    <string name="phoneTypeMms">MMS</string>
+    <string name="eventTypeBirthday">Sünnipäev</string>
+    <string name="eventTypeAnniversary">Tähtpäev</string>
+    <string name="eventTypeOther">Sündmus</string>
+    <string name="emailTypeCustom">Kohandatud</string>
+    <string name="emailTypeHome">Isiklik</string>
+    <string name="emailTypeWork">Töö</string>
+    <string name="emailTypeOther">Muu</string>
+    <string name="emailTypeMobile">Mobiiltelef.</string>
+    <string name="postalTypeCustom">Kohandatud</string>
+    <string name="postalTypeHome">Kodune</string>
+    <string name="postalTypeWork">Töö</string>
+    <string name="postalTypeOther">Muu postiaadress</string>
+    <string name="imTypeCustom">Kohandatud</string>
+    <string name="imTypeHome">Isiklik</string>
+    <string name="imTypeWork">Töö</string>
+    <string name="imTypeOther">Muu IM-aadress</string>
+    <string name="imProtocolCustom">Kohandatud</string>
+    <string name="imProtocolAim">AIM</string>
+    <string name="imProtocolMsn">Windows Live</string>
+    <string name="imProtocolYahoo">Yahoo</string>
+    <string name="imProtocolSkype">Skype</string>
+    <string name="imProtocolQq">QQ</string>
+    <string name="imProtocolGoogleTalk">Google Talk</string>
+    <string name="imProtocolIcq">ICQ</string>
+    <string name="imProtocolJabber">Jabber</string>
+    <string name="imProtocolNetMeeting">NetMeeting</string>
+    <string name="orgTypeWork">Töö</string>
+    <string name="orgTypeOther">Muu</string>
+    <string name="orgTypeCustom">Kohandatud</string>
+    <string name="sipAddressTypeCustom">Kohandatud</string>
+    <string name="sipAddressTypeHome">Avaleht</string>
+    <string name="sipAddressTypeWork">Töö</string>
+    <string name="sipAddressTypeOther">Muu</string>
+    <string name="contact_status_update_attribution">%1$skaudu</string>
+    <string name="contact_status_update_attribution_with_date">%1$s%2$skaudu</string>
+    <string name="keyguard_password_enter_pin_code">Sisestage PIN-kood</string>
+    <string name="keyguard_password_enter_password_code">Avamiseks sisestage parool</string>
+    <string name="keyguard_password_wrong_pin_code">Vale PIN-kood!</string>
+    <string name="keyguard_label_text">Avamiseks vajutage nuppu Menüü ja seejärel 0.</string>
+    <string name="emergency_call_dialog_number_for_display">Hädaabinumber</string>
+    <string name="lockscreen_carrier_default">(Mobiilsideteenust pole)</string>
+    <string name="lockscreen_screen_locked">Ekraan on lukus.</string>
+    <string name="lockscreen_instructions_when_pattern_enabled">Avamiseks vajutage nuppu Menüü või tehke hädaabikõne.</string>
+    <string name="lockscreen_instructions_when_pattern_disabled">Avamiseks vajutage nuppu Menüü.</string>
+    <string name="lockscreen_pattern_instructions">Avamiseks joonistage muster</string>
+    <string name="lockscreen_emergency_call">Hädaabikõne</string>
+    <string name="lockscreen_return_to_call">Pöördu kõne juurde tagasi</string>
+    <string name="lockscreen_pattern_correct">Õige</string>
+    <string name="lockscreen_pattern_wrong">Proovige uuesti</string>
+    <string name="lockscreen_plugged_in">Laadimine (%d%%)</string>
+    <string name="lockscreen_charged">Laetud.</string>
+    <string name="lockscreen_battery_short">%d%%</string>
+    <string name="lockscreen_low_battery">Ühendage laadija.</string>
+    <string name="lockscreen_missing_sim_message_short">SIM-kaarti pole</string>
+    <string name="lockscreen_missing_sim_message">Telefonis pole SIM-kaarti.</string>
+    <string name="lockscreen_missing_sim_instructions">Sisestage SIM-kaart.</string>
+    <string name="emergency_calls_only">Ainult hädaabikõned</string>
+    <string name="lockscreen_network_locked_message">Võrgulukk</string>
+    <string name="lockscreen_sim_puk_locked_message">SIM-kaart on PUK-koodiga lukustatud.</string>
+    <string name="lockscreen_sim_puk_locked_instructions">Lugege kasutusjuhendit või võtke ühendust klienditeenindusega.</string>
+    <string name="lockscreen_sim_locked_message">SIM-kaart on lukus.</string>
+    <string name="lockscreen_sim_unlock_progress_dialog_message">SIM-kaardi avamine…</string>
+    <string name="lockscreen_too_many_failed_attempts_dialog_message" formatted="false">"Olete avamismustri%dkorda valesti joonistanud.
+        
+
+Proovige%dsekundi pärast uuesti."</string>
+    <string name="lockscreen_failed_attempts_almost_glogin" formatted="false">"Olete avamismustri%dkorda valesti joonistanud.
+       Pärast veel%debaõnnestunud katset
+       palutakse teil avada telefon Google'i kaudu sisse logides.
+
+
+       Proovige%dsekundi pärast uuesti."</string>
+    <string name="lockscreen_too_many_failed_attempts_countdown">Proovige%dsekundi pärast uuesti.</string>
+    <string name="lockscreen_forgot_pattern_button_text">Kas unustasite mustri?</string>
+    <string name="lockscreen_glogin_forgot_pattern">Konto kaudu avamine</string>
+    <string name="lockscreen_glogin_too_many_attempts">Liiga palju katseid mustrit joonistada.</string>
+    <string name="lockscreen_glogin_instructions">"Avamiseks logige Google'i konto kaudu sisse"</string>
+    <string name="lockscreen_glogin_username_hint">Kasutajanimi (e-postiaadress)</string>
+    <string name="lockscreen_glogin_password_hint">Parool</string>
+    <string name="lockscreen_glogin_submit_button">Logi sisse</string>
+    <string name="lockscreen_glogin_invalid_input">Vale kasutajanimi või parool.</string>
+    <string name="lockscreen_glogin_checking_password">Kontrollimine...</string>
+    <string name="lockscreen_unlock_label">Ava</string>
+    <string name="lockscreen_sound_on_label">Heli on sees</string>
+    <string name="lockscreen_sound_off_label">Heli on väljas</string>
+    <string name="password_keyboard_label_symbol_key">\?123</string>
+    <string name="password_keyboard_label_alpha_key">ABC</string>
+    <string name="password_keyboard_label_alt_key">ALT</string>
+    <string name="factorytest_failed">Tehasetest nurjus</string>
+    <string name="factorytest_not_system">"Toimingut FACTORY_TEST
+        toetatakse ainult kausta /system/app installitud rakendustes."</string>
+    <string name="factorytest_no_action">"Paketti, mis võimaldaks toimingut
+        FACTORY_TEST, ei leitud."</string>
+    <string name="factorytest_reboot">Taaskäivita</string>
+    <string name="js_dialog_title">"Lehel aadressiga '%s' on tekst:"</string>
+    <string name="js_dialog_title_default">JavaScript</string>
+    <string name="js_dialog_before_unload">"Kas soovite sellelt lehelt lahkuda? 
+
+%s
+
+Jätkamiseks vajutage nuppu OK, samale lehele jäämiseks vajutage nuppu Tühista."</string>
+    <string name="save_password_label">Kinnitamine</string>
+    <string name="double_tap_toast">Näpunäide. Suurendamiseks ja vähendamiseks puudutage kaks korda.</string>
+    <string name="permlab_readHistoryBookmarks">Brauseriajaloo ja järjehoidjate lugemine</string>
+    <string name="permdesc_readHistoryBookmarks">"Lubab rakendusel lugeda kõiki
+        brauseri külastatud URL-e ja kõiki brauseri järjehoidjaid."</string>
+    <string name="permlab_writeHistoryBookmarks">Brauseriajaloo ja järjehoidjate kirjutamine</string>
+    <string name="permdesc_writeHistoryBookmarks">"Lubab rakendusel muuta
+        brauseriajalugu või telefonis talletatud järjehoidjaid. Pahavararakendused
+        võivad seda kasutada teie brauseriandmete kustutamiseks või muutmiseks."</string>
+    <string name="permlab_setAlarm">määra äratuskellas äratus</string>
+    <string name="permdesc_setAlarm">"Lubab rakendusel määrata äratuse
+      installitud äratuskella rakenduses. Mõned äratuskellarakendused ei pruugi
+      seda funktsiooni rakendada."</string>
+    <string name="permlab_writeGeolocationPermissions">Muuda brauseri geograafilise asukohateabe õigusi</string>
+    <string name="permdesc_writeGeolocationPermissions">"Lubab rakendusel muuta
+        brauseri geograafilise asukohateabe õigusi Pahavararakendused
+        võivad selle abil saata asukohateavet muudele veebilehtedele."</string>
+    <string name="save_password_message">Kas soovite parooli brauseris salvestada?</string>
+    <string name="save_password_notnow">Mitte praegu</string>
+    <string name="save_password_remember">Jäta meelde</string>
+    <string name="save_password_never">Mitte kunagi</string>
+    <string name="open_permission_deny">Teil pole selle lehe avamiseks õigusi.</string>
+    <string name="text_copied">Tekst kopeeriti lõikelauale.</string>
+    <string name="more_item_label">Veel</string>
+    <string name="prepend_shortcut_label">Menüü +</string>
+    <string name="menu_space_shortcut_label">tühik</string>
+    <string name="menu_enter_shortcut_label">sisesta</string>
+    <string name="menu_delete_shortcut_label">kustuta</string>
+    <string name="oneMonthDurationPast">1 kuu vanused</string>
+    <string name="beforeOneMonthDurationPast">Vanemad kui 1 kuu</string>
+    <string name="last_month">Eelmisel kuul</string>
+    <string name="older">Vanemad</string>
+    <string name="preposition_for_date">kuupäev:%s</string>
+    <string name="preposition_for_time">kellaaeg%s</string>
+    <string name="preposition_for_year">aasta%s</string>
+    <string name="day">päev</string>
+    <string name="days">päeva</string>
+    <string name="hour">tund</string>
+    <string name="hours">tund</string>
+    <string name="minute">min</string>
+    <string name="minutes">minutit</string>
+    <string name="second">s</string>
+    <string name="seconds">sekundit</string>
+    <string name="week">nädal</string>
+    <string name="weeks">nädalat</string>
+    <string name="year">aasta</string>
+    <string name="years">aastat</string>
+    <string name="relative_time">Aeg:%1$s,%2$s</string>
+    <string name="noon">keskpäev</string>
+    <string name="Noon">Keskpäev</string>
+    <string name="midnight">kesköö</string>
+    <string name="Midnight">Kesköö</string>
+    <string name="elapsed_time_short_format_mm_ss">%1$02d:%2$02d</string>
+    <string name="elapsed_time_short_format_h_mm_ss">%1$d:%2$02d:%3$02d</string>
+    <string name="selectText">Vali tekst</string>
+    <string name="inputMethod">Valige sisestusviis</string>
+    <string name="addToDictionary">Lisa \"%s\" sõnastikku</string>
+    <string name="editTextMenuTitle">Muuda teksti</string>
+    <string name="low_internal_storage_view_title">Salvestusruumi on vähe</string>
+    <string name="low_internal_storage_view_text">Telefoni salvestusruum hakkab otsa saama.</string>
+    <string name="capital_on">SEES</string>
+    <string name="capital_off">VÄLJAS</string>
+    <string name="whichApplication">Kasuta toimingu lõpuleviimiseks</string>
+    <string name="alwaysUse">Kasuta vaikimisi selle toimingu puhul</string>
+    <string name="clearDefaultHintMsg">Vaikeseadete kustutamine: Seaded > Rakendused > Halda rakendusi.</string>
+    <string name="chooseActivity">Vali toiming</string>
+    <string name="noApplications">Seda toimingut ei saa ükski rakendus teha.</string>
+    <string name="aerr_title">Vabandust!</string>
+    <string name="aerr_application">Rakendus%1$s(protsess%2$s) töö katkes ootamatult. Proovige uuesti.</string>
+    <string name="aerr_process">Protsess%1$skatkes ootamatult. Proovige uuesti.</string>
+    <string name="anr_title">Vabandust!</string>
+    <string name="anr_activity_application">Toiming%1$s(rakenduses%2$s) ei reageeri.</string>
+    <string name="anr_activity_process">Toiming%1$s(protsessis%2$s) ei reageeri.</string>
+    <string name="anr_application_process">Rakendus%1$s(protsessis%2$s) ei reageeri.</string>
+    <string name="anr_process">Protsess%1$sei reageeri.</string>
+    <string name="force_close">Sunni sulguma</string>
+    <string name="report">Teade</string>
+    <string name="wait">Oota</string>
+    <string name="launch_warning_title">Rakendus on edasi suunatud</string>
+    <string name="launch_warning_replace">%1$stöötab nüüd.</string>
+    <string name="launch_warning_original">%1$skäivitati algselt.</string>
+    <string name="smv_application">Rakendus%1$s(protsess%2$s) on rikkunud enda ise-kehtestatud StrictMode-reeglit.</string>
+    <string name="smv_process">"Protsess%1$son
+      rikkunud enda ise-kehtestatud StrictMode-reeglit."</string>
+    <string name="heavy_weight_notification">%1$stöötab</string>
+    <string name="heavy_weight_notification_detail">Vali rakendusele lülitumine</string>
+    <string name="heavy_weight_switcher_title">Vahetada rakendused?</string>
+    <string name="heavy_weight_switcher_text">"Teine rakendus, mis juba töötab,
+    tuleb peatada enne, kui saate uue käivitada."</string>
+    <string name="old_app_action">Minge tagasi kohta%1$s</string>
+    <string name="old_app_description">Ära käivita uut rakendust.</string>
+    <string name="new_app_action">Käivita%1$s</string>
+    <string name="new_app_description">Peata vana rakendus ilma salvestamata.</string>
+    <string name="sendText">Valige tekstsõnumi jaoks toiming</string>
+    <string name="volume_ringtone">Helitugevus</string>
+    <string name="volume_music">Meediumi helitugevus</string>
+    <string name="volume_music_hint_playing_through_bluetooth">Esitus Bluetoothi kaudu</string>
+    <string name="volume_music_hint_silent_ringtone_selected">Valitud on vaikne helin</string>
+    <string name="volume_call">Kuulari helitugevus</string>
+    <string name="volume_bluetooth_call">Bluetooth-kuulari helitugevus</string>
+    <string name="volume_alarm">Äratuse helitugevus</string>
+    <string name="volume_notification">Teate helitugevus</string>
+    <string name="volume_unknown">Helitugevus</string>
+    <string name="ringtone_default">Vaikehelin</string>
+    <string name="ringtone_default_with_actual">Vaikehelin (%1$s)</string>
+    <string name="ringtone_silent">Vaikne</string>
+    <string name="ringtone_picker_title">Helinad</string>
+    <string name="ringtone_unknown">Tundmatu helin</string>
+    <string name="select_character">Lisa märk</string>
+    <string name="sms_control_default_app_name">Tundmatu rakendus</string>
+    <string name="sms_control_title">SMS-sõnumite saatmine</string>
+    <string name="sms_control_message">Saadetakse suur arv SMS-sõnumeid. Jätkamiseks valige \"OK\" , saatmise katkestamiseks valige \"Tühista\".</string>
+    <string name="sms_control_yes">OK</string>
+    <string name="sms_control_no">Tühista</string>
+    <string name="date_time_set">Määra</string>
+    <string name="default_permission_group">Vaikimisi</string>
+    <string name="no_permissions">Lube pole vaja</string>
+    <string name="perms_hide"><b>Peida</b></string>
+    <string name="perms_show_all"><b>Kuva kõik</b></string>
+    <string name="usb_storage_activity_title">USB-massmälu</string>
+    <string name="usb_storage_title">USB-mälu on ühendatud</string>
+    <string name="usb_storage_message">Telefon on USB kaudu arvutiga ühendatud. Kui soovite arvutist telefoni‘s SD-kaardile või vastupidi faile kopeerida, vajutage allolevat nuppu.</string>
+    <string name="usb_storage_button_mount">Lülita USB-mälu sisse</string>
+    <string name="usb_storage_error_message">SD-kaardi kasutamisel USB-mäluna ilmnes probleem.</string>
+    <string name="usb_storage_notification_title">USB on ühendatud</string>
+    <string name="usb_storage_notification_message">Saate faile arvutisse või arvutist kopeerida.</string>
+    <string name="usb_storage_stop_notification_title">Lülita USB-mälu välja</string>
+    <string name="usb_storage_stop_notification_message">Saate USB-mälu välja lülitada.</string>
+    <string name="usb_storage_stop_title">USB-mälu on kasutusel</string>
+    <string name="usb_storage_stop_message">Enne USB-mälu väljalülitamist veenduge, et olete telefoni SD-kaardi arvutist lahutanud(“välja võtnud”) .</string>
+    <string name="usb_storage_stop_button_mount">Lülita USB-mälu välja</string>
+    <string name="usb_storage_stop_error_message">USB-mälu väljalülitamisel ilmnes probleem. Veenduge, et olete USB-seadme lahutanud ja proovige siis uuesti.</string>
+    <string name="dlg_confirm_kill_storage_users_title">Lülita USB-mälu sisse</string>
+    <string name="dlg_confirm_kill_storage_users_text">Kui lülitate USB-mälu sisse, võib mõni kasutatav rakendus sulguda ja seda ei saa kasutada enne, kui USB-mälu on välja lülitatud.</string>
+    <string name="dlg_error_title">USB-toiming nurjus</string>
+    <string name="dlg_ok">OK</string>
+    <string name="extmedia_format_title">Vorminda SD-kaart</string>
+    <string name="extmedia_format_message">Kas soovite kindlasti SD-kaardi vormindada? Kõik kaardil olevad andmed kustutatakse.</string>
+    <string name="extmedia_format_button_format">Vorminda</string>
+    <string name="adb_active_notification_title">USB-silumine ühendatud</string>
+    <string name="adb_active_notification_message">Saate USB-silumise keelata.</string>
+    <string name="select_input_method">Valige sisestusviis</string>
+    <string name="fast_scroll_alphabet">" ABCDEFGHIJKLMNOPQRSTUVWXYZ"</string>
+    <string name="fast_scroll_numeric_alphabet">" 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"</string>
+    <string name="candidates_style"><u>kandidaadid</u></string>
+    <string name="ext_media_checking_notification_title">SD-kaardi ettevalmistamine</string>
+    <string name="ext_media_checking_notification_message">Tõrgete kontroll.</string>
+    <string name="ext_media_nofs_notification_title">Tühi SD-kaart</string>
+    <string name="ext_media_nofs_notification_message">SD-kaart on tühi või selle failisüsteemi ei toetata.</string>
+    <string name="ext_media_unmountable_notification_title">Kahustatud SD-kaart</string>
+    <string name="ext_media_unmountable_notification_message">SD-kaart on kahjustatud. Võimalik, et see tuleb vormindada.</string>
+    <string name="ext_media_badremoval_notification_title">SD-kaart eemaldati ootamatult</string>
+    <string name="ext_media_badremoval_notification_message">Lahutage SD-kaart enne eemaldamist, nii väldite andmekadu.</string>
+    <string name="ext_media_safe_unmount_notification_title">Nüüd võite SD-kaardi eemaldada</string>
+    <string name="ext_media_safe_unmount_notification_message">Võite SD-kaardi eemaldada.</string>
+    <string name="ext_media_nomedia_notification_title">SD-kaart on eemaldatud</string>
+    <string name="ext_media_nomedia_notification_message">SD-kaart on eemaldatud. Sisestage uus.</string>
+    <string name="activity_list_empty">Sobivaid toiminguid ei leitud.</string>
+    <string name="permlab_pkgUsageStats">Uuenda komponendi kasutusstatistikat</string>
+    <string name="permdesc_pkgUsageStats">Lubab kogutud komponendi kasutustatistikat muuta. Tavarakendused seda ei kasuta.</string>
+    <string name="permlab_copyProtectedData">Lubab käivitada sisu kopeerimiseks vaikekontenteinerteenuse. Tavarakendused seda ei kasuta.</string>
+    <string name="permdesc_copyProtectedData">Lubab käivitada sisu kopeerimiseks vaikekontenteinerteenuse. Tavarakendused seda ei kasuta.</string>
+    <string name="tutorial_double_tap_to_zoom_message_short">Suurenduse juhtimiseks puudutage kaks korda</string>
+    <string name="gadget_host_error_inflating">Tõrge vidina käivitamisel</string>
+    <string name="ime_action_go">Ava</string>
+    <string name="ime_action_search">Otsi</string>
+    <string name="ime_action_send">Saada</string>
+    <string name="ime_action_next">Järgmine</string>
+    <string name="ime_action_done">Valmis</string>
+    <string name="ime_action_default">Käivita</string>
+    <string name="dial_number_using">"Vali number,
+kasutades%s"</string>
+    <string name="create_contact_using">"Loo kontakt,
+kasutades%s"</string>
+    <string name="accessibility_compound_button_selected">märgitud</string>
+    <string name="accessibility_compound_button_unselected">märkimata</string>
+    <string name="grant_credentials_permission_message_header">Üks või mitu järgnevat rakendust taotlevad teie kontole juurdepääsu luba, praegu ja tulevikus.</string>
+    <string name="grant_credentials_permission_message_footer">Kas soovite selle taotluse rahuldada?</string>
+    <string name="grant_permissions_header_text">Juurdepääsutaotlus</string>
+    <string name="allow">Luba</string>
+    <string name="deny">Keela</string>
+    <string name="permission_request_notification_title">Õiguste taotlemine</string>
+    <string name="permission_request_notification_with_subtitle">"Õiguste taotlemine
+kontole%s"</string>
+    <string name="input_method_binding_label">Sisestusviis</string>
+    <string name="sync_binding_label">Sünkroonimine</string>
+    <string name="accessibility_binding_label">Hõlbustusvahendid</string>
+    <string name="wallpaper_binding_label">Taustpilt</string>
+    <string name="chooser_wallpaper">Taustpildi vahetamine</string>
+    <string name="pptp_vpn_description">Kakspunkt-tunnelprotokoll</string>
+    <string name="l2tp_vpn_description">2. kihi tunnelprotokoll</string>
+    <string name="l2tp_ipsec_psk_vpn_description">Eeljagatud võtmepõhine L2TP/IPSec VPN</string>
+    <string name="l2tp_ipsec_crt_vpn_description">Sertifikaadipõhine L2TP/IPSec VPN</string>
+    <string name="upload_file">Vali fail</string>
+    <string name="reset">Lähtesta</string>
+    <string name="submit">Saada</string>
+    <string name="description_star">lemmik</string>
+    <string name="car_mode_disable_notification_title">Autorežiim on lubatud</string>
+    <string name="car_mode_disable_notification_message">Autorežiimi väljalülitamiseks valige see valik.</string>
+    <string name="tethered_notification_title">Aktiivne edasijagatud ühenduskoht või tööpunkt</string>
+    <string name="tethered_notification_message">Seadistamiseks puudutage</string>
+    <string name="throttle_warning_notification_title">Suur mobiilandmeside kasutus</string>
+    <string name="throttle_warning_notification_message">Mobiilandmeside kohta lugemiseks puudutage</string>
+    <string name="throttled_notification_title">Mobiilandmeside limiit on ületatud</string>
+    <string name="throttled_notification_message">Mobiilandmeside kohta lugemiseks puudutage</string>
+    <string name="progress_unmounting">SD-kaardi lahutamine ...</string>
+    <string name="progress_erasing">SD-kaardi kustutamine ...</string>
+    <string name="format_error">SD-kaardi kustutamine ebaõnnestus.</string>
+    <string name="media_bad_removal">SD-kaart eemaldati enne lahutamist.</string>
+    <string name="media_checking">SD-kaarti kontrollitakse hetkel.</string>
+    <string name="media_removed">SD-kaart on eemaldatud.</string>
+    <string name="media_shared">SD-kaarti kasutab hetkel arvuti.</string>
+    <string name="media_unknown_state">Tundmatus olekus välismeedium.</string>
+    <string name="permlab_writeOwnerData">Kirjuta omanikuandmeid</string>
+    <string name="permdesc_writeOwnerData">"Lubab rakendusel muuta
+        telefoni salvestatud omanikuandmeid. Pahavararakendused
+        võivad seda kasutada teie omanikuandmete kustutamiseks või muutmiseks."</string>
+    <string name="permlab_readOwnerData">Loe omanikuandmeid</string>
+    <string name="permdesc_readOwnerData">"Lubab rakendusel lugeda
+        telefonis salvestatud omanikuandmeid. Pahavararakendused
+        võivad seda kasutada telefoni omaniku andmete lugemiseks."</string>
+    <string name="permlab_accessUsb">juurdepääs USB-seadmetele</string>
+    <string name="permdesc_accessUsb">Lubab rakendusele juurdepääsu USB-seadmetele.</string>
+    <string name="lockscreen_sim_error_message_short">Kehtetu kaart.</string>
+    <string name="lockscreen_sim_error_message">SIM-kaart kehtetu.</string>
+    <string name="lockscreen_sim_network_locked_message">Telefoni SIM-võrk lukustatud</string>
+    <string name="lockscreen_sim_network_subset_locked_message">Telefoni SIM-alamvõrk lukustatud</string>
+    <string name="lockscreen_sim_service_provider_locked_message">Telefoni SIM-i teenusepakkuja lukustatud</string>
+    <string name="lockscreen_sim_sim_locked_message">Telefoni SIM lukustatud</string>
+    <string name="status_bar_clear_all_button">Kustuta</string>
+    <string name="status_bar_no_notifications_title">Teateid pole</string>
+    <string name="status_bar_ongoing_events_title">Pooleli</string>
+    <string name="status_bar_latest_events_title">Teated</string>
+    <string name="battery_status_charging">Laadimine…</string>
+    <string name="battery_low_title">Ühendage laadija</string>
+    <string name="battery_low_subtitle">Aku tühjeneb:</string>
+    <string name="battery_low_percent_format">%d%%või vähem alles.</string>
+    <string name="battery_low_why">Aku kasutus</string>
+    <string name="stopSelectingText">Katkesta teksti valimine</string>
+    <string name="cutAll">Lõika kõik</string>
+    <string name="copyAll">Kopeeri kõik</string>
+    <string name="volume_fm">FM-helitugevus</string>
+    <string name="managed_roaming_title">Hallatud rändlus</string>
+    <string name="managed_roaming_dialog_content">Leitud on piiratud teenusega võrk. Soovite käivitada võrguotsingu?</string>
+    <string name="managed_roaming_dialog_ok_button">Jah</string>
+    <string name="managed_roaming_dialog_cancel_button">Ei</string>
+</resources>

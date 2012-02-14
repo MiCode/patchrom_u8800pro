@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="num_seconds_ago">
+        <item quantity="other">%dsekundit tagasi</item>
+        <item quantity="one">1 sekund tagasi</item>
+    </plurals>
+    <plurals name="num_minutes_ago">
+        <item quantity="other">%dminutit tagasi</item>
+        <item quantity="one">1 minut tagasi</item>
+    </plurals>
+    <plurals name="num_hours_ago">
+        <item quantity="other">%dtundi tagasi</item>
+        <item quantity="one">1 tund tagasi</item>
+    </plurals>
+    <plurals name="last_num_days">
+        <item quantity="other">Viimased%dpäeva</item>
+    </plurals>
+    <plurals name="num_days_ago">
+        <item quantity="other">%dpäeva tagasi</item>
+        <item quantity="one">eile</item>
+    </plurals>
+    <plurals name="in_num_seconds">
+        <item quantity="other">%dsekundi pärast</item>
+        <item quantity="one">1 sekundi pärast</item>
+    </plurals>
+    <plurals name="in_num_minutes">
+        <item quantity="other">%dminuti pärast</item>
+        <item quantity="one">1 minuti pärast</item>
+    </plurals>
+    <plurals name="in_num_hours">
+        <item quantity="other">%dtunni pärast</item>
+        <item quantity="one">1 tunni pärast</item>
+    </plurals>
+    <plurals name="in_num_days">
+        <item quantity="other">%dpäeva pärast</item>
+        <item quantity="one">homme</item>
+    </plurals>
+    <plurals name="abbrev_num_seconds_ago">
+        <item quantity="other">%dsekundit tagasi</item>
+        <item quantity="one">1 sekund tagasi</item>
+    </plurals>
+    <plurals name="abbrev_num_minutes_ago">
+        <item quantity="other">%dminutit tagasi</item>
+        <item quantity="one">1 minut tagasi</item>
+    </plurals>
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="other">%dtundi tagasi</item>
+        <item quantity="one">1 tund tagasi</item>
+    </plurals>
+    <plurals name="abbrev_num_days_ago">
+        <item quantity="other">%dpäeva tagasi</item>
+        <item quantity="one">eile</item>
+    </plurals>
+    <plurals name="abbrev_in_num_seconds">
+        <item quantity="other">%dpäeva pärast</item>
+        <item quantity="one">1 sekundi pärast</item>
+    </plurals>
+    <plurals name="abbrev_in_num_minutes">
+        <item quantity="other">%dminuti pärast</item>
+        <item quantity="one">1 minuti pärast</item>
+    </plurals>
+    <plurals name="abbrev_in_num_hours">
+        <item quantity="other">%dtunni pärast</item>
+        <item quantity="one">1 tunni pärast</item>
+    </plurals>
+    <plurals name="abbrev_in_num_days">
+        <item quantity="other">%dpäeva pärast</item>
+        <item quantity="one">homme</item>
+    </plurals>
+    <plurals name="wifi_available">
+        <item quantity="other">"WiFi-võrgud on  saadaval"</item>
+        <item quantity="one">WiFi-võrk on saadaval</item>
+    </plurals>
+    <plurals name="wifi_available_detailed">
+        <item quantity="other">Avatud WiFi-võrgud on saadaval</item>
+        <item quantity="one">Avatud WiFi-võrk on saadaval</item>
+    </plurals>
+</resources>

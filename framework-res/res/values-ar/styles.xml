@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.Large" parent="@style/TextAppearance">
+        <item name="textSize">20.0sp</item>
+        <item name="textStyle">normal</item>
+        <item name="textColor">?textColorPrimary</item>
+    </style>
+</resources>

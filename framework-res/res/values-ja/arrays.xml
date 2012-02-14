@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="emailAddressTypes">
+        <item>自宅</item>
+        <item>仕事</item>
+        <item>その他</item>
+        <item>カスタム</item>
+    </string-array>
+    <string-array name="imProtocols">
+        <item>AIM</item>
+        <item>Windows Live</item>
+        <item>Yahoo</item>
+        <item>Skype</item>
+        <item>QQ</item>
+        <item>Googleトーク</item>
+        <item>ICQ</item>
+        <item>Jabber</item>
+    </string-array>
+    <string-array name="organizationTypes">
+        <item>仕事</item>
+        <item>その他</item>
+        <item>カスタム</item>
+    </string-array>
+    <string-array name="phoneTypes">
+        <item>自宅</item>
+        <item>携帯</item>
+        <item>仕事</item>
+        <item>FAX（仕事）</item>
+        <item>FAX（自宅）</item>
+        <item>ポケベル</item>
+        <item>その他</item>
+        <item>カスタム</item>
+    </string-array>
+    <string-array name="postalAddressTypes">
+        <item>自宅</item>
+        <item>仕事</item>
+        <item>その他</item>
+        <item>カスタム</item>
+    </string-array>
+    <string-array name="imAddressTypes">
+        <item>自宅</item>
+        <item>仕事</item>
+        <item>その他</item>
+        <item>カスタム</item>
+    </string-array>
+    <string-array name="status_bar_icon_order">
+        <item>clock</item>
+        <item>secure</item>
+        <item>alarm_clock</item>
+        <item>battery</item>
+        <item>phone_signal</item>
+        <item>phone_evdo_signal</item>
+        <item>data_connection</item>
+        <item>cdma_eri</item>
+        <item>tty</item>
+        <item>volume</item>
+        <item>mute</item>
+        <item>speakerphone</item>
+        <item>wifi</item>
+        <item>tty</item>
+        <item>bluetooth</item>
+        <item>gps</item>
+        <item>sync_active</item>
+        <item>sync_failing</item>
+        <item>ime</item>
+    </string-array>
+</resources>

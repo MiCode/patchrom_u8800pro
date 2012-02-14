@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="hw_startColor">#ff24dbeb</color>
+    <color name="hw_centerColor">#ff009ef1</color>
+    <color name="hw_endColor">#ff24dbeb</color>
+    <color name="hw_startColor_sec">#802b8a92</color>
+    <color name="hw_centerColor_sec">#802577a3</color>
+    <color name="hw_endColor_sec">#802b8a92</color>
+    <color name="hw_textColorHighlight">#ffff890b</color>
+</resources>

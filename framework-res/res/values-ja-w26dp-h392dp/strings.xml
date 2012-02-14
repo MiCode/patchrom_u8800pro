@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="recent_tasks_title">最近使用したアプリ</string>
+    <string name="keyguard_password_enter_pin_code">ロックを解除するには暗証番号を入力</string>
+    <string name="keyguard_password_enter_password_code">ロックを解除する場合にはパスワードを入力</string>
+    <string name="lockscreen_emergency_call">緊急通報</string>
+    <string name="lockscreen_sim_puk_locked_message">SIMカードがロックされています。ご契約の問合せ窓口までご連絡ください。</string>
+    <string name="low_internal_storage_view_title">重要：本体メモリの空き容量低下</string>
+    <string name="low_internal_storage_view_text">本機の動作が不安定になるため、速やかに不要なデータやアプリを削除してください。</string>
+    <string name="aerr_application">%1$s（%2$s）がメモリ容量不足のため停止しました。端末内部空きメモリを増やしてください。</string>
+    <string name="usb_storage_message">携帯電話をUSBでパソコンに接続しています。パソコンとAndroidのSDカード間でファイルをコピーするには下のボタンを選択します。</string>
+    <string name="usb_storage_stop_title">USBストレージを使用中</string>
+    <string name="usb_storage_stop_message">USBストレージをOFFにする前に、パソコンで必ずAndroidのSDカードのマウントを解除して(カードを取り出して)ください。</string>
+    <string name="usb_storage_stop_button_mount">USBストレージをOFFにする</string>
+    <string name="tethered_notification_title">Pocket WiFiまたはUSBテザリングが有効です</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="hw_startColor">#ff5be3ff</color>
+    <color name="hw_centerColor">#ff20c0e4</color>
+    <color name="hw_endColor">#ff00b1dd</color>
+    <color name="hw_startColor_sec">#805be3ff</color>
+    <color name="hw_centerColor_sec">#8020c0e4</color>
+    <color name="hw_endColor_sec">#a000b1dd</color>
+    <color name="hw_state_selected">#ffffffff</color>
+    <color name="hw_not_selected">#ff808080</color>
+    <color name="hw_statusbar_time">#ff000000</color>
+    <color name="hw_textColorHighlight">#ff00eef6</color>
+</resources>

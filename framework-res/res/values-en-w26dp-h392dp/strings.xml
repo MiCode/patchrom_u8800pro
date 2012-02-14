@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="aerr_application">The application %1$s(process %2$s) has stopped because of memory shortage.Please increase available internal phone storage.</string>
+    <string name="tethered_notification_title">Pocket WiFi active or Tethering</string>
+</resources>
