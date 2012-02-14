@@ -18,7 +18,7 @@
     .prologue
     const-string v3, "mms"
 
-    .line 851
+    .line 857
     new-instance v0, Landroid/content/UriMatcher;
 
     const/4 v1, -0x1
@@ -27,7 +27,7 @@
 
     sput-object v0, Lcom/android/providers/telephony/MmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
-    .line 854
+    .line 860
     sget-object v0, Lcom/android/providers/telephony/MmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "mms"
@@ -38,7 +38,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 855
+    .line 861
     sget-object v0, Lcom/android/providers/telephony/MmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "mms"
@@ -49,7 +49,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 856
+    .line 862
     sget-object v0, Lcom/android/providers/telephony/MmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "mms"
@@ -60,7 +60,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 857
+    .line 863
     sget-object v0, Lcom/android/providers/telephony/MmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "mms"
@@ -71,7 +71,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 858
+    .line 864
     sget-object v0, Lcom/android/providers/telephony/MmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "mms"
@@ -82,7 +82,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 859
+    .line 865
     sget-object v0, Lcom/android/providers/telephony/MmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "mms"
@@ -93,7 +93,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 860
+    .line 866
     sget-object v0, Lcom/android/providers/telephony/MmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "mms"
@@ -104,7 +104,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 861
+    .line 867
     sget-object v0, Lcom/android/providers/telephony/MmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "mms"
@@ -115,7 +115,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 862
+    .line 868
     sget-object v0, Lcom/android/providers/telephony/MmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "mms"
@@ -126,7 +126,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 863
+    .line 869
     sget-object v0, Lcom/android/providers/telephony/MmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "mms"
@@ -137,7 +137,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 864
+    .line 870
     sget-object v0, Lcom/android/providers/telephony/MmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "mms"
@@ -148,7 +148,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 865
+    .line 871
     sget-object v0, Lcom/android/providers/telephony/MmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "mms"
@@ -159,7 +159,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 866
+    .line 872
     sget-object v0, Lcom/android/providers/telephony/MmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "mms"
@@ -170,7 +170,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 867
+    .line 873
     sget-object v0, Lcom/android/providers/telephony/MmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "mms"
@@ -181,7 +181,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 868
+    .line 874
     sget-object v0, Lcom/android/providers/telephony/MmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "mms"
@@ -192,7 +192,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 869
+    .line 875
     sget-object v0, Lcom/android/providers/telephony/MmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "mms"
@@ -203,7 +203,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 870
+    .line 876
     sget-object v0, Lcom/android/providers/telephony/MmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "mms"
@@ -214,7 +214,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 871
+    .line 877
     sget-object v0, Lcom/android/providers/telephony/MmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "mms"
@@ -225,7 +225,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 872
+    .line 878
     sget-object v0, Lcom/android/providers/telephony/MmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "mms"
@@ -236,7 +236,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 873
+    .line 879
     sget-object v0, Lcom/android/providers/telephony/MmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "mms"
@@ -247,7 +247,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 874
+    .line 880
     sget-object v0, Lcom/android/providers/telephony/MmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "mms"
@@ -258,7 +258,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 875
+    .line 881
     return-void
 .end method
 
@@ -278,7 +278,7 @@
     .parameter "selection2"
 
     .prologue
-    .line 880
+    .line 886
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -287,11 +287,11 @@
 
     move-object v0, p1
 
-    .line 885
+    .line 891
     :goto_0
     return-object v0
 
-    .line 882
+    .line 888
     :cond_0
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -301,10 +301,10 @@
 
     move-object v0, p0
 
-    .line 883
+    .line 889
     goto :goto_0
 
-    .line 885
+    .line 891
     :cond_1
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -721,202 +721,202 @@
     .parameter "values"
 
     .prologue
-    .line 774
+    .line 780
     const-string v0, "d_tm_tok"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 775
+    .line 781
     const-string v0, "s_vis"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 776
+    .line 782
     const-string v0, "r_chg"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 777
+    .line 783
     const-string v0, "r_chg_dl_tok"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 778
+    .line 784
     const-string v0, "r_chg_dl"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 779
+    .line 785
     const-string v0, "r_chg_id"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 780
+    .line 786
     const-string v0, "r_chg_sz"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 781
+    .line 787
     const-string v0, "p_s_by"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 782
+    .line 788
     const-string v0, "p_s_d"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 783
+    .line 789
     const-string v0, "store"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 784
+    .line 790
     const-string v0, "mm_st"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 785
+    .line 791
     const-string v0, "mm_flg_tok"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 786
+    .line 792
     const-string v0, "mm_flg"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 787
+    .line 793
     const-string v0, "store_st"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 788
+    .line 794
     const-string v0, "store_st_txt"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 789
+    .line 795
     const-string v0, "stored"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 790
+    .line 796
     const-string v0, "totals"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 791
+    .line 797
     const-string v0, "mb_t"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 792
+    .line 798
     const-string v0, "mb_t_tok"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 793
+    .line 799
     const-string v0, "qt"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 794
+    .line 800
     const-string v0, "mb_qt"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 795
+    .line 801
     const-string v0, "mb_qt_tok"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 796
+    .line 802
     const-string v0, "m_cnt"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 797
+    .line 803
     const-string v0, "start"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 798
+    .line 804
     const-string v0, "d_ind"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 799
+    .line 805
     const-string v0, "e_des"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 800
+    .line 806
     const-string v0, "limit"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 801
+    .line 807
     const-string v0, "r_r_mod"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 802
+    .line 808
     const-string v0, "r_r_mod_txt"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 803
+    .line 809
     const-string v0, "st_txt"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 804
+    .line 810
     const-string v0, "apl_id"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 805
+    .line 811
     const-string v0, "r_apl_id"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 806
+    .line 812
     const-string v0, "aux_apl_id"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 807
+    .line 813
     const-string v0, "drm_c"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 808
+    .line 814
     const-string v0, "adp_a"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 809
+    .line 815
     const-string v0, "repl_id"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 810
+    .line 816
     const-string v0, "cl_id"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 811
+    .line 817
     const-string v0, "cl_st"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 814
+    .line 820
     const-string v0, "_id"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 815
+    .line 821
     return-void
 .end method
 
@@ -999,27 +999,27 @@
     .prologue
     const-string v8, "MmsProvider"
 
-    .line 723
+    .line 729
     const-string v2, "/sdcard/mms/scrapSpace/.temp.jpg"
 
-    .line 724
+    .line 730
     .local v2, fileName:Ljava/lang/String;
     const/4 v4, 0x0
 
-    .line 727
+    .line 733
     .local v4, pfd:Landroid/os/ParcelFileDescriptor;
     :try_start_0
     new-instance v1, Ljava/io/File;
 
     invoke-direct {v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 730
+    .line 736
     .local v1, file:Ljava/io/File;
     invoke-virtual {v1}, Ljava/io/File;->getParentFile()Ljava/io/File;
 
     move-result-object v3
 
-    .line 731
+    .line 737
     .local v3, parentFile:Ljava/io/File;
     invoke-virtual {v3}, Ljava/io/File;->exists()Z
 
@@ -1033,7 +1033,7 @@
 
     if-nez v5, :cond_0
 
-    .line 732
+    .line 738
     const-string v5, "MmsProvider"
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -1066,16 +1066,16 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 734
+    .line 740
     const/4 v5, 0x0
 
-    .line 744
+    .line 750
     .end local v1           #file:Ljava/io/File;
     .end local v3           #parentFile:Ljava/io/File;
     :goto_0
     return-object v5
 
-    .line 737
+    .line 743
     .restart local v1       #file:Ljava/io/File;
     .restart local v3       #parentFile:Ljava/io/File;
     :cond_0
@@ -1092,16 +1092,16 @@
     :goto_1
     move-object v5, v4
 
-    .line 744
+    .line 750
     goto :goto_0
 
-    .line 740
+    .line 746
     :catch_0
     move-exception v5
 
     move-object v0, v5
 
-    .line 741
+    .line 747
     .local v0, ex:Ljava/lang/Exception;
     const-string v5, "MmsProvider"
 
@@ -1132,7 +1132,7 @@
     .locals 3
 
     .prologue
-    .line 818
+    .line 824
     invoke-virtual {p0}, Lcom/android/providers/telephony/MmsProvider;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -1147,7 +1147,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/ContentResolver;->notifyChange(Landroid/net/Uri;Landroid/database/ContentObserver;)V
 
-    .line 820
+    .line 826
     return-void
 .end method
 
@@ -3360,14 +3360,14 @@
     .prologue
     const-string v4, "MmsProvider"
 
-    .line 753
+    .line 759
     sget-object v2, Lcom/android/providers/telephony/MmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     invoke-virtual {v2, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
 
     move-result v1
 
-    .line 755
+    .line 761
     .local v1, match:I
     const-string v2, "MmsProvider"
 
@@ -3379,7 +3379,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 756
+    .line 762
     const-string v2, "MmsProvider"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -3412,32 +3412,32 @@
 
     invoke-static {v4, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 759
+    .line 765
     :cond_0
     packed-switch v1, :pswitch_data_0
 
-    .line 765
+    .line 771
     invoke-virtual {p0, p1, p2}, Lcom/android/providers/telephony/MmsProvider;->openFileHelper(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
 
     move-result-object v0
 
-    .line 768
+    .line 774
     .local v0, fd:Landroid/os/ParcelFileDescriptor;
     :goto_0
     return-object v0
 
-    .line 761
+    .line 767
     .end local v0           #fd:Landroid/os/ParcelFileDescriptor;
     :pswitch_0
     invoke-direct {p0}, Lcom/android/providers/telephony/MmsProvider;->getTempStoreFd()Landroid/os/ParcelFileDescriptor;
 
     move-result-object v0
 
-    .line 762
+    .line 768
     .restart local v0       #fd:Landroid/os/ParcelFileDescriptor;
     goto :goto_0
 
-    .line 759
+    .line 765
     :pswitch_data_0
     .packed-switch 0x14
         :pswitch_0
@@ -4028,7 +4028,7 @@
 .end method
 
 .method public update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
-    .locals 17
+    .locals 18
     .parameter "uri"
     .parameter "values"
     .parameter "selection"
@@ -4036,9 +4036,9 @@
 
     .prologue
     .line 652
-    sget-object v14, Lcom/android/providers/telephony/MmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
+    sget-object v15, Lcom/android/providers/telephony/MmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
-    move-object v0, v14
+    move-object v0, v15
 
     move-object/from16 v1, p1
 
@@ -4060,45 +4060,45 @@
 
     .line 682
     :pswitch_0
-    const-string v14, "MmsProvider"
+    const-string v15, "MmsProvider"
 
-    new-instance v15, Ljava/lang/StringBuilder;
+    new-instance v16, Ljava/lang/StringBuilder;
 
-    invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v16 .. v16}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v16, "Update operation for \'"
+    const-string v17, "Update operation for \'"
 
-    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v16 .. v17}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v15
+    move-result-object v16
 
-    move-object v0, v15
+    move-object/from16 v0, v16
 
     move-object/from16 v1, p1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v15
+    move-result-object v16
 
-    const-string v16, "\' not implemented."
+    const-string v17, "\' not implemented."
 
-    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v16 .. v17}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v15
+    move-result-object v16
 
-    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual/range {v16 .. v16}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v15
+    move-result-object v16
 
-    invoke-static {v14, v15}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static/range {v15 .. v16}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 683
-    const/4 v14, 0x0
+    const/4 v15, 0x0
 
-    .line 719
+    .line 725
     .end local p1
     :goto_0
-    return v14
+    return v15
 
     .line 667
     .restart local p1
@@ -4112,142 +4112,68 @@
     const/4 v12, 0x1
 
     .line 675
-    const-string v13, "pdu"
-
-    .line 686
-    .local v13, table:Ljava/lang/String;
-    :goto_1
-    const/4 v7, 0x0
-
-    .line 688
-    .local v7, extraSelection:Ljava/lang/String;
     const-string v14, "pdu"
 
-    invoke-virtual {v13, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    .line 687
+    .local v14, table:Ljava/lang/String;
+    :goto_1
+    const-string v15, "read"
 
-    move-result v14
+    move-object/from16 v0, p2
 
-    if-eqz v14, :cond_2
+    move-object v1, v15
 
-    .line 690
+    invoke-virtual {v0, v1}, Landroid/content/ContentValues;->getAsInteger(Ljava/lang/String;)Ljava/lang/Integer;
+
+    move-result-object v13
+
+    .line 688
+    .local v13, read:Ljava/lang/Integer;
+    if-eqz v13, :cond_0
+
+    invoke-virtual {v13}, Ljava/lang/Integer;->intValue()I
+
+    move-result v15
+
+    const/16 v16, 0x1
+
+    move v0, v15
+
+    move/from16 v1, v16
+
+    if-ne v0, v1, :cond_0
+
+    .line 689
+    const-string v15, "seen"
+
+    move-object/from16 v0, p2
+
+    move-object v1, v15
+
+    move-object v2, v13
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+
+    .line 692
+    :cond_0
+    const/4 v7, 0x0
+
+    .line 694
+    .local v7, extraSelection:Ljava/lang/String;
+    const-string v15, "pdu"
+
+    invoke-virtual {v14, v15}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v15
+
+    if-eqz v15, :cond_3
+
+    .line 696
     move-object/from16 v0, p0
 
     move-object/from16 v1, p2
 
     invoke-direct {v0, v1}, Lcom/android/providers/telephony/MmsProvider;->filterUnsupportedKeys(Landroid/content/ContentValues;)V
-
-    .line 691
-    new-instance v9, Landroid/content/ContentValues;
-
-    move-object v0, v9
-
-    move-object/from16 v1, p2
-
-    invoke-direct {v0, v1}, Landroid/content/ContentValues;-><init>(Landroid/content/ContentValues;)V
-
-    .line 693
-    .local v9, finalValues:Landroid/content/ContentValues;
-    if-eqz v11, :cond_0
-
-    .line 694
-    new-instance v14, Ljava/lang/StringBuilder;
-
-    invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v15, "_id="
-
-    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v14
-
-    invoke-virtual {v14, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v14
-
-    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v7
-
-    .line 713
-    .end local p1
-    :cond_0
-    :goto_2
-    move-object/from16 v0, p3
-
-    move-object v1, v7
-
-    invoke-static {v0, v1}, Lcom/android/providers/telephony/MmsProvider;->concatSelections(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v8
-
-    .line 714
-    .local v8, finalSelection:Ljava/lang/String;
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/providers/telephony/MmsProvider;->mOpenHelper:Landroid/database/sqlite/SQLiteOpenHelper;
-
-    move-object v14, v0
-
-    invoke-virtual {v14}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
-
-    move-result-object v6
-
-    .line 715
-    .local v6, db:Landroid/database/sqlite/SQLiteDatabase;
-    move-object v0, v6
-
-    move-object v1, v13
-
-    move-object v2, v9
-
-    move-object v3, v8
-
-    move-object/from16 v4, p4
-
-    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/database/sqlite/SQLiteDatabase;->update(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
-
-    move-result v5
-
-    .line 716
-    .local v5, count:I
-    if-eqz v12, :cond_1
-
-    if-lez v5, :cond_1
-
-    .line 717
-    invoke-direct/range {p0 .. p0}, Lcom/android/providers/telephony/MmsProvider;->notifyChange()V
-
-    :cond_1
-    move v14, v5
-
-    .line 719
-    goto :goto_0
-
-    .line 679
-    .end local v5           #count:I
-    .end local v6           #db:Landroid/database/sqlite/SQLiteDatabase;
-    .end local v7           #extraSelection:Ljava/lang/String;
-    .end local v8           #finalSelection:Ljava/lang/String;
-    .end local v9           #finalValues:Landroid/content/ContentValues;
-    .end local v13           #table:Ljava/lang/String;
-    .restart local p1
-    :pswitch_3
-    const-string v13, "part"
-
-    .line 680
-    .restart local v13       #table:Ljava/lang/String;
-    goto :goto_1
-
-    .line 696
-    .restart local v7       #extraSelection:Ljava/lang/String;
-    :cond_2
-    const-string v14, "part"
-
-    invoke-virtual {v13, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v14
-
-    if-eqz v14, :cond_3
 
     .line 697
     new-instance v9, Landroid/content/ContentValues;
@@ -4259,97 +4185,212 @@
     invoke-direct {v0, v1}, Landroid/content/ContentValues;-><init>(Landroid/content/ContentValues;)V
 
     .line 699
+    .local v9, finalValues:Landroid/content/ContentValues;
+    if-eqz v11, :cond_1
+
+    .line 700
+    new-instance v15, Ljava/lang/StringBuilder;
+
+    invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v16, "_id="
+
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v15
+
+    invoke-virtual {v15, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v15
+
+    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    .line 719
+    .end local p1
+    :cond_1
+    :goto_2
+    move-object/from16 v0, p3
+
+    move-object v1, v7
+
+    invoke-static {v0, v1}, Lcom/android/providers/telephony/MmsProvider;->concatSelections(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v8
+
+    .line 720
+    .local v8, finalSelection:Ljava/lang/String;
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/providers/telephony/MmsProvider;->mOpenHelper:Landroid/database/sqlite/SQLiteOpenHelper;
+
+    move-object v15, v0
+
+    invoke-virtual {v15}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+
+    move-result-object v6
+
+    .line 721
+    .local v6, db:Landroid/database/sqlite/SQLiteDatabase;
+    move-object v0, v6
+
+    move-object v1, v14
+
+    move-object v2, v9
+
+    move-object v3, v8
+
+    move-object/from16 v4, p4
+
+    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/database/sqlite/SQLiteDatabase;->update(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
+
+    move-result v5
+
+    .line 722
+    .local v5, count:I
+    if-eqz v12, :cond_2
+
+    if-lez v5, :cond_2
+
+    .line 723
+    invoke-direct/range {p0 .. p0}, Lcom/android/providers/telephony/MmsProvider;->notifyChange()V
+
+    :cond_2
+    move v15, v5
+
+    .line 725
+    goto :goto_0
+
+    .line 679
+    .end local v5           #count:I
+    .end local v6           #db:Landroid/database/sqlite/SQLiteDatabase;
+    .end local v7           #extraSelection:Ljava/lang/String;
+    .end local v8           #finalSelection:Ljava/lang/String;
+    .end local v9           #finalValues:Landroid/content/ContentValues;
+    .end local v13           #read:Ljava/lang/Integer;
+    .end local v14           #table:Ljava/lang/String;
+    .restart local p1
+    :pswitch_3
+    const-string v14, "part"
+
+    .line 680
+    .restart local v14       #table:Ljava/lang/String;
+    goto :goto_1
+
+    .line 702
+    .restart local v7       #extraSelection:Ljava/lang/String;
+    .restart local v13       #read:Ljava/lang/Integer;
+    :cond_3
+    const-string v15, "part"
+
+    invoke-virtual {v14, v15}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v15
+
+    if-eqz v15, :cond_4
+
+    .line 703
+    new-instance v9, Landroid/content/ContentValues;
+
+    move-object v0, v9
+
+    move-object/from16 v1, p2
+
+    invoke-direct {v0, v1}, Landroid/content/ContentValues;-><init>(Landroid/content/ContentValues;)V
+
+    .line 705
     .restart local v9       #finalValues:Landroid/content/ContentValues;
     packed-switch v10, :pswitch_data_1
 
     goto :goto_2
 
-    .line 701
+    .line 707
     :pswitch_4
-    new-instance v14, Ljava/lang/StringBuilder;
+    new-instance v15, Ljava/lang/StringBuilder;
 
-    invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v15, "mid="
+    const-string v16, "mid="
 
-    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v14
-
-    invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v15
 
-    const/16 v16, 0x0
+    invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
-    invoke-interface/range {v15 .. v16}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    move-result-object v16
+
+    const/16 v17, 0x0
+
+    invoke-interface/range {v16 .. v17}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
 
     .end local p1
     check-cast p1, Ljava/lang/String;
 
-    move-object v0, v14
+    move-object v0, v15
 
     move-object/from16 v1, p1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v14
-
-    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v7
-
-    .line 702
-    goto :goto_2
-
-    .line 704
-    .restart local p1
-    :pswitch_5
-    new-instance v14, Ljava/lang/StringBuilder;
-
-    invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v15, "_id="
-
-    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v14
-
-    invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
     move-result-object v15
 
-    const/16 v16, 0x1
-
-    invoke-interface/range {v15 .. v16}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object p1
-
-    .end local p1
-    check-cast p1, Ljava/lang/String;
-
-    move-object v0, v14
-
-    move-object/from16 v1, p1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v14
-
-    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v7
 
-    .line 705
+    .line 708
     goto :goto_2
 
     .line 710
+    .restart local p1
+    :pswitch_5
+    new-instance v15, Ljava/lang/StringBuilder;
+
+    invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v16, "_id="
+
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v15
+
+    invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
+
+    move-result-object v16
+
+    const/16 v17, 0x1
+
+    invoke-interface/range {v16 .. v17}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    .end local p1
+    check-cast p1, Ljava/lang/String;
+
+    move-object v0, v15
+
+    move-object/from16 v1, p1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v15
+
+    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    .line 711
+    goto :goto_2
+
+    .line 716
     .end local v9           #finalValues:Landroid/content/ContentValues;
     .restart local p1
-    :cond_3
-    const/4 v14, 0x0
+    :cond_4
+    const/4 v15, 0x0
 
     goto/16 :goto_0
 
@@ -4371,7 +4412,7 @@
         :pswitch_3
     .end packed-switch
 
-    .line 699
+    .line 705
     :pswitch_data_1
     .packed-switch 0xb
         :pswitch_4

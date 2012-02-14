@@ -1411,7 +1411,7 @@
 
     .line 129
     .local v3, r:Landroid/content/res/Resources;
-    const/high16 v4, 0x10b
+    const/high16 v4, 0x605
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getXml(I)Landroid/content/res/XmlResourceParser;
 
@@ -1504,7 +1504,7 @@
 
     .line 226
     .local v9, r:Landroid/content/res/Resources;
-    const/high16 v10, 0x10b
+    const/high16 v10, 0x605
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getXml(I)Landroid/content/res/XmlResourceParser;
 

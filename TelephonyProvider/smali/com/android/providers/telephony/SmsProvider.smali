@@ -50,7 +50,7 @@
 
     const-string v3, "sms"
 
-    .line 53
+    .line 54
     const-string v0, "content://sms"
 
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
@@ -59,7 +59,7 @@
 
     sput-object v0, Lcom/android/providers/telephony/SmsProvider;->NOTIFICATION_URI:Landroid/net/Uri;
 
-    .line 54
+    .line 55
     const-string v0, "content://sms/icc"
 
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
@@ -68,14 +68,14 @@
 
     sput-object v0, Lcom/android/providers/telephony/SmsProvider;->ICC_URI:Landroid/net/Uri;
 
-    .line 60
+    .line 61
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
 
     sput-object v0, Lcom/android/providers/telephony/SmsProvider;->ONE:Ljava/lang/Integer;
 
-    .line 62
+    .line 63
     new-array v0, v4, [Ljava/lang/String;
 
     const-string v1, "person"
@@ -84,8 +84,8 @@
 
     sput-object v0, Lcom/android/providers/telephony/SmsProvider;->CONTACT_QUERY_PROJECTION:[Ljava/lang/String;
 
-    .line 71
-    const/16 v0, 0xd
+    .line 72
+    const/16 v0, 0xc
 
     new-array v0, v0, [Ljava/lang/String;
 
@@ -119,41 +119,35 @@
 
     const/4 v1, 0x6
 
-    const-string v2, "status_on_icc"
+    const-string v2, "index_on_icc"
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x7
 
-    const-string v2, "index_on_icc"
+    const-string v2, "is_status_report"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x8
 
-    const-string v2, "is_status_report"
+    const-string v2, "transport_type"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x9
 
-    const-string v2, "transport_type"
+    const-string v2, "type"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0xa
 
-    const-string v2, "type"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0xb
-
     const-string v2, "locked"
 
     aput-object v2, v0, v1
 
-    const/16 v1, 0xc
+    const/16 v1, 0xb
 
     const-string v2, "error_code"
 
@@ -161,14 +155,14 @@
 
     sput-object v0, Lcom/android/providers/telephony/SmsProvider;->ICC_COLUMNS:[Ljava/lang/String;
 
-    .line 807
+    .line 783
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     sput-object v0, Lcom/android/providers/telephony/SmsProvider;->sConversationProjectionMap:Ljava/util/HashMap;
 
-    .line 809
+    .line 785
     new-array v0, v4, [Ljava/lang/String;
 
     const-string v1, "_id"
@@ -177,7 +171,7 @@
 
     sput-object v0, Lcom/android/providers/telephony/SmsProvider;->sIDProjection:[Ljava/lang/String;
 
-    .line 840
+    .line 813
     new-instance v0, Landroid/content/UriMatcher;
 
     const/4 v1, -0x1
@@ -186,7 +180,7 @@
 
     sput-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
-    .line 844
+    .line 817
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "sms"
@@ -195,7 +189,7 @@
 
     invoke-virtual {v0, v3, v1, v5}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 845
+    .line 818
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "sms"
@@ -204,7 +198,7 @@
 
     invoke-virtual {v0, v3, v1, v4}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 846
+    .line 819
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "sms"
@@ -213,7 +207,7 @@
 
     invoke-virtual {v0, v3, v1, v6}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 847
+    .line 820
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "sms"
@@ -222,7 +216,7 @@
 
     invoke-virtual {v0, v3, v1, v7}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 848
+    .line 821
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "sms"
@@ -233,7 +227,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 849
+    .line 822
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "sms"
@@ -244,7 +238,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 850
+    .line 823
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "sms"
@@ -255,7 +249,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 851
+    .line 824
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "sms"
@@ -266,7 +260,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 852
+    .line 825
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "sms"
@@ -277,7 +271,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 853
+    .line 826
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "sms"
@@ -288,7 +282,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 854
+    .line 827
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "sms"
@@ -299,7 +293,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 855
+    .line 828
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "sms"
@@ -310,7 +304,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 856
+    .line 829
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "sms"
@@ -321,7 +315,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 857
+    .line 830
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "sms"
@@ -332,7 +326,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 858
+    .line 831
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "sms"
@@ -343,7 +337,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 859
+    .line 832
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "sms"
@@ -354,7 +348,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 860
+    .line 833
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "sms"
@@ -365,7 +359,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 861
+    .line 834
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "sms"
@@ -376,7 +370,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 862
+    .line 835
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "sms"
@@ -387,7 +381,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 863
+    .line 836
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "sms"
@@ -398,7 +392,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 864
+    .line 837
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "sms"
@@ -409,7 +403,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 865
+    .line 838
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "sms"
@@ -420,7 +414,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 866
+    .line 839
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "sms"
@@ -431,7 +425,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 867
+    .line 840
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "sms"
@@ -442,7 +436,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 868
+    .line 841
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "sms"
@@ -453,7 +447,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 870
+    .line 843
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "sms"
@@ -464,7 +458,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 871
+    .line 844
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
     const-string v1, "sms"
@@ -475,18 +469,7 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 873
-    sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
-
-    const-string v1, "sms"
-
-    const-string v1, "addtoicc"
-
-    const/16 v2, 0x1c
-
-    invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
-
-    .line 876
+    .line 846
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sConversationProjectionMap:Ljava/util/HashMap;
 
     const-string v1, "snippet"
@@ -495,7 +478,7 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 878
+    .line 848
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sConversationProjectionMap:Ljava/util/HashMap;
 
     const-string v1, "thread_id"
@@ -504,7 +487,7 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 880
+    .line 850
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sConversationProjectionMap:Ljava/util/HashMap;
 
     const-string v1, "msg_count"
@@ -513,7 +496,7 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 882
+    .line 852
     sget-object v0, Lcom/android/providers/telephony/SmsProvider;->sConversationProjectionMap:Ljava/util/HashMap;
 
     const-string v1, "delta"
@@ -522,7 +505,7 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 883
+    .line 853
     return-void
 .end method
 
@@ -530,7 +513,7 @@
     .locals 0
 
     .prologue
-    .line 52
+    .line 53
     invoke-direct {p0}, Landroid/content/ContentProvider;-><init>()V
 
     return-void
@@ -542,15 +525,15 @@
     .parameter "type"
 
     .prologue
-    .line 328
+    .line 305
     const-string v0, "sms"
 
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteQueryBuilder;->setTables(Ljava/lang/String;)V
 
-    .line 330
+    .line 307
     if-eqz p2, :cond_0
 
-    .line 331
+    .line 308
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -571,7 +554,7 @@
 
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteQueryBuilder;->appendWhere(Ljava/lang/CharSequence;)V
 
-    .line 333
+    .line 310
     :cond_0
     return-void
 .end method
@@ -581,22 +564,22 @@
     .parameter "qb"
 
     .prologue
-    .line 336
+    .line 313
     const-string v0, "sms"
 
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteQueryBuilder;->setTables(Ljava/lang/String;)V
 
-    .line 338
+    .line 315
     const-string v0, "(type=4 OR type=5 OR type=6)"
 
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteQueryBuilder;->appendWhere(Ljava/lang/CharSequence;)V
 
-    .line 341
+    .line 318
     return-void
 .end method
 
 .method private convertIccToSms(Landroid/telephony/SmsMessage;)Ljava/util/ArrayList;
-    .locals 7
+    .locals 4
     .parameter "message"
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -611,182 +594,116 @@
     .end annotation
 
     .prologue
-    const/4 v6, 0x3
+    const/4 v3, 0x0
 
-    const/4 v5, 0x1
-
-    const/4 v4, 0x0
-
-    .line 242
+    .line 239
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 245
+    .line 243
     .local v0, result:Ljava/util/ArrayList;
-    invoke-virtual {p1}, Landroid/telephony/SmsMessage;->getStatusOnIcc()I
+    invoke-virtual {p1}, Landroid/telephony/SmsMessage;->getServiceCenterAddress()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 244
+    invoke-virtual {p1}, Landroid/telephony/SmsMessage;->getDisplayOriginatingAddress()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 245
+    invoke-virtual {p1}, Landroid/telephony/SmsMessage;->getMessageClass()Landroid/telephony/SmsMessage$MessageClass;
+
+    move-result-object v1
+
+    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 246
+    invoke-virtual {p1}, Landroid/telephony/SmsMessage;->getDisplayMessageBody()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 247
+    invoke-virtual {p1}, Landroid/telephony/SmsMessage;->getTimestampMillis()J
+
+    move-result-wide v1
+
+    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 248
+    const/4 v1, -0x1
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 249
+    invoke-virtual {p1}, Landroid/telephony/SmsMessage;->getIndexOnIcc()I
 
     move-result v1
 
-    .line 250
-    .local v1, statusOnIcc:I
-    invoke-virtual {p1}, Landroid/telephony/SmsMessage;->getServiceCenterAddress()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 251
-    invoke-virtual {p1}, Landroid/telephony/SmsMessage;->getDisplayOriginatingAddress()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 252
-    invoke-virtual {p1}, Landroid/telephony/SmsMessage;->getMessageClass()Landroid/telephony/SmsMessage$MessageClass;
-
-    move-result-object v2
-
-    invoke-static {v2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 253
-    invoke-virtual {p1}, Landroid/telephony/SmsMessage;->getDisplayMessageBody()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 254
-    invoke-virtual {p1}, Landroid/telephony/SmsMessage;->getTimestampMillis()J
-
-    move-result-wide v2
-
-    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 255
-    const/4 v2, -0x1
-
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 257
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 259
-    invoke-virtual {p1}, Landroid/telephony/SmsMessage;->getIndexOnIcc()I
-
-    move-result v2
-
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 260
+    .line 250
     invoke-virtual {p1}, Landroid/telephony/SmsMessage;->isStatusReportMessage()Z
 
-    move-result v2
+    move-result v1
 
-    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 261
-    const-string v2, "sms"
+    .line 251
+    const-string v1, "sms"
 
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 265
-    if-eq v5, v1, :cond_0
+    .line 252
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    if-ne v6, v1, :cond_1
+    move-result-object v1
 
-    .line 267
-    :cond_0
-    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    move-result-object v2
+    .line 253
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    move-result-object v1
 
-    .line 276
-    :goto_0
-    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    move-result-object v2
+    .line 254
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    move-result-object v1
 
-    .line 277
-    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    move-result-object v2
-
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 278
+    .line 255
     return-object v0
-
-    .line 268
-    :cond_1
-    const/4 v2, 0x5
-
-    if-ne v2, v1, :cond_2
-
-    .line 269
-    const/4 v2, 0x2
-
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_0
-
-    .line 270
-    :cond_2
-    const/4 v2, 0x7
-
-    if-ne v2, v1, :cond_3
-
-    .line 271
-    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_0
-
-    .line 273
-    :cond_3
-    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_0
 .end method
 
 .method private deleteMessageFromIcc(Ljava/lang/String;)I
@@ -796,12 +713,12 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 702
+    .line 628
     invoke-static {}, Landroid/telephony/SmsManager;->getDefault()Landroid/telephony/SmsManager;
 
     move-result-object v2
 
-    .line 705
+    .line 631
     .local v2, smsManager:Landroid/telephony/SmsManager;
     :try_start_0
     invoke-static {p1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
@@ -819,7 +736,7 @@
 
     const/4 v3, 0x1
 
-    .line 712
+    .line 638
     :goto_0
     invoke-virtual {p0}, Lcom/android/providers/telephony/SmsProvider;->getContext()Landroid/content/Context;
 
@@ -829,29 +746,29 @@
 
     move-result-object v0
 
-    .line 714
+    .line 640
     .local v0, cr:Landroid/content/ContentResolver;
     sget-object v4, Lcom/android/providers/telephony/SmsProvider;->ICC_URI:Landroid/net/Uri;
 
     invoke-virtual {v0, v4, v6}, Landroid/content/ContentResolver;->notifyChange(Landroid/net/Uri;Landroid/database/ContentObserver;)V
 
-    .line 715
+    .line 641
     return v3
 
-    .line 705
+    .line 631
     .end local v0           #cr:Landroid/content/ContentResolver;
     :cond_0
     const/4 v3, 0x0
 
     goto :goto_0
 
-    .line 708
+    .line 634
     :catch_0
     move-exception v3
 
     move-object v1, v3
 
-    .line 709
+    .line 635
     .local v1, exception:Ljava/lang/NumberFormatException;
     :try_start_1
     new-instance v3, Ljava/lang/IllegalArgumentException;
@@ -880,7 +797,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 712
+    .line 638
     .end local v1           #exception:Ljava/lang/NumberFormatException;
     :catchall_0
     move-exception v3
@@ -893,13 +810,13 @@
 
     move-result-object v0
 
-    .line 714
+    .line 640
     .restart local v0       #cr:Landroid/content/ContentResolver;
     sget-object v4, Lcom/android/providers/telephony/SmsProvider;->ICC_URI:Landroid/net/Uri;
 
     invoke-virtual {v0, v4, v6}, Landroid/content/ContentResolver;->notifyChange(Landroid/net/Uri;Landroid/database/ContentObserver;)V
 
-    .line 715
+    .line 641
     throw v3
 .end method
 
@@ -907,24 +824,24 @@
     .locals 8
 
     .prologue
-    .line 309
+    .line 286
     invoke-static {}, Landroid/telephony/SmsManager;->getDefault()Landroid/telephony/SmsManager;
 
     move-result-object v5
 
-    .line 310
+    .line 287
     .local v5, smsManager:Landroid/telephony/SmsManager;
     invoke-virtual {v5}, Landroid/telephony/SmsManager;->getAllMessagesFromIcc()Ljava/util/ArrayList;
 
     move-result-object v3
 
-    .line 311
+    .line 288
     .local v3, messages:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Landroid/telephony/SmsMessage;>;"
     new-instance v4, Ljava/util/ArrayList;
 
     invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
-    .line 313
+    .line 290
     .local v4, rows:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/util/ArrayList;>;"
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
@@ -937,31 +854,31 @@
     :goto_0
     if-ge v1, v0, :cond_1
 
-    .line 314
+    .line 291
     invoke-virtual {v3, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Landroid/telephony/SmsMessage;
 
-    .line 315
+    .line 292
     .local v2, message:Landroid/telephony/SmsMessage;
     if-eqz v2, :cond_0
 
-    .line 316
+    .line 293
     invoke-direct {p0, v2}, Lcom/android/providers/telephony/SmsProvider;->convertIccToSms(Landroid/telephony/SmsMessage;)Ljava/util/ArrayList;
 
     move-result-object v6
 
     invoke-virtual {v4, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 313
+    .line 290
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 319
+    .line 296
     .end local v2           #message:Landroid/telephony/SmsMessage;
     :cond_1
     new-instance v6, Lcom/android/common/ArrayListCursor;
@@ -982,31 +899,31 @@
     .parameter "messageIndexString"
 
     .prologue
-    .line 286
+    .line 263
     :try_start_0
     invoke-static {p1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result v2
 
-    .line 287
+    .line 264
     .local v2, messageIndex:I
     invoke-static {}, Landroid/telephony/SmsManager;->getDefault()Landroid/telephony/SmsManager;
 
     move-result-object v5
 
-    .line 288
+    .line 265
     .local v5, smsManager:Landroid/telephony/SmsManager;
     invoke-virtual {v5}, Landroid/telephony/SmsManager;->getAllMessagesFromIcc()Ljava/util/ArrayList;
 
     move-result-object v3
 
-    .line 289
+    .line 266
     .local v3, messages:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Landroid/telephony/SmsMessage;>;"
     new-instance v4, Ljava/util/ArrayList;
 
     invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
-    .line 291
+    .line 268
     .local v4, singleRow:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/util/ArrayList;>;"
     invoke-virtual {v3, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1014,11 +931,11 @@
 
     check-cast v1, Landroid/telephony/SmsMessage;
 
-    .line 292
+    .line 269
     .local v1, message:Landroid/telephony/SmsMessage;
     if-nez v1, :cond_0
 
-    .line 293
+    .line 270
     new-instance v6, Ljava/lang/IllegalArgumentException;
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -1045,7 +962,7 @@
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 299
+    .line 276
     .end local v1           #message:Landroid/telephony/SmsMessage;
     .end local v2           #messageIndex:I
     .end local v3           #messages:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Landroid/telephony/SmsMessage;>;"
@@ -1056,7 +973,7 @@
 
     move-object v0, v6
 
-    .line 300
+    .line 277
     .local v0, exception:Ljava/lang/NumberFormatException;
     new-instance v6, Ljava/lang/IllegalArgumentException;
 
@@ -1082,7 +999,7 @@
 
     throw v6
 
-    .line 296
+    .line 273
     .end local v0           #exception:Ljava/lang/NumberFormatException;
     .restart local v1       #message:Landroid/telephony/SmsMessage;
     .restart local v2       #messageIndex:I
@@ -1097,7 +1014,7 @@
 
     invoke-virtual {v4, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 297
+    .line 274
     new-instance v6, Lcom/android/common/ArrayListCursor;
 
     sget-object v7, Lcom/android/providers/telephony/SmsProvider;->ICC_COLUMNS:[Ljava/lang/String;
@@ -1113,368 +1030,29 @@
     return-object v6
 .end method
 
-.method private insertMessageToIcc(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
-    .locals 21
-    .parameter "url"
-    .parameter "initialValues"
-
-    .prologue
-    .line 564
-    const/4 v7, 0x0
-
-    .line 565
-    .local v7, loop:I
-    const/4 v5, -0x1
-
-    .line 566
-    .local v5, MessageReferenceNum:I
-    const/4 v15, 0x0
-
-    .line 569
-    .local v15, userDataHeader:[B
-    const/4 v13, 0x0
-
-    .line 573
-    .local v13, timeStamp:Ljava/lang/String;
-    const/4 v8, 0x0
-
-    .line 574
-    .local v8, messages:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/String;>;"
-    const/4 v11, 0x0
-
-    .line 576
-    .local v11, smsPud:Landroid/telephony/SmsMessage$SubmitPdu;
-    if-eqz p2, :cond_6
-
-    .line 577
-    const-string v17, "SmsProvider"
-
-    new-instance v18, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v18 .. v18}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v19, "initialValues:"
-
-    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v18
-
-    move-object/from16 v0, v18
-
-    move-object/from16 v1, p2
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v18
-
-    invoke-virtual/range {v18 .. v18}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v18
-
-    invoke-static/range {v17 .. v18}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 580
-    invoke-static {}, Landroid/telephony/SmsManager;->getDefault()Landroid/telephony/SmsManager;
-
-    move-result-object v10
-
-    .line 582
-    .local v10, smsManager:Landroid/telephony/SmsManager;
-    invoke-virtual {v10}, Landroid/telephony/SmsManager;->getSmscAddr()Ljava/lang/String;
-
-    move-result-object v9
-
-    .line 583
-    .local v9, scAddress:Ljava/lang/String;
-    new-instance v16, Landroid/content/ContentValues;
-
-    move-object/from16 v0, v16
-
-    move-object/from16 v1, p2
-
-    invoke-direct {v0, v1}, Landroid/content/ContentValues;-><init>(Landroid/content/ContentValues;)V
-
-    .line 584
-    .local v16, values:Landroid/content/ContentValues;
-    const-string v17, "body"
-
-    invoke-virtual/range {v16 .. v17}, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v14
-
-    .line 587
-    .local v14, userData:Ljava/lang/String;
-    invoke-virtual {v10, v14}, Landroid/telephony/SmsManager;->divideMessage(Ljava/lang/String;)Ljava/util/ArrayList;
-
-    move-result-object v8
-
-    .line 588
-    if-nez v8, :cond_0
-
-    .line 589
-    const/16 v17, 0x0
-
-    .line 630
-    .end local v9           #scAddress:Ljava/lang/String;
-    .end local v10           #smsManager:Landroid/telephony/SmsManager;
-    .end local v14           #userData:Ljava/lang/String;
-    .end local v16           #values:Landroid/content/ContentValues;
-    .end local p0
-    :goto_0
-    return-object v17
-
-    .line 592
-    .restart local v9       #scAddress:Ljava/lang/String;
-    .restart local v10       #smsManager:Landroid/telephony/SmsManager;
-    .restart local v14       #userData:Ljava/lang/String;
-    .restart local v16       #values:Landroid/content/ContentValues;
-    .restart local p0
-    :cond_0
-    const-string v17, "address"
-
-    invoke-virtual/range {v16 .. v17}, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v6
-
-    .line 593
-    .local v6, address:Ljava/lang/String;
-    const-string v17, "status"
-
-    invoke-virtual/range {v16 .. v17}, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v12
-
-    .line 594
-    .local v12, status:Ljava/lang/String;
-    const-string v17, "timestamp"
-
-    invoke-virtual/range {v16 .. v17}, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v13
-
-    .line 596
-    const/4 v7, 0x0
-
-    .end local p0
-    :goto_1
-    invoke-virtual {v8}, Ljava/util/ArrayList;->size()I
-
-    move-result v17
-
-    move v0, v7
-
-    move/from16 v1, v17
-
-    if-ge v0, v1, :cond_7
-
-    .line 598
-    invoke-virtual {v8}, Ljava/util/ArrayList;->size()I
-
-    move-result v17
-
-    const/16 v18, 0x1
-
-    move/from16 v0, v17
-
-    move/from16 v1, v18
-
-    if-le v0, v1, :cond_2
-
-    .line 599
-    const/16 v17, -0x1
-
-    move/from16 v0, v17
-
-    move v1, v5
-
-    if-ne v0, v1, :cond_1
-
-    .line 601
-    invoke-static {}, Landroid/telephony/SmsMessage;->getMessageRefrenceNumber()I
-
-    move-result v5
-
-    .line 604
-    :cond_1
-    add-int/lit8 v17, v7, 0x1
-
-    invoke-virtual {v8}, Ljava/util/ArrayList;->size()I
-
-    move-result v18
-
-    move/from16 v0, v17
-
-    move/from16 v1, v18
-
-    move v2, v5
-
-    invoke-static {v0, v1, v2}, Landroid/telephony/SmsMessage;->getUserDataHeaderForGsm(III)[B
-
-    move-result-object v15
-
-    .line 608
-    :cond_2
-    const/16 v17, 0x5
-
-    invoke-static {v12}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
-
-    move-result-object v18
-
-    invoke-virtual/range {v18 .. v18}, Ljava/lang/Integer;->intValue()I
-
-    move-result v18
-
-    move/from16 v0, v17
-
-    move/from16 v1, v18
-
-    if-ne v0, v1, :cond_3
-
-    .line 609
-    invoke-virtual {v8, v7}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljava/lang/String;
-
-    move-object v0, v9
-
-    move-object v1, v13
-
-    move-object v2, v6
-
-    move-object/from16 v3, p0
-
-    move-object v4, v15
-
-    invoke-static {v0, v1, v2, v3, v4}, Landroid/telephony/SmsMessage;->getSubmitPdu(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[B)Landroid/telephony/SmsMessage$SubmitPdu;
-
-    move-result-object v11
-
-    .line 616
-    :goto_2
-    move-object v0, v11
-
-    iget-object v0, v0, Landroid/telephony/SmsMessage$SubmitPdu;->encodedMessage:[B
-
-    move-object/from16 v17, v0
-
-    if-nez v17, :cond_4
-
-    .line 617
-    const-string v17, "SmsProvider"
-
-    const-string v18, "null == smsPud.encodedMessage."
-
-    invoke-static/range {v17 .. v18}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 618
-    const/16 v17, 0x0
-
-    goto :goto_0
-
-    .line 613
-    :cond_3
-    invoke-virtual {v8, v7}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljava/lang/String;
-
-    move-object v0, v9
-
-    move-object v1, v13
-
-    move-object v2, v6
-
-    move-object/from16 v3, p0
-
-    move-object v4, v15
-
-    invoke-static {v0, v1, v2, v3, v4}, Landroid/telephony/SmsMessage;->getDeliverPdu(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[B)Landroid/telephony/SmsMessage$SubmitPdu;
-
-    move-result-object v11
-
-    goto :goto_2
-
-    .line 621
-    :cond_4
-    invoke-static {}, Landroid/telephony/SmsManager;->getDefault()Landroid/telephony/SmsManager;
-
-    move-result-object v17
-
-    move-object v0, v11
-
-    iget-object v0, v0, Landroid/telephony/SmsMessage$SubmitPdu;->encodedScAddress:[B
-
-    move-object/from16 v18, v0
-
-    move-object v0, v11
-
-    iget-object v0, v0, Landroid/telephony/SmsMessage$SubmitPdu;->encodedMessage:[B
-
-    move-object/from16 v19, v0
-
-    invoke-static {v12}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
-
-    move-result-object v20
-
-    invoke-virtual/range {v20 .. v20}, Ljava/lang/Integer;->intValue()I
-
-    move-result v20
-
-    invoke-virtual/range {v17 .. v20}, Landroid/telephony/SmsManager;->copyMessageToIcc([B[BI)Z
-
-    move-result v17
-
-    if-nez v17, :cond_5
-
-    .line 623
-    const/16 v17, 0x0
-
-    goto/16 :goto_0
-
-    .line 596
-    :cond_5
-    add-int/lit8 v7, v7, 0x1
-
-    goto/16 :goto_1
-
-    .line 628
-    .end local v6           #address:Ljava/lang/String;
-    .end local v9           #scAddress:Ljava/lang/String;
-    .end local v10           #smsManager:Landroid/telephony/SmsManager;
-    .end local v12           #status:Ljava/lang/String;
-    .end local v14           #userData:Ljava/lang/String;
-    .end local v16           #values:Landroid/content/ContentValues;
-    .restart local p0
-    :cond_6
-    const/16 v17, 0x0
-
-    goto/16 :goto_0
-
-    .end local p0
-    .restart local v6       #address:Ljava/lang/String;
-    .restart local v9       #scAddress:Ljava/lang/String;
-    .restart local v10       #smsManager:Landroid/telephony/SmsManager;
-    .restart local v12       #status:Ljava/lang/String;
-    .restart local v14       #userData:Ljava/lang/String;
-    .restart local v16       #values:Landroid/content/ContentValues;
-    :cond_7
-    move-object/from16 v17, p1
-
-    .line 630
-    goto/16 :goto_0
-.end method
-
 .method private notifyChange(Landroid/net/Uri;)V
-    .locals 3
+    .locals 2
     .parameter "uri"
 
     .prologue
-    const/4 v2, 0x0
+    .line 730
+    const-wide/16 v0, -0x1
 
-    .line 792
+    invoke-direct {p0, p1, v0, v1}, Lcom/android/providers/telephony/SmsProvider;->notifyChange(Landroid/net/Uri;J)V
+
+    .line 731
+    return-void
+.end method
+
+.method private notifyChange(Landroid/net/Uri;J)V
+    .locals 4
+    .parameter "uri"
+    .parameter "threadId"
+
+    .prologue
+    const/4 v3, 0x0
+
+    .line 734
     invoke-virtual {p0}, Lcom/android/providers/telephony/SmsProvider;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -1483,26 +1061,204 @@
 
     move-result-object v0
 
-    .line 793
+    .line 735
     .local v0, cr:Landroid/content/ContentResolver;
-    invoke-virtual {v0, p1, v2}, Landroid/content/ContentResolver;->notifyChange(Landroid/net/Uri;Landroid/database/ContentObserver;)V
+    invoke-virtual {v0, p1, v3}, Landroid/content/ContentResolver;->notifyChange(Landroid/net/Uri;Landroid/database/ContentObserver;)V
 
-    .line 794
-    sget-object v1, Landroid/provider/Telephony$MmsSms;->CONTENT_URI:Landroid/net/Uri;
+    .line 737
+    const-wide/16 v1, -0x1
 
-    invoke-virtual {v0, v1, v2}, Landroid/content/ContentResolver;->notifyChange(Landroid/net/Uri;Landroid/database/ContentObserver;)V
+    cmp-long v1, p2, v1
 
-    .line 795
-    const-string v1, "content://mms-sms/conversations/"
+    if-nez v1, :cond_0
 
-    invoke-static {v1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+    .line 738
+    sget-object v1, Landroid/provider/Telephony$MmsSms;->CONTENT_CONVERSATIONS_URI:Landroid/net/Uri;
+
+    invoke-virtual {v0, v1, v3}, Landroid/content/ContentResolver;->notifyChange(Landroid/net/Uri;Landroid/database/ContentObserver;)V
+
+    .line 742
+    :goto_0
+    sget-object v1, Lmiui/provider/ExtraTelephony$MmsSms;->CONTENT_PREVIEW_URI:Landroid/net/Uri;
+
+    invoke-virtual {v0, v1, v3}, Landroid/content/ContentResolver;->notifyChange(Landroid/net/Uri;Landroid/database/ContentObserver;)V
+
+    .line 743
+    return-void
+
+    .line 740
+    :cond_0
+    sget-object v1, Landroid/provider/Telephony$MmsSms;->CONTENT_CONVERSATIONS_URI:Landroid/net/Uri;
+
+    invoke-static {v1, p2, p3}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1, v2}, Landroid/content/ContentResolver;->notifyChange(Landroid/net/Uri;Landroid/database/ContentObserver;)V
+    invoke-virtual {v0, v1, v3}, Landroid/content/ContentResolver;->notifyChange(Landroid/net/Uri;Landroid/database/ContentObserver;)V
 
-    .line 796
-    return-void
+    goto :goto_0
+.end method
+
+.method private static parseThreadId(Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase;)J
+    .locals 15
+    .parameter "msgIdValue"
+    .parameter "db"
+
+    .prologue
+    .line 746
+    const-wide/16 v9, -0x1
+
+    .line 748
+    .local v9, msgId:J
+    :try_start_0
+    invoke-static {p0}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result-wide v8
+
+    .line 753
+    .end local v9           #msgId:J
+    .local v8, msgId:J
+    :goto_0
+    const-wide/16 v10, -0x1
+
+    cmp-long v8, v8, v10
+
+    if-nez v8, :cond_0
+
+    .line 754
+    .end local v8           #msgId:J
+    const-wide/16 p0, -0x1
+
+    .line 770
+    .end local p0
+    .end local p1
+    :goto_1
+    return-wide p0
+
+    .line 749
+    .restart local v9       #msgId:J
+    .restart local p0
+    .restart local p1
+    :catch_0
+    move-exception v8
+
+    .line 750
+    .local v8, e:Ljava/lang/Exception;
+    const-string v8, "SmsProvider"
+
+    .end local v8           #e:Ljava/lang/Exception;
+    new-instance v11, Ljava/lang/StringBuilder;
+
+    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v12, "Bad message id: "
+
+    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v11
+
+    invoke-virtual {v11, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v11
+
+    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-static {v8, v11}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    move-wide v8, v9
+
+    .end local v9           #msgId:J
+    .local v8, msgId:J
+    goto :goto_0
+
+    .line 756
+    .end local v8           #msgId:J
+    :cond_0
+    const-string v8, "sms"
+
+    const/4 v9, 0x1
+
+    new-array v9, v9, [Ljava/lang/String;
+
+    const/4 v10, 0x0
+
+    const-string v11, "thread_id"
+
+    aput-object v11, v9, v10
+
+    const-string v10, "_id=?"
+
+    const/4 v11, 0x1
+
+    new-array v11, v11, [Ljava/lang/String;
+
+    const/4 v12, 0x0
+
+    aput-object p0, v11, v12
+
+    const/4 v12, 0x0
+
+    const/4 v13, 0x0
+
+    const/4 v14, 0x0
+
+    move-object/from16 v0, p1
+
+    move-object v1, v8
+
+    move-object v2, v9
+
+    move-object v3, v10
+
+    move-object v4, v11
+
+    move-object v5, v12
+
+    move-object v6, v13
+
+    move-object v7, v14
+
+    invoke-virtual/range {v0 .. v7}, Landroid/database/sqlite/SQLiteDatabase;->query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+
+    move-result-object p0
+
+    .line 763
+    .local p0, c:Landroid/database/Cursor;
+    const-wide/16 v8, -0x1
+
+    .line 764
+    .local v8, threadId:J
+    if-eqz p0, :cond_2
+
+    .line 765
+    invoke-interface {p0}, Landroid/database/Cursor;->moveToFirst()Z
+
+    move-result p1
+
+    .end local p1
+    if-eqz p1, :cond_1
+
+    .line 766
+    const/16 p1, 0x0
+
+    invoke-interface/range {p0 .. p1}, Landroid/database/Cursor;->getLong(I)J
+
+    move-result-wide v8
+
+    .line 768
+    :cond_1
+    invoke-interface {p0}, Landroid/database/Cursor;->close()V
+
+    :cond_2
+    move-wide p0, v8
+
+    .end local v8           #threadId:J
+    .local p0, threadId:J
+    goto :goto_1
 .end method
 
 .method private withIccNotificationUri(Landroid/database/Cursor;)Landroid/database/Cursor;
@@ -1510,7 +1266,7 @@
     .parameter "cursor"
 
     .prologue
-    .line 323
+    .line 300
     invoke-virtual {p0}, Lcom/android/providers/telephony/SmsProvider;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -1523,321 +1279,591 @@
 
     invoke-interface {p1, v0, v1}, Landroid/database/Cursor;->setNotificationUri(Landroid/content/ContentResolver;Landroid/net/Uri;)V
 
-    .line 324
+    .line 301
     return-object p1
 .end method
 
 
 # virtual methods
 .method public delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
-    .locals 12
+    .locals 23
     .parameter "url"
     .parameter "where"
     .parameter "whereArgs"
 
     .prologue
-    .line 636
-    sget-object v8, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
+    .line 530
+    sget-object v19, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
-    invoke-virtual {v8, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
+    move-object/from16 v0, v19
 
-    move-result v4
+    move-object/from16 v1, p1
 
-    .line 637
-    .local v4, match:I
-    iget-object v8, p0, Lcom/android/providers/telephony/SmsProvider;->mOpenHelper:Landroid/database/sqlite/SQLiteOpenHelper;
+    invoke-virtual {v0, v1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
 
-    invoke-virtual {v8}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    move-result v11
 
-    move-result-object v1
+    .line 531
+    .local v11, match:I
+    move-object/from16 v0, p0
 
-    .line 638
-    .local v1, db:Landroid/database/sqlite/SQLiteDatabase;
-    sparse-switch v4, :sswitch_data_0
+    iget-object v0, v0, Lcom/android/providers/telephony/SmsProvider;->mOpenHelper:Landroid/database/sqlite/SQLiteOpenHelper;
 
-    .line 688
-    new-instance v8, Ljava/lang/IllegalArgumentException;
+    move-object/from16 v19, v0
 
-    const-string v9, "Unknown URL"
+    invoke-virtual/range {v19 .. v19}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
-    invoke-direct {v8, v9}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    move-result-object v7
 
-    throw v8
+    .line 532
+    .local v7, db:Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/providers/telephony/SmsProvider;->getContext()Landroid/content/Context;
 
-    .line 640
+    move-result-object v5
+
+    .line 533
+    .local v5, context:Landroid/content/Context;
+    sparse-switch v11, :sswitch_data_0
+
+    .line 614
+    new-instance v19, Ljava/lang/IllegalArgumentException;
+
+    const-string v20, "Unknown URL"
+
+    invoke-direct/range {v19 .. v20}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v19
+
+    .line 540
     :sswitch_0
-    const-string v8, "sms"
+    const-string v15, ""
 
-    invoke-virtual {v1, v8, p2, p3}, Landroid/database/sqlite/SQLiteDatabase;->delete(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
+    .line 542
+    .local v15, queryWhere:Ljava/lang/String;
+    if-eqz p2, :cond_0
 
-    move-result v0
+    .line 543
+    new-instance v19, Ljava/lang/StringBuilder;
 
-    .line 641
-    .local v0, count:I
-    if-eqz v0, :cond_0
+    invoke-direct/range {v19 .. v19}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 643
-    invoke-static {v1, p2, p3}, Lcom/android/providers/telephony/MmsSmsDatabaseHelper;->updateAllThreads(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;[Ljava/lang/String;)V
+    const-string v20, "WHERE ("
 
-    .line 691
-    .end local p3
+    invoke-virtual/range {v19 .. v20}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v19
+
+    move-object/from16 v0, v19
+
+    move-object/from16 v1, p2
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v19
+
+    const-string v20, ")"
+
+    invoke-virtual/range {v19 .. v20}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v19
+
+    invoke-virtual/range {v19 .. v19}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v15
+
+    .line 545
     :cond_0
-    :goto_0
-    if-lez v0, :cond_1
+    new-instance v19, Ljava/lang/StringBuilder;
 
-    .line 692
-    invoke-direct {p0, p1}, Lcom/android/providers/telephony/SmsProvider;->notifyChange(Landroid/net/Uri;)V
+    invoke-direct/range {v19 .. v19}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v20, "SELECT _id FROM threads WHERE _id IN (SELECT DISTINCT thread_id FROM sms "
+
+    invoke-virtual/range {v19 .. v20}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v19
+
+    move-object/from16 v0, v19
+
+    move-object v1, v15
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v19
+
+    const-string v20, ")"
+
+    invoke-virtual/range {v19 .. v20}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v19
+
+    invoke-virtual/range {v19 .. v19}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v14
+
+    .line 547
+    .local v14, query:Ljava/lang/String;
+    move-object v0, v7
+
+    move-object v1, v14
+
+    move-object/from16 v2, p3
+
+    invoke-virtual {v0, v1, v2}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+
+    move-result-object v4
+
+    .line 549
+    .local v4, c:Landroid/database/Cursor;
+    new-instance v17, Ljava/util/HashSet;
+
+    invoke-direct/range {v17 .. v17}, Ljava/util/HashSet;-><init>()V
+
+    .line 550
+    .local v17, threadIds:Ljava/util/HashSet;,"Ljava/util/HashSet<Ljava/lang/Integer;>;"
+    if-eqz v4, :cond_2
+
+    .line 552
+    :goto_0
+    :try_start_0
+    invoke-interface {v4}, Landroid/database/Cursor;->moveToNext()Z
+
+    move-result v19
+
+    if-eqz v19, :cond_1
+
+    .line 553
+    const/16 v19, 0x0
+
+    move-object v0, v4
+
+    move/from16 v1, v19
+
+    invoke-interface {v0, v1}, Landroid/database/Cursor;->getInt(I)I
+
+    move-result v19
+
+    invoke-static/range {v19 .. v19}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v19
+
+    move-object/from16 v0, v17
+
+    move-object/from16 v1, v19
+
+    invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    .line 556
+    :catchall_0
+    move-exception v19
+
+    invoke-interface {v4}, Landroid/database/Cursor;->close()V
+
+    throw v19
 
     :cond_1
-    move v8, v0
+    invoke-interface {v4}, Landroid/database/Cursor;->close()V
 
-    .line 694
-    .end local v0           #count:I
+    .line 560
+    :cond_2
+    const-string v19, "sms"
+
+    move-object v0, v7
+
+    move-object/from16 v1, v19
+
+    move-object/from16 v2, p2
+
+    move-object/from16 v3, p3
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/database/sqlite/SQLiteDatabase;->delete(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
+
+    move-result v6
+
+    .line 561
+    .local v6, count:I
+    if-eqz v6, :cond_4
+
+    .line 563
+    invoke-virtual/range {v17 .. v17}, Ljava/util/HashSet;->iterator()Ljava/util/Iterator;
+
+    move-result-object v10
+
+    .local v10, i$:Ljava/util/Iterator;
     :goto_1
-    return v8
+    invoke-interface {v10}, Ljava/util/Iterator;->hasNext()Z
 
-    .line 649
+    move-result v19
+
+    if-eqz v19, :cond_3
+
+    invoke-interface {v10}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v18
+
+    check-cast v18, Ljava/lang/Integer;
+
+    .line 564
+    .local v18, tid:Ljava/lang/Integer;
+    invoke-virtual/range {v18 .. v18}, Ljava/lang/Integer;->intValue()I
+
+    move-result v19
+
+    move/from16 v0, v19
+
+    int-to-long v0, v0
+
+    move-wide/from16 v19, v0
+
+    move-object v0, v5
+
+    move-object v1, v7
+
+    move-wide/from16 v2, v19
+
+    invoke-static {v0, v1, v2, v3}, Lcom/android/providers/telephony/MmsSmsDatabaseHelper;->updateThread(Landroid/content/Context;Landroid/database/sqlite/SQLiteDatabase;J)V
+
+    goto :goto_1
+
+    .line 567
+    .end local v18           #tid:Ljava/lang/Integer;
+    :cond_3
+    const-string v19, "threads"
+
+    const-string v20, "_id NOT IN (SELECT DISTINCT thread_id FROM sms UNION SELECT DISTINCT thread_id FROM pdu)"
+
+    const/16 v21, 0x0
+
+    move-object v0, v7
+
+    move-object/from16 v1, v19
+
+    move-object/from16 v2, v20
+
+    move-object/from16 v3, v21
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/database/sqlite/SQLiteDatabase;->delete(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
+
+    .line 617
+    .end local v4           #c:Landroid/database/Cursor;
+    .end local v10           #i$:Ljava/util/Iterator;
+    .end local v14           #query:Ljava/lang/String;
+    .end local v15           #queryWhere:Ljava/lang/String;
+    .end local v17           #threadIds:Ljava/util/HashSet;,"Ljava/util/HashSet<Ljava/lang/Integer;>;"
+    .end local p3
+    :cond_4
+    :goto_2
+    if-lez v6, :cond_5
+
+    .line 618
+    invoke-direct/range {p0 .. p1}, Lcom/android/providers/telephony/SmsProvider;->notifyChange(Landroid/net/Uri;)V
+
+    :cond_5
+    move/from16 v19, v6
+
+    .line 620
+    .end local v6           #count:I
+    :goto_3
+    return v19
+
+    .line 575
     .restart local p3
     :sswitch_1
-    :try_start_0
-    invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
+    :try_start_1
+    invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
-    move-result-object v8
+    move-result-object v19
 
-    const/4 v9, 0x0
+    const/16 v20, 0x0
 
-    invoke-interface {v8, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface/range {v19 .. v20}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p3
 
     .end local p3
     check-cast p3, Ljava/lang/String;
 
-    invoke-static {p3}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+    invoke-static/range {p3 .. p3}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v13
+
+    .line 576
+    .local v13, message_id:I
+    invoke-static {v5, v7, v13}, Lcom/android/providers/telephony/MmsSmsDatabaseHelper;->deleteOneSms(Landroid/content/Context;Landroid/database/sqlite/SQLiteDatabase;I)I
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
     move-result v6
 
-    .line 650
-    .local v6, message_id:I
-    invoke-static {v1, v6}, Lcom/android/providers/telephony/MmsSmsDatabaseHelper;->deleteOneSms(Landroid/database/sqlite/SQLiteDatabase;I)I
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .restart local v6       #count:I
+    goto :goto_2
 
-    move-result v0
-
-    .restart local v0       #count:I
-    goto :goto_0
-
-    .line 651
-    .end local v0           #count:I
-    .end local v6           #message_id:I
+    .line 577
+    .end local v6           #count:I
+    .end local v13           #message_id:I
     :catch_0
-    move-exception v8
+    move-exception v19
 
-    move-object v2, v8
+    move-object/from16 v8, v19
 
-    .line 652
-    .local v2, e:Ljava/lang/Exception;
-    new-instance v8, Ljava/lang/IllegalArgumentException;
+    .line 578
+    .local v8, e:Ljava/lang/Exception;
+    new-instance v19, Ljava/lang/IllegalArgumentException;
 
-    new-instance v9, Ljava/lang/StringBuilder;
+    new-instance v20, Ljava/lang/StringBuilder;
 
-    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v20 .. v20}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v10, "Bad message id: "
+    const-string v21, "Bad message id: "
 
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v20 .. v21}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v9
+    move-result-object v20
 
-    invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
+    invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
-    move-result-object v10
+    move-result-object v21
 
-    const/4 v11, 0x0
+    const/16 v22, 0x0
 
-    invoke-interface {v10, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface/range {v21 .. v22}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p0
 
     .end local p0
     check-cast p0, Ljava/lang/String;
 
-    invoke-virtual {v9, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-object/from16 v0, v20
 
-    move-result-object v9
+    move-object/from16 v1, p0
 
-    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v9
+    move-result-object v20
 
-    invoke-direct {v8, v9}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    invoke-virtual/range {v20 .. v20}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    throw v8
+    move-result-object v20
 
-    .line 661
-    .end local v2           #e:Ljava/lang/Exception;
+    invoke-direct/range {v19 .. v20}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v19
+
+    .line 587
+    .end local v8           #e:Ljava/lang/Exception;
     .restart local p0
     .restart local p3
     :sswitch_2
-    :try_start_1
-    invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
+    :try_start_2
+    invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
-    move-result-object v8
+    move-result-object v19
 
-    const/4 v9, 0x1
+    const/16 v20, 0x1
 
-    invoke-interface {v8, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface/range {v19 .. v20}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object v4
 
-    check-cast v0, Ljava/lang/String;
+    check-cast v4, Ljava/lang/String;
 
-    invoke-static {v0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
+    invoke-static {v4}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
 
-    move-result v7
+    move-result v16
 
-    .line 669
-    .local v7, threadID:I
-    new-instance v8, Ljava/lang/StringBuilder;
+    .line 595
+    .local v16, threadID:I
+    new-instance v19, Ljava/lang/StringBuilder;
 
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v19 .. v19}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v9, "thread_id="
+    const-string v20, "thread_id="
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v19 .. v20}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v8
+    move-result-object v19
 
-    invoke-virtual {v8, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-object/from16 v0, v19
 
-    move-result-object v8
+    move/from16 v1, v16
 
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v8
+    move-result-object v19
 
-    invoke-static {v8, p2}, Landroid/database/DatabaseUtils;->concatenateWhere(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual/range {v19 .. v19}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v19
+
+    move-object/from16 v0, v19
+
+    move-object/from16 v1, p2
+
+    invoke-static {v0, v1}, Landroid/database/DatabaseUtils;->concatenateWhere(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
-    .line 670
-    const-string v8, "sms"
+    .line 596
+    const-string v19, "sms"
 
-    invoke-virtual {v1, v8, p2, p3}, Landroid/database/sqlite/SQLiteDatabase;->delete(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
+    move-object v0, v7
 
-    move-result v0
+    move-object/from16 v1, v19
 
-    .line 671
-    .restart local v0       #count:I
-    int-to-long v8, v7
+    move-object/from16 v2, p2
 
-    invoke-static {v1, v8, v9}, Lcom/android/providers/telephony/MmsSmsDatabaseHelper;->updateThread(Landroid/database/sqlite/SQLiteDatabase;J)V
+    move-object/from16 v3, p3
 
-    goto :goto_0
+    invoke-virtual {v0, v1, v2, v3}, Landroid/database/sqlite/SQLiteDatabase;->delete(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
 
-    .line 662
-    .end local v0           #count:I
-    .end local v7           #threadID:I
+    move-result v6
+
+    .line 597
+    .restart local v6       #count:I
+    move/from16 v0, v16
+
+    int-to-long v0, v0
+
+    move-wide/from16 v19, v0
+
+    move-object v0, v5
+
+    move-object v1, v7
+
+    move-wide/from16 v2, v19
+
+    invoke-static {v0, v1, v2, v3}, Lcom/android/providers/telephony/MmsSmsDatabaseHelper;->updateThread(Landroid/content/Context;Landroid/database/sqlite/SQLiteDatabase;J)V
+
+    goto/16 :goto_2
+
+    .line 588
+    .end local v6           #count:I
+    .end local v16           #threadID:I
     :catch_1
-    move-exception v8
+    move-exception v19
 
-    move-object v3, v8
+    move-object/from16 v9, v19
 
-    .line 663
-    .local v3, ex:Ljava/lang/Exception;
-    new-instance v8, Ljava/lang/IllegalArgumentException;
+    .line 589
+    .local v9, ex:Ljava/lang/Exception;
+    new-instance v19, Ljava/lang/IllegalArgumentException;
 
-    new-instance v9, Ljava/lang/StringBuilder;
+    new-instance v20, Ljava/lang/StringBuilder;
 
-    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v20 .. v20}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v10, "Bad conversation thread id: "
+    const-string v21, "Bad conversation thread id: "
 
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v20 .. v21}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v9
+    move-result-object v20
 
-    invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
+    invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
-    move-result-object v10
+    move-result-object v21
 
-    const/4 v11, 0x1
+    const/16 v22, 0x1
 
-    invoke-interface {v10, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface/range {v21 .. v22}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p0
 
     .end local p0
     check-cast p0, Ljava/lang/String;
 
-    invoke-virtual {v9, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-object/from16 v0, v20
 
-    move-result-object v9
+    move-object/from16 v1, p0
 
-    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v9
+    move-result-object v20
 
-    invoke-direct {v8, v9}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    invoke-virtual/range {v20 .. v20}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    throw v8
+    move-result-object v20
 
-    .line 675
-    .end local v3           #ex:Ljava/lang/Exception;
+    invoke-direct/range {v19 .. v20}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v19
+
+    .line 601
+    .end local v9           #ex:Ljava/lang/Exception;
     .restart local p0
     :sswitch_3
-    const-string v8, "raw"
+    const-string v19, "raw"
 
-    invoke-virtual {v1, v8, p2, p3}, Landroid/database/sqlite/SQLiteDatabase;->delete(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
+    move-object v0, v7
 
-    move-result v0
+    move-object/from16 v1, v19
 
-    .line 676
-    .restart local v0       #count:I
-    goto/16 :goto_0
+    move-object/from16 v2, p2
 
-    .line 679
-    .end local v0           #count:I
+    move-object/from16 v3, p3
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/database/sqlite/SQLiteDatabase;->delete(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
+
+    move-result v6
+
+    .line 602
+    .restart local v6       #count:I
+    goto/16 :goto_2
+
+    .line 605
+    .end local v6           #count:I
     :sswitch_4
-    const-string v8, "sr_pending"
+    const-string v19, "sr_pending"
 
-    invoke-virtual {v1, v8, p2, p3}, Landroid/database/sqlite/SQLiteDatabase;->delete(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
+    move-object v0, v7
 
-    move-result v0
+    move-object/from16 v1, v19
 
-    .line 680
-    .restart local v0       #count:I
-    goto/16 :goto_0
+    move-object/from16 v2, p2
 
-    .line 683
-    .end local v0           #count:I
+    move-object/from16 v3, p3
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/database/sqlite/SQLiteDatabase;->delete(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
+
+    move-result v6
+
+    .line 606
+    .restart local v6       #count:I
+    goto/16 :goto_2
+
+    .line 609
+    .end local v6           #count:I
     :sswitch_5
-    invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
+    invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
-    move-result-object v8
+    move-result-object v19
 
-    const/4 v9, 0x1
+    const/16 v20, 0x1
 
-    invoke-interface {v8, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface/range {v19 .. v20}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-result-object v5
+    move-result-object v12
 
-    check-cast v5, Ljava/lang/String;
+    check-cast v12, Ljava/lang/String;
 
-    .line 685
-    .local v5, messageIndexString:Ljava/lang/String;
-    invoke-direct {p0, v5}, Lcom/android/providers/telephony/SmsProvider;->deleteMessageFromIcc(Ljava/lang/String;)I
+    .line 611
+    .local v12, messageIndexString:Ljava/lang/String;
+    move-object/from16 v0, p0
 
-    move-result v8
+    move-object v1, v12
 
-    goto/16 :goto_1
+    invoke-direct {v0, v1}, Lcom/android/providers/telephony/SmsProvider;->deleteMessageFromIcc(Ljava/lang/String;)I
 
-    .line 638
-    nop
+    move-result v19
 
+    goto/16 :goto_3
+
+    .line 533
     :sswitch_data_0
     .sparse-switch
         0x0 -> :sswitch_0
@@ -1860,7 +1886,7 @@
 
     const-string v3, "vnd.android.cursor.dir/sms"
 
-    .line 345
+    .line 322
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
     move-result-object v1
@@ -1871,14 +1897,14 @@
 
     packed-switch v1, :pswitch_data_0
 
-    .line 363
+    .line 340
     const/4 v1, 0x0
 
     .end local p0
     :goto_0
     return-object v1
 
-    .line 347
+    .line 324
     .restart local p0
     :pswitch_0
     const-string v1, "vnd.android.cursor.dir/sms"
@@ -1887,7 +1913,7 @@
 
     goto :goto_0
 
-    .line 350
+    .line 327
     :pswitch_1
     :try_start_0
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
@@ -1905,7 +1931,7 @@
 
     invoke-static {p0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
-    .line 351
+    .line 328
     const-string v1, "vnd.android.cursor.item/sms"
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
@@ -1914,13 +1940,13 @@
 
     goto :goto_0
 
-    .line 352
+    .line 329
     :catch_0
     move-exception v1
 
     move-object v0, v1
 
-    .line 353
+    .line 330
     .local v0, ex:Ljava/lang/NumberFormatException;
     const-string v1, "vnd.android.cursor.dir/sms"
 
@@ -1928,7 +1954,7 @@
 
     goto :goto_0
 
-    .line 357
+    .line 334
     .end local v0           #ex:Ljava/lang/NumberFormatException;
     .restart local p0
     :pswitch_2
@@ -1951,12 +1977,12 @@
 
     if-eqz v1, :cond_0
 
-    .line 358
+    .line 335
     const-string v1, "vnd.android.cursor.item/sms-chat"
 
     goto :goto_0
 
-    .line 360
+    .line 337
     :cond_0
     const-string v1, "vnd.android.cursor.item/sms"
 
@@ -1964,7 +1990,7 @@
 
     goto :goto_0
 
-    .line 345
+    .line 322
     nop
 
     :pswitch_data_0
@@ -1981,10 +2007,10 @@
     .parameter "initialValues"
 
     .prologue
-    .line 370
+    .line 347
     const/16 v23, 0x0
 
-    .line 372
+    .line 349
     .local v23, type:I
     sget-object v4, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
@@ -1996,16 +2022,15 @@
 
     move-result v18
 
-    .line 373
+    .line 350
     .local v18, match:I
     const-string v21, "sms"
 
-    .line 375
+    .line 352
     .local v21, table:Ljava/lang/String;
-    packed-switch v18, :pswitch_data_0
+    sparse-switch v18, :sswitch_data_0
 
-    .line 431
-    :pswitch_0
+    .line 404
     const-string v4, "SmsProvider"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -2032,15 +2057,15 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 432
+    .line 405
     const/4 v4, 0x0
 
-    .line 558
+    .line 524
     :goto_0
     return-object v4
 
-    .line 377
-    :pswitch_1
+    .line 354
+    :sswitch_0
     const-string v4, "type"
 
     move-object/from16 v0, p2
@@ -2051,18 +2076,26 @@
 
     move-result-object v24
 
-    .line 378
+    .line 355
     .local v24, typeObj:Ljava/lang/Integer;
-    if-eqz v24, :cond_b
+    if-eqz v24, :cond_a
 
-    .line 379
+    .line 356
     invoke-virtual/range {v24 .. v24}, Ljava/lang/Integer;->intValue()I
 
     move-result v23
 
-    .line 435
+    .line 408
     .end local v24           #typeObj:Ljava/lang/Integer;
     :goto_1
+    const-wide/16 v6, -0x1
+
+    invoke-static {v6, v7}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v22
+
+    .line 409
+    .local v22, threadId:Ljava/lang/Long;
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/providers/telephony/SmsProvider;->mOpenHelper:Landroid/database/sqlite/SQLiteOpenHelper;
@@ -2073,7 +2106,7 @@
 
     move-result-object v15
 
-    .line 437
+    .line 411
     .local v15, db:Landroid/database/sqlite/SQLiteDatabase;
     const-string v4, "sms"
 
@@ -2085,20 +2118,20 @@
 
     move-result v4
 
-    if-eqz v4, :cond_10
+    if-eqz v4, :cond_f
 
-    .line 438
+    .line 412
     const/4 v10, 0x0
 
-    .line 439
+    .line 413
     .local v10, addDate:Z
     const/4 v11, 0x0
 
-    .line 442
+    .line 416
     .local v11, addType:Z
-    if-nez p2, :cond_c
+    if-nez p2, :cond_b
 
-    .line 443
+    .line 417
     new-instance v25, Landroid/content/ContentValues;
 
     const/4 v4, 0x1
@@ -2109,19 +2142,19 @@
 
     invoke-direct {v0, v1}, Landroid/content/ContentValues;-><init>(I)V
 
-    .line 444
+    .line 418
     .local v25, values:Landroid/content/ContentValues;
     const/4 v10, 0x1
 
-    .line 445
+    .line 419
     const/4 v11, 0x1
 
-    .line 458
+    .line 432
     :cond_0
     :goto_2
     if-eqz v10, :cond_1
 
-    .line 459
+    .line 433
     const-string v4, "date"
 
     new-instance v5, Ljava/lang/Long;
@@ -2140,13 +2173,13 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 462
+    .line 436
     :cond_1
     if-eqz v11, :cond_2
 
     if-eqz v23, :cond_2
 
-    .line 463
+    .line 437
     const-string v4, "type"
 
     invoke-static/range {v23 .. v23}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -2161,7 +2194,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 467
+    .line 441
     :cond_2
     const-string v4, "thread_id"
 
@@ -2173,8 +2206,7 @@
 
     move-result-object v22
 
-    .line 468
-    .local v22, threadId:Ljava/lang/Long;
+    .line 442
     const-string v4, "address"
 
     move-object/from16 v0, v25
@@ -2185,7 +2217,7 @@
 
     move-result-object v12
 
-    .line 470
+    .line 444
     .local v12, address:Ljava/lang/String;
     if-eqz v22, :cond_3
 
@@ -2202,30 +2234,31 @@
     :cond_3
     if-eqz v12, :cond_4
 
-    .line 471
-    const-string v4, "thread_id"
-
+    .line 445
     invoke-virtual/range {p0 .. p0}, Lcom/android/providers/telephony/SmsProvider;->getContext()Landroid/content/Context;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-static {v5, v12}, Landroid/provider/Telephony$Threads;->getOrCreateThreadId(Landroid/content/Context;Ljava/lang/String;)J
+    invoke-static {v4, v12}, Landroid/provider/Telephony$Threads;->getOrCreateThreadId(Landroid/content/Context;Ljava/lang/String;)J
 
     move-result-wide v6
 
     invoke-static {v6, v7}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    move-result-object v5
+    move-result-object v22
+
+    .line 446
+    const-string v4, "thread_id"
 
     move-object/from16 v0, v25
 
     move-object v1, v4
 
-    move-object v2, v5
+    move-object/from16 v2, v22
 
     invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 480
+    .line 454
     :cond_4
     const-string v4, "type"
 
@@ -2245,7 +2278,7 @@
 
     if-ne v4, v5, :cond_5
 
-    .line 481
+    .line 455
     const-string v4, "sms"
 
     const-string v5, "thread_id=? AND type=?"
@@ -2280,7 +2313,7 @@
 
     invoke-virtual {v15, v4, v5, v6}, Landroid/database/sqlite/SQLiteDatabase;->delete(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
 
-    .line 486
+    .line 460
     :cond_5
     const/4 v4, 0x1
 
@@ -2288,9 +2321,9 @@
 
     move v1, v4
 
-    if-ne v0, v1, :cond_f
+    if-ne v0, v1, :cond_e
 
-    .line 488
+    .line 462
     const-string v4, "person"
 
     move-object/from16 v0, v25
@@ -2309,10 +2342,10 @@
 
     if-nez v4, :cond_7
 
-    .line 489
+    .line 463
     const/4 v13, 0x0
 
-    .line 490
+    .line 464
     .local v13, cursor:Landroid/database/Cursor;
     sget-object v4, Landroid/provider/Contacts$Phones;->CONTENT_FILTER_URL:Landroid/net/Uri;
 
@@ -2324,7 +2357,7 @@
 
     move-result-object v5
 
-    .line 493
+    .line 467
     .local v5, uri:Landroid/net/Uri;
     :try_start_0
     invoke-virtual/range {p0 .. p0}, Lcom/android/providers/telephony/SmsProvider;->getContext()Landroid/content/Context;
@@ -2347,14 +2380,14 @@
 
     move-result-object v13
 
-    .line 498
+    .line 472
     invoke-interface {v13}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result v4
 
     if-eqz v4, :cond_6
 
-    .line 499
+    .line 473
     const/4 v4, 0x0
 
     invoke-interface {v13, v4}, Landroid/database/Cursor;->getLong(I)J
@@ -2365,7 +2398,7 @@
 
     move-result-object v17
 
-    .line 500
+    .line 474
     .local v17, id:Ljava/lang/Long;
     const-string v4, "person"
 
@@ -2380,21 +2413,20 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 505
+    .line 479
     .end local v17           #id:Ljava/lang/Long;
     :cond_6
     if-eqz v13, :cond_7
 
-    .line 506
+    .line 480
     invoke-interface {v13}, Landroid/database/Cursor;->close()V
 
-    .line 522
+    .line 496
     .end local v5           #uri:Landroid/net/Uri;
     .end local v10           #addDate:Z
     .end local v11           #addType:Z
     .end local v12           #address:Ljava/lang/String;
     .end local v13           #cursor:Landroid/database/Cursor;
-    .end local v22           #threadId:Ljava/lang/Long;
     :cond_7
     :goto_3
     const-string v4, "body"
@@ -2411,7 +2443,7 @@
 
     move-result-wide v19
 
-    .line 527
+    .line 501
     .local v19, rowID:J
     const-string v4, "sms"
 
@@ -2421,12 +2453,12 @@
 
     if-ne v0, v1, :cond_8
 
-    .line 531
+    .line 505
     new-instance v14, Landroid/content/ContentValues;
 
     invoke-direct {v14}, Landroid/content/ContentValues;-><init>()V
 
-    .line 532
+    .line 506
     .local v14, cv:Landroid/content/ContentValues;
     const-string v4, "_id"
 
@@ -2436,7 +2468,7 @@
 
     invoke-virtual {v14, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 533
+    .line 507
     const-string v4, "index_text"
 
     const-string v5, "body"
@@ -2451,7 +2483,7 @@
 
     invoke-virtual {v14, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 534
+    .line 508
     const-string v4, "source_id"
 
     invoke-static/range {v19 .. v20}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -2460,7 +2492,7 @@
 
     invoke-virtual {v14, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 535
+    .line 509
     const-string v4, "table_to_use"
 
     const/4 v5, 0x1
@@ -2471,23 +2503,23 @@
 
     invoke-virtual {v14, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 536
+    .line 510
     const-string v4, "words"
 
     const-string v5, "index_text"
 
     invoke-virtual {v15, v4, v5, v14}, Landroid/database/sqlite/SQLiteDatabase;->insert(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
 
-    .line 538
+    .line 512
     .end local v14           #cv:Landroid/content/ContentValues;
     :cond_8
     const-wide/16 v6, 0x0
 
     cmp-long v4, v19, v6
 
-    if-lez v4, :cond_12
+    if-lez v4, :cond_11
 
-    .line 539
+    .line 513
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -2528,7 +2560,7 @@
 
     move-result-object v5
 
-    .line 541
+    .line 515
     .restart local v5       #uri:Landroid/net/Uri;
     const-string v4, "SmsProvider"
 
@@ -2540,7 +2572,7 @@
 
     if-eqz v4, :cond_9
 
-    .line 542
+    .line 516
     const-string v4, "SmsProvider"
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -2569,146 +2601,115 @@
 
     invoke-static {v4, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 547
+    .line 518
     :cond_9
-    const-string v4, "sms"
-
-    move-object/from16 v0, v21
-
-    move-object v1, v4
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_a
-
-    .line 548
-    const-string v4, "thread_id"
-
-    move-object/from16 v0, v25
-
-    move-object v1, v4
-
-    invoke-virtual {v0, v1}, Landroid/content/ContentValues;->getAsLong(Ljava/lang/String;)Ljava/lang/Long;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/Long;->longValue()J
+    invoke-virtual/range {v22 .. v22}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v6
 
-    invoke-static {v15, v6, v7}, Lcom/android/providers/telephony/MmsSmsDatabaseHelper;->updateThread(Landroid/database/sqlite/SQLiteDatabase;J)V
-
-    .line 552
-    :cond_a
     move-object/from16 v0, p0
 
     move-object v1, v5
 
-    invoke-direct {v0, v1}, Lcom/android/providers/telephony/SmsProvider;->notifyChange(Landroid/net/Uri;)V
+    move-wide v2, v6
+
+    invoke-direct {v0, v1, v2, v3}, Lcom/android/providers/telephony/SmsProvider;->notifyChange(Landroid/net/Uri;J)V
 
     move-object v4, v5
 
-    .line 553
+    .line 519
     goto/16 :goto_0
 
-    .line 382
+    .line 359
     .end local v5           #uri:Landroid/net/Uri;
     .end local v15           #db:Landroid/database/sqlite/SQLiteDatabase;
     .end local v19           #rowID:J
+    .end local v22           #threadId:Ljava/lang/Long;
     .end local v25           #values:Landroid/content/ContentValues;
     .restart local v24       #typeObj:Ljava/lang/Integer;
-    :cond_b
+    :cond_a
     const/16 v23, 0x1
 
-    .line 384
+    .line 361
     goto/16 :goto_1
 
-    .line 387
+    .line 364
     .end local v24           #typeObj:Ljava/lang/Integer;
-    :pswitch_2
+    :sswitch_1
     const/16 v23, 0x1
 
-    .line 388
+    .line 365
     goto/16 :goto_1
 
-    .line 391
-    :pswitch_3
+    .line 368
+    :sswitch_2
     const/16 v23, 0x5
 
-    .line 392
+    .line 369
     goto/16 :goto_1
 
-    .line 395
-    :pswitch_4
+    .line 372
+    :sswitch_3
     const/16 v23, 0x6
 
-    .line 396
+    .line 373
     goto/16 :goto_1
 
-    .line 399
-    :pswitch_5
+    .line 376
+    :sswitch_4
     const/16 v23, 0x2
 
-    .line 400
+    .line 377
     goto/16 :goto_1
 
-    .line 403
-    :pswitch_6
+    .line 380
+    :sswitch_5
     const/16 v23, 0x3
 
-    .line 404
+    .line 381
     goto/16 :goto_1
 
-    .line 407
-    :pswitch_7
+    .line 384
+    :sswitch_6
     const/16 v23, 0x4
 
-    .line 408
+    .line 385
     goto/16 :goto_1
 
-    .line 411
-    :pswitch_8
+    .line 388
+    :sswitch_7
     const-string v21, "raw"
 
-    .line 412
+    .line 389
     goto/16 :goto_1
 
-    .line 415
-    :pswitch_9
+    .line 392
+    :sswitch_8
     const-string v21, "sr_pending"
 
-    .line 416
+    .line 393
     goto/16 :goto_1
 
-    .line 419
-    :pswitch_a
+    .line 396
+    :sswitch_9
     const-string v21, "attachments"
 
-    .line 420
+    .line 397
     goto/16 :goto_1
 
-    .line 423
-    :pswitch_b
+    .line 400
+    :sswitch_a
     const-string v21, "canonical_addresses"
 
-    .line 424
+    .line 401
     goto/16 :goto_1
 
-    .line 427
-    :pswitch_c
-    invoke-direct/range {p0 .. p2}, Lcom/android/providers/telephony/SmsProvider;->insertMessageToIcc(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
-
-    move-result-object v4
-
-    goto/16 :goto_0
-
-    .line 447
+    .line 421
     .restart local v10       #addDate:Z
     .restart local v11       #addType:Z
     .restart local v15       #db:Landroid/database/sqlite/SQLiteDatabase;
-    :cond_c
+    .restart local v22       #threadId:Ljava/lang/Long;
+    :cond_b
     new-instance v25, Landroid/content/ContentValues;
 
     move-object/from16 v0, v25
@@ -2717,7 +2718,7 @@
 
     invoke-direct {v0, v1}, Landroid/content/ContentValues;-><init>(Landroid/content/ContentValues;)V
 
-    .line 449
+    .line 423
     .restart local v25       #values:Landroid/content/ContentValues;
     const-string v4, "date"
 
@@ -2729,13 +2730,13 @@
 
     move-result v4
 
-    if-nez v4, :cond_d
+    if-nez v4, :cond_c
 
-    .line 450
+    .line 424
     const/4 v10, 0x1
 
-    .line 453
-    :cond_d
+    .line 427
+    :cond_c
     const-string v4, "type"
 
     move-object/from16 v0, p2
@@ -2748,22 +2749,21 @@
 
     if-nez v4, :cond_0
 
-    .line 454
+    .line 428
     const/4 v11, 0x1
 
     goto/16 :goto_2
 
-    .line 502
+    .line 476
     .restart local v5       #uri:Landroid/net/Uri;
     .restart local v12       #address:Ljava/lang/String;
     .restart local v13       #cursor:Landroid/database/Cursor;
-    .restart local v22       #threadId:Ljava/lang/Long;
     :catch_0
     move-exception v4
 
     move-object/from16 v16, v4
 
-    .line 503
+    .line 477
     .local v16, ex:Ljava/lang/Exception;
     :try_start_1
     const-string v4, "SmsProvider"
@@ -2803,30 +2803,30 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 505
+    .line 479
     if-eqz v13, :cond_7
 
-    .line 506
+    .line 480
     invoke-interface {v13}, Landroid/database/Cursor;->close()V
 
     goto/16 :goto_3
 
-    .line 505
+    .line 479
     .end local v16           #ex:Ljava/lang/Exception;
     :catchall_0
     move-exception v4
 
-    if-eqz v13, :cond_e
+    if-eqz v13, :cond_d
 
-    .line 506
+    .line 480
     invoke-interface {v13}, Landroid/database/Cursor;->close()V
 
-    :cond_e
+    :cond_d
     throw v4
 
-    .line 512
+    .line 486
     .end local v13           #cursor:Landroid/database/Cursor;
-    :cond_f
+    :cond_e
     const-string v4, "read"
 
     sget-object v5, Lcom/android/providers/telephony/SmsProvider;->ONE:Ljava/lang/Integer;
@@ -2841,16 +2841,15 @@
 
     goto/16 :goto_3
 
-    .line 515
+    .line 489
     .end local v10           #addDate:Z
     .end local v11           #addType:Z
     .end local v12           #address:Ljava/lang/String;
-    .end local v22           #threadId:Ljava/lang/Long;
     .end local v25           #values:Landroid/content/ContentValues;
-    :cond_10
-    if-nez p2, :cond_11
+    :cond_f
+    if-nez p2, :cond_10
 
-    .line 516
+    .line 490
     new-instance v25, Landroid/content/ContentValues;
 
     const/4 v4, 0x1
@@ -2864,17 +2863,17 @@
     .restart local v25       #values:Landroid/content/ContentValues;
     goto/16 :goto_3
 
-    .line 518
+    .line 492
     .end local v25           #values:Landroid/content/ContentValues;
-    :cond_11
+    :cond_10
     move-object/from16 v25, p2
 
     .restart local v25       #values:Landroid/content/ContentValues;
     goto/16 :goto_3
 
-    .line 555
+    .line 521
     .restart local v19       #rowID:J
-    :cond_12
+    :cond_11
     const-string v4, "SmsProvider"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -2901,51 +2900,35 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 558
+    .line 524
     const/4 v4, 0x0
 
     goto/16 :goto_0
 
-    .line 375
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-        :pswitch_2
-        :pswitch_0
-        :pswitch_5
-        :pswitch_0
-        :pswitch_6
-        :pswitch_0
-        :pswitch_7
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_8
-        :pswitch_a
-        :pswitch_0
-        :pswitch_b
-        :pswitch_0
-        :pswitch_0
-        :pswitch_9
-        :pswitch_0
-        :pswitch_0
-        :pswitch_3
-        :pswitch_0
-        :pswitch_4
-        :pswitch_0
-        :pswitch_c
-    .end packed-switch
+    .line 352
+    nop
+
+    :sswitch_data_0
+    .sparse-switch
+        0x0 -> :sswitch_0
+        0x2 -> :sswitch_1
+        0x4 -> :sswitch_4
+        0x6 -> :sswitch_5
+        0x8 -> :sswitch_6
+        0xf -> :sswitch_7
+        0x10 -> :sswitch_9
+        0x12 -> :sswitch_a
+        0x15 -> :sswitch_8
+        0x18 -> :sswitch_2
+        0x1a -> :sswitch_3
+    .end sparse-switch
 .end method
 
 .method public onCreate()Z
     .locals 1
 
     .prologue
-    .line 94
+    .line 91
     invoke-virtual {p0}, Lcom/android/providers/telephony/SmsProvider;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -2956,7 +2939,7 @@
 
     iput-object v0, p0, Lcom/android/providers/telephony/SmsProvider;->mOpenHelper:Landroid/database/sqlite/SQLiteOpenHelper;
 
-    .line 95
+    .line 92
     const/4 v0, 0x1
 
     return v0
@@ -2971,12 +2954,12 @@
     .parameter "sort"
 
     .prologue
-    .line 101
+    .line 98
     new-instance v0, Landroid/database/sqlite/SQLiteQueryBuilder;
 
     invoke-direct {v0}, Landroid/database/sqlite/SQLiteQueryBuilder;-><init>()V
 
-    .line 104
+    .line 101
     .local v0, qb:Landroid/database/sqlite/SQLiteQueryBuilder;
     sget-object v2, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
@@ -2984,11 +2967,11 @@
 
     move-result v9
 
-    .line 105
+    .line 102
     .local v9, match:I
     packed-switch v9, :pswitch_data_0
 
-    .line 219
+    .line 216
     :pswitch_0
     const-string v2, "SmsProvider"
 
@@ -3012,16 +2995,16 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 220
+    .line 217
     const/4 v2, 0x0
 
-    .line 238
+    .line 235
     .end local p0
     .end local p1
     :goto_0
     return-object v2
 
-    .line 107
+    .line 104
     .restart local p0
     .restart local p1
     :pswitch_1
@@ -3029,13 +3012,13 @@
 
     invoke-direct {p0, v0, v2}, Lcom/android/providers/telephony/SmsProvider;->constructQueryForBox(Landroid/database/sqlite/SQLiteQueryBuilder;I)V
 
-    .line 223
+    .line 220
     .end local p1
     :cond_0
     :goto_1
     const/4 v7, 0x0
 
-    .line 225
+    .line 222
     .local v7, orderBy:Ljava/lang/String;
     invoke-static/range {p5 .. p5}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -3043,10 +3026,10 @@
 
     if-nez v2, :cond_3
 
-    .line 226
+    .line 223
     move-object/from16 v7, p5
 
-    .line 231
+    .line 228
     :cond_1
     :goto_2
     iget-object v2, p0, Lcom/android/providers/telephony/SmsProvider;->mOpenHelper:Landroid/database/sqlite/SQLiteOpenHelper;
@@ -3055,7 +3038,7 @@
 
     move-result-object v1
 
-    .line 232
+    .line 229
     .local v1, db:Landroid/database/sqlite/SQLiteDatabase;
     const/4 v5, 0x0
 
@@ -3071,7 +3054,7 @@
 
     move-result-object v11
 
-    .line 236
+    .line 233
     .local v11, ret:Landroid/database/Cursor;
     invoke-virtual {p0}, Lcom/android/providers/telephony/SmsProvider;->getContext()Landroid/content/Context;
 
@@ -3087,10 +3070,10 @@
 
     move-object v2, v11
 
-    .line 238
+    .line 235
     goto :goto_0
 
-    .line 111
+    .line 108
     .end local v1           #db:Landroid/database/sqlite/SQLiteDatabase;
     .end local v7           #orderBy:Ljava/lang/String;
     .end local v11           #ret:Landroid/database/Cursor;
@@ -3100,7 +3083,7 @@
 
     goto :goto_1
 
-    .line 115
+    .line 112
     :pswitch_3
     const/4 v2, 0x5
 
@@ -3108,7 +3091,7 @@
 
     goto :goto_1
 
-    .line 119
+    .line 116
     :pswitch_4
     const/4 v2, 0x6
 
@@ -3116,7 +3099,7 @@
 
     goto :goto_1
 
-    .line 123
+    .line 120
     :pswitch_5
     const/4 v2, 0x1
 
@@ -3124,7 +3107,7 @@
 
     goto :goto_1
 
-    .line 127
+    .line 124
     :pswitch_6
     const/4 v2, 0x2
 
@@ -3132,7 +3115,7 @@
 
     goto :goto_1
 
-    .line 131
+    .line 128
     :pswitch_7
     const/4 v2, 0x3
 
@@ -3140,7 +3123,7 @@
 
     goto :goto_1
 
-    .line 135
+    .line 132
     :pswitch_8
     const/4 v2, 0x4
 
@@ -3148,13 +3131,13 @@
 
     goto :goto_1
 
-    .line 139
+    .line 136
     :pswitch_9
     const-string v2, "sms"
 
     invoke-virtual {v0, v2}, Landroid/database/sqlite/SQLiteQueryBuilder;->setTables(Ljava/lang/String;)V
 
-    .line 140
+    .line 137
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -3196,14 +3179,14 @@
 
     goto :goto_1
 
-    .line 148
+    .line 145
     .restart local p1
     :pswitch_a
     const-string v2, "sms"
 
     invoke-virtual {v0, v2}, Landroid/database/sqlite/SQLiteQueryBuilder;->setTables(Ljava/lang/String;)V
 
-    .line 149
+    .line 146
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -3245,7 +3228,7 @@
 
     goto/16 :goto_1
 
-    .line 156
+    .line 153
     .restart local p1
     :pswitch_b
     :try_start_0
@@ -3265,7 +3248,7 @@
 
     move-result v12
 
-    .line 157
+    .line 154
     .local v12, threadID:I
     const-string v2, "SmsProvider"
 
@@ -3277,7 +3260,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 158
+    .line 155
     const-string v2, "SmsProvider"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -3302,13 +3285,13 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 168
+    .line 165
     :cond_2
     const-string v2, "sms"
 
     invoke-virtual {v0, v2}, Landroid/database/sqlite/SQLiteQueryBuilder;->setTables(Ljava/lang/String;)V
 
-    .line 169
+    .line 166
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -3331,14 +3314,14 @@
 
     goto/16 :goto_1
 
-    .line 161
+    .line 158
     .end local v12           #threadID:I
     :catch_0
     move-exception v2
 
     move-object v8, v2
 
-    .line 162
+    .line 159
     .local v8, ex:Ljava/lang/Exception;
     const-string v2, "SmsProvider"
 
@@ -3375,12 +3358,12 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 165
+    .line 162
     const/4 v2, 0x0
 
     goto/16 :goto_0
 
-    .line 173
+    .line 170
     .end local v8           #ex:Ljava/lang/Exception;
     .restart local p0
     :pswitch_c
@@ -3388,19 +3371,19 @@
 
     invoke-virtual {v0, v2}, Landroid/database/sqlite/SQLiteQueryBuilder;->setTables(Ljava/lang/String;)V
 
-    .line 175
+    .line 172
     const-string v2, "sms.thread_id = groups.group_thread_id AND sms.date =groups.group_date"
 
     invoke-virtual {v0, v2}, Landroid/database/sqlite/SQLiteQueryBuilder;->appendWhere(Ljava/lang/CharSequence;)V
 
-    .line 177
+    .line 174
     sget-object v2, Lcom/android/providers/telephony/SmsProvider;->sConversationProjectionMap:Ljava/util/HashMap;
 
     invoke-virtual {v0, v2}, Landroid/database/sqlite/SQLiteQueryBuilder;->setProjectionMap(Ljava/util/Map;)V
 
     goto/16 :goto_1
 
-    .line 181
+    .line 178
     :pswitch_d
     const-string v2, "raw"
 
@@ -3408,7 +3391,7 @@
 
     goto/16 :goto_1
 
-    .line 185
+    .line 182
     :pswitch_e
     const-string v2, "sr_pending"
 
@@ -3416,7 +3399,7 @@
 
     goto/16 :goto_1
 
-    .line 189
+    .line 186
     :pswitch_f
     const-string v2, "attachments"
 
@@ -3424,13 +3407,13 @@
 
     goto/16 :goto_1
 
-    .line 193
+    .line 190
     :pswitch_10
     const-string v2, "attachments"
 
     invoke-virtual {v0, v2}, Landroid/database/sqlite/SQLiteQueryBuilder;->setTables(Ljava/lang/String;)V
 
-    .line 194
+    .line 191
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -3472,28 +3455,28 @@
 
     goto/16 :goto_1
 
-    .line 199
+    .line 196
     .restart local p1
     :pswitch_11
     const-string v2, "canonical_addresses"
 
     invoke-virtual {v0, v2}, Landroid/database/sqlite/SQLiteQueryBuilder;->setTables(Ljava/lang/String;)V
 
-    .line 200
+    .line 197
     if-nez p2, :cond_0
 
-    .line 201
+    .line 198
     sget-object p2, Lcom/android/providers/telephony/SmsProvider;->sIDProjection:[Ljava/lang/String;
 
     goto/16 :goto_1
 
-    .line 206
+    .line 203
     :pswitch_12
     const-string v2, "sms"
 
     invoke-virtual {v0, v2}, Landroid/database/sqlite/SQLiteQueryBuilder;->setTables(Ljava/lang/String;)V
 
-    .line 207
+    .line 204
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -3535,7 +3518,7 @@
 
     goto/16 :goto_1
 
-    .line 211
+    .line 208
     .restart local p1
     :pswitch_13
     invoke-direct {p0}, Lcom/android/providers/telephony/SmsProvider;->getAllMessagesFromIcc()Landroid/database/Cursor;
@@ -3544,7 +3527,7 @@
 
     goto/16 :goto_0
 
-    .line 214
+    .line 211
     :pswitch_14
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
@@ -3558,7 +3541,7 @@
 
     check-cast v10, Ljava/lang/String;
 
-    .line 216
+    .line 213
     .local v10, messageIndexString:Ljava/lang/String;
     invoke-direct {p0, v10}, Lcom/android/providers/telephony/SmsProvider;->getSingleMessageFromIcc(Ljava/lang/String;)Landroid/database/Cursor;
 
@@ -3566,7 +3549,7 @@
 
     goto/16 :goto_0
 
-    .line 227
+    .line 224
     .end local v10           #messageIndexString:Ljava/lang/String;
     .end local p1
     .restart local v7       #orderBy:Ljava/lang/String;
@@ -3583,12 +3566,12 @@
 
     if-eqz v2, :cond_1
 
-    .line 228
+    .line 225
     const-string v7, "date DESC"
 
     goto/16 :goto_2
 
-    .line 105
+    .line 102
     nop
 
     :pswitch_data_0
@@ -3625,329 +3608,440 @@
 .end method
 
 .method public update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
-    .locals 11
+    .locals 18
     .parameter "url"
     .parameter "values"
     .parameter "where"
     .parameter "whereArgs"
 
     .prologue
-    const/4 v8, 0x1
+    .line 646
+    const/4 v5, 0x0
 
-    const-string v10, "_id="
+    .line 647
+    .local v5, count:I
+    const-string v11, "sms"
 
-    const-string v9, "SmsProvider"
+    .line 648
+    .local v11, table:Ljava/lang/String;
+    const/4 v8, 0x0
 
-    .line 720
-    const/4 v0, 0x0
+    .line 649
+    .local v8, extraWhere:Ljava/lang/String;
+    move-object/from16 v0, p0
 
-    .line 721
-    .local v0, count:I
-    const-string v4, "sms"
+    iget-object v0, v0, Lcom/android/providers/telephony/SmsProvider;->mOpenHelper:Landroid/database/sqlite/SQLiteOpenHelper;
 
-    .line 722
-    .local v4, table:Ljava/lang/String;
-    const/4 v3, 0x0
+    move-object v15, v0
 
-    .line 723
-    .local v3, extraWhere:Ljava/lang/String;
-    iget-object v6, p0, Lcom/android/providers/telephony/SmsProvider;->mOpenHelper:Landroid/database/sqlite/SQLiteOpenHelper;
+    invoke-virtual {v15}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
-    invoke-virtual {v6}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    move-result-object v6
 
-    move-result-object v1
+    .line 650
+    .local v6, db:Landroid/database/sqlite/SQLiteDatabase;
+    const-wide/16 v12, -0x1
 
-    .line 725
-    .local v1, db:Landroid/database/sqlite/SQLiteDatabase;
-    sget-object v6, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
+    .line 651
+    .local v12, threadId:J
+    const/4 v9, 0x0
 
-    invoke-virtual {v6, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
+    .line 653
+    .local v9, msgIdValue:Ljava/lang/String;
+    sget-object v15, Lcom/android/providers/telephony/SmsProvider;->sURLMatcher:Landroid/content/UriMatcher;
 
-    move-result v6
+    move-object v0, v15
 
-    packed-switch v6, :pswitch_data_0
+    move-object/from16 v1, p1
 
-    .line 775
+    invoke-virtual {v0, v1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
+
+    move-result v15
+
+    packed-switch v15, :pswitch_data_0
+
+    .line 707
     :pswitch_0
-    new-instance v6, Ljava/lang/UnsupportedOperationException;
+    new-instance v15, Ljava/lang/UnsupportedOperationException;
 
-    new-instance v7, Ljava/lang/StringBuilder;
+    new-instance v16, Ljava/lang/StringBuilder;
 
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v16 .. v16}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v8, "URI "
+    const-string v17, "URI "
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v16 .. v17}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    move-result-object v16
 
-    invoke-virtual {v7, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    move-object/from16 v0, v16
 
-    move-result-object v7
+    move-object/from16 v1, p1
 
-    const-string v8, " not supported"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v16
 
-    move-result-object v7
+    const-string v17, " not supported"
 
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual/range {v16 .. v17}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    move-result-object v16
 
-    invoke-direct {v6, v7}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    invoke-virtual/range {v16 .. v16}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    throw v6
+    move-result-object v16
 
-    .line 727
+    invoke-direct/range {v15 .. v16}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw v15
+
+    .line 655
     :pswitch_1
-    const-string v4, "raw"
+    const-string v11, "raw"
 
-    .line 779
+    .line 712
+    .end local v5           #count:I
     :goto_0
     :pswitch_2
-    invoke-static {p3, v3}, Landroid/database/DatabaseUtils;->concatenateWhere(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    const-string v15, "read"
+
+    move-object/from16 v0, p2
+
+    move-object v1, v15
+
+    invoke-virtual {v0, v1}, Landroid/content/ContentValues;->getAsInteger(Ljava/lang/String;)Ljava/lang/Integer;
+
+    move-result-object v10
+
+    .line 713
+    .local v10, read:Ljava/lang/Integer;
+    if-eqz v10, :cond_0
+
+    invoke-virtual {v10}, Ljava/lang/Integer;->intValue()I
+
+    move-result v15
+
+    const/16 v16, 0x1
+
+    move v0, v15
+
+    move/from16 v1, v16
+
+    if-ne v0, v1, :cond_0
+
+    .line 714
+    const-string v15, "seen"
+
+    move-object/from16 v0, p2
+
+    move-object v1, v15
+
+    move-object v2, v10
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+
+    .line 717
+    :cond_0
+    move-object/from16 v0, p3
+
+    move-object v1, v8
+
+    invoke-static {v0, v1}, Landroid/database/DatabaseUtils;->concatenateWhere(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p3
 
-    .line 780
-    invoke-virtual {v1, v4, p2, p3, p4}, Landroid/database/sqlite/SQLiteDatabase;->update(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
+    .line 718
+    move-object v0, v6
 
-    move-result v0
+    move-object v1, v11
 
-    .line 782
-    if-lez v0, :cond_1
+    move-object/from16 v2, p2
 
-    .line 783
-    const-string v6, "SmsProvider"
+    move-object/from16 v3, p3
 
-    const/4 v6, 0x2
+    move-object/from16 v4, p4
 
-    invoke-static {v9, v6}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/database/sqlite/SQLiteDatabase;->update(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
 
-    move-result v6
+    move-result v5
 
-    if-eqz v6, :cond_0
+    .line 720
+    .restart local v5       #count:I
+    if-lez v5, :cond_2
 
-    .line 784
-    const-string v6, "SmsProvider"
+    .line 721
+    const-string v15, "SmsProvider"
 
-    new-instance v6, Ljava/lang/StringBuilder;
+    const/16 v16, 0x2
 
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-static/range {v15 .. v16}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
-    const-string v7, "update "
+    move-result v15
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-eqz v15, :cond_1
 
-    move-result-object v6
+    .line 722
+    const-string v15, "SmsProvider"
 
-    invoke-virtual {v6, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    new-instance v16, Ljava/lang/StringBuilder;
 
-    move-result-object v6
+    invoke-direct/range {v16 .. v16}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v7, " succeeded"
+    const-string v17, "update "
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v16 .. v17}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v6
+    move-result-object v16
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-object/from16 v0, v16
 
-    move-result-object v6
+    move-object/from16 v1, p1
 
-    invoke-static {v9, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 786
-    :cond_0
-    invoke-direct {p0, p1}, Lcom/android/providers/telephony/SmsProvider;->notifyChange(Landroid/net/Uri;)V
+    move-result-object v16
 
-    .line 788
+    const-string v17, " succeeded"
+
+    invoke-virtual/range {v16 .. v17}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v16
+
+    invoke-virtual/range {v16 .. v16}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v16
+
+    invoke-static/range {v15 .. v16}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 724
     :cond_1
-    return v0
+    move-object/from16 v0, p0
 
-    .line 731
+    move-object/from16 v1, p1
+
+    move-wide v2, v12
+
+    invoke-direct {v0, v1, v2, v3}, Lcom/android/providers/telephony/SmsProvider;->notifyChange(Landroid/net/Uri;J)V
+
+    .line 726
+    :cond_2
+    return v5
+
+    .line 659
+    .end local v10           #read:Ljava/lang/Integer;
     :pswitch_3
-    const-string v4, "sr_pending"
+    const-string v11, "sr_pending"
 
-    .line 732
+    .line 660
     goto :goto_0
 
-    .line 745
+    .line 673
     :pswitch_4
-    new-instance v6, Ljava/lang/StringBuilder;
+    invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+    move-result-object v15
 
-    const-string v7, "_id="
+    const/16 v16, 0x0
 
-    invoke-virtual {v6, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-interface/range {v15 .. v16}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-result-object v7
+    move-result-object v9
 
-    invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
+    .end local v9           #msgIdValue:Ljava/lang/String;
+    check-cast v9, Ljava/lang/String;
 
-    move-result-object v6
+    .line 674
+    .restart local v9       #msgIdValue:Ljava/lang/String;
+    new-instance v15, Ljava/lang/StringBuilder;
 
-    const/4 v8, 0x0
+    invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-interface {v6, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    const-string v16, "_id="
 
-    move-result-object v6
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    check-cast v6, Ljava/lang/String;
+    move-result-object v15
 
-    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v15, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v6
+    move-result-object v15
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v8
 
-    .line 746
-    goto :goto_0
+    .line 675
+    invoke-static {v9, v6}, Lcom/android/providers/telephony/SmsProvider;->parseThreadId(Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase;)J
 
-    .line 753
+    move-result-wide v12
+
+    .line 676
+    goto/16 :goto_0
+
+    .line 683
     :pswitch_5
-    new-instance v6, Ljava/lang/StringBuilder;
+    invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+    move-result-object v15
 
-    const-string v7, "_id="
+    const/16 v16, 0x1
 
-    invoke-virtual {v6, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-interface/range {v15 .. v16}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-result-object v7
+    move-result-object v9
 
-    invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
+    .end local v9           #msgIdValue:Ljava/lang/String;
+    check-cast v9, Ljava/lang/String;
 
-    move-result-object v6
+    .line 684
+    .restart local v9       #msgIdValue:Ljava/lang/String;
+    new-instance v15, Ljava/lang/StringBuilder;
 
-    invoke-interface {v6, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-result-object v6
+    const-string v16, "_id="
 
-    check-cast v6, Ljava/lang/String;
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v15
 
-    move-result-object v6
+    invoke-virtual {v15, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v15
 
-    move-result-object v3
+    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 754
-    goto :goto_0
+    move-result-object v8
 
-    .line 757
+    .line 685
+    invoke-static {v9, v6}, Lcom/android/providers/telephony/SmsProvider;->parseThreadId(Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase;)J
+
+    move-result-wide v12
+
+    .line 686
+    goto/16 :goto_0
+
+    .line 689
     :pswitch_6
-    invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
+    invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
-    move-result-object v6
+    move-result-object v15
 
-    invoke-interface {v6, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    const/16 v16, 0x1
 
-    move-result-object v5
+    invoke-interface/range {v15 .. v16}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    check-cast v5, Ljava/lang/String;
+    move-result-object v14
 
-    .line 760
-    .local v5, threadId:Ljava/lang/String;
+    check-cast v14, Ljava/lang/String;
+
+    .line 692
+    .local v14, threadIdValue:Ljava/lang/String;
     :try_start_0
-    invoke-static {v5}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+    invoke-static {v14}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 766
-    new-instance v6, Ljava/lang/StringBuilder;
+    move-result-wide v12
 
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+    .line 698
+    new-instance v15, Ljava/lang/StringBuilder;
 
-    const-string v7, "thread_id="
+    invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v16, "thread_id="
 
-    move-result-object v6
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v15
 
-    move-result-object v6
+    invoke-virtual {v15, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v15
 
-    move-result-object v3
+    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 767
+    move-result-object v8
+
+    .line 699
     goto/16 :goto_0
 
-    .line 761
+    .line 693
     :catch_0
-    move-exception v2
+    move-exception v7
 
-    .line 762
-    .local v2, ex:Ljava/lang/Exception;
-    const-string v6, "SmsProvider"
+    .line 694
+    .local v7, ex:Ljava/lang/Exception;
+    const-string v15, "SmsProvider"
 
-    new-instance v6, Ljava/lang/StringBuilder;
+    new-instance v16, Ljava/lang/StringBuilder;
 
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct/range {v16 .. v16}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v7, "Bad conversation thread id: "
+    const-string v17, "Bad conversation thread id: "
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v16 .. v17}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v6
+    move-result-object v16
 
-    invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-object/from16 v0, v16
 
-    move-result-object v6
+    move-object v1, v14
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v6
+    move-result-object v16
 
-    invoke-static {v9, v6}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual/range {v16 .. v16}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v16
+
+    invoke-static/range {v15 .. v16}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     goto/16 :goto_0
 
-    .line 771
-    .end local v2           #ex:Ljava/lang/Exception;
-    .end local v5           #threadId:Ljava/lang/String;
+    .line 703
+    .end local v7           #ex:Ljava/lang/Exception;
+    .end local v14           #threadIdValue:Ljava/lang/String;
     :pswitch_7
-    new-instance v6, Ljava/lang/StringBuilder;
+    new-instance v15, Ljava/lang/StringBuilder;
 
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v7, "_id="
+    const-string v16, "_id="
 
-    invoke-virtual {v6, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    move-result-object v15
 
-    invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
+    invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
-    move-result-object v6
+    move-result-object v16
 
-    invoke-interface {v6, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    const/16 v17, 0x1
 
-    move-result-object v6
+    invoke-interface/range {v16 .. v17}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    check-cast v6, Ljava/lang/String;
+    move-result-object v5
 
-    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .end local v5           #count:I
+    check-cast v5, Ljava/lang/String;
 
-    move-result-object v6
+    invoke-virtual {v15, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v15
 
-    move-result-object v3
+    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 772
+    move-result-object v8
+
+    .line 704
     goto/16 :goto_0
 
-    .line 725
+    .line 653
+    nop
+
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_2
