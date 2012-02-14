@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="uid_label">미디어</string>
+    <string name="app_label">미디어 저장소</string>
+    <string name="artist_label">아티스트</string>
+</resources>
