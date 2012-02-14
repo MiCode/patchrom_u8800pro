@@ -44,6 +44,14 @@ local-zip-misc:
 	cp other/apk/* $(ZIP_DIR)/system/app/
 	@echo Replace build.prop
 	cp other/build.prop $(ZIP_DIR)/system/build.prop
+	@echo Replace updater-script
+	cp other/updater-script $(ZIP_DIR)/META-INF/com/google/android/updater-script
+	@echo Add screencap
+	cp other/screencap $(ZIP_DIR)/system/bin/screencap
+	@echo Add mv2sd
+	cp other/mv2sd $(ZIP_DIR)/system/xbin/mv2sd
+	@echo Add invoke-as
+	cp other/invoke-as $(ZIP_DIR)/system/xbin/invoke-as
 
 local-test:
 	@echo push $(OUT_ZIP) to phone sdcard

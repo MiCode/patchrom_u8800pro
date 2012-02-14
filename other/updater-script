@@ -101,6 +101,7 @@ symlink("toolbox", "/system/bin/cat", "/system/bin/cmp",
 show_progress(0.04,1);
 set_perm_recursive(0, 0, 0755, 0644, "/system");
 set_perm_recursive(0, 2000, 0755, 0755, "/system/bin");
+set_perm(0, 0, 0755, "/system/bin/screencap");
 set_perm(0, 3003, 06755, "/system/bin/ip");
 set_perm(0, 3003, 02750, "/system/bin/netcfg");
 set_perm(0, 3004, 02755, "/system/bin/ping");
@@ -116,6 +117,8 @@ set_perm(0, 2000, 0550, "/system/etc/init.goldfish.sh");
 set_perm_recursive(0, 0, 0755, 0555, "/system/etc/ppp");
 set_perm_recursive(0, 2000, 0755, 0755, "/system/xbin");
 set_perm(0, 0, 06755, "/system/xbin/su");
+set_perm(0, 0, 06755, "/system/xbin/invoke-as");
+set_perm(0, 0, 06755, "/system/xbin/mv2sd");
 show_progress(0.08,4);
 unmount("/system");
 unmount("/cust");
