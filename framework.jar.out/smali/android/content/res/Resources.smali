@@ -182,7 +182,7 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>()V
+.method constructor <init>()V
     .locals 3
 
     .prologue
@@ -773,12 +773,9 @@
     .local v0, ret:Landroid/content/res/Resources;
     if-nez v0, :cond_0
 
-    .line 173
-    new-instance v0, Landroid/content/res/Resources;
+    invoke-static {}, Landroid/content/res/MiuiClassFactory;->newResources()Landroid/content/res/Resources;
 
-    .end local v0           #ret:Landroid/content/res/Resources;
-    invoke-direct {v0}, Landroid/content/res/Resources;-><init>()V
-
+    move-result-object v0
     .line 174
     .restart local v0       #ret:Landroid/content/res/Resources;
     sput-object v0, Landroid/content/res/Resources;->mSystem:Landroid/content/res/Resources;
@@ -3598,6 +3595,12 @@
     .end local v8           #e:Ljava/lang/Exception;
     .end local v13           #rnf:Landroid/content/res/Resources$NotFoundException;
     :cond_6
+    invoke-virtual/range {p0 .. p2}, Landroid/content/res/Resources;->loadOverlayDrawable(Landroid/util/TypedValue;I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v6
+
+    if-nez v6, :cond_1
+
     :try_start_1
     move-object/from16 v0, p0
 
@@ -3752,6 +3755,17 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     throw v16
+.end method
+
+.method loadOverlayDrawable(Landroid/util/TypedValue;I)Landroid/graphics/drawable/Drawable;
+    .locals 1
+    .parameter "value"
+    .parameter "id"
+
+    .prologue
+    const/4 v0, 0x0
+
+    return-object v0
 .end method
 
 .method loadXmlResourceParser(ILjava/lang/String;)Landroid/content/res/XmlResourceParser;
@@ -4134,7 +4148,7 @@
     throw v6
 .end method
 
-.method public final newTheme()Landroid/content/res/Resources$Theme;
+.method public newTheme()Landroid/content/res/Resources$Theme;
     .locals 1
 
     .prologue

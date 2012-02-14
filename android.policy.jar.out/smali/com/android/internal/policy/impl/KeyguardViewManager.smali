@@ -409,7 +409,7 @@
 
     .line 103
     .local v6, stretch:I
-    const v4, 0x10100800
+    const v4, 0x10100900
 
     .line 108
     .local v4, flags:I
@@ -448,7 +448,7 @@
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->windowAnimations:I
 
     .line 116
-    const/4 v1, 0x5
+    const/4 v1, 0x1
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->screenOrientation:I
 

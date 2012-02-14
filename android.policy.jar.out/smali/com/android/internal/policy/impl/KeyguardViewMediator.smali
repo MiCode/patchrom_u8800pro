@@ -657,13 +657,23 @@
     return-void
 .end method
 
+.method static synthetic access$1700(Lcom/android/internal/policy/impl/KeyguardViewMediator;)V
+    .locals 0
+    .parameter "x0"
+
+    .prologue
+    invoke-direct {p0}, Lcom/android/internal/policy/impl/KeyguardViewMediator;->adjustStatusBarLocked()V
+
+    return-void
+.end method
+
 .method private adjustStatusBarLocked()V
     .locals 6
 
     .prologue
-    const/4 v4, 0x1
+    const/4 v3, 0x1
 
-    const/4 v3, 0x0
+    const/4 v4, 0x0
 
     const-string v5, "secure"
 
@@ -731,10 +741,10 @@
 
     const v2, 0x10802ca
 
-    invoke-virtual {v1, v5, v2, v3}, Landroid/app/StatusBarManager;->setIcon(Ljava/lang/String;II)V
+    invoke-virtual {v1, v5, v2, v4}, Landroid/app/StatusBarManager;->setIcon(Ljava/lang/String;II)V
 
     .line 1138
-    iput-boolean v4, p0, Lcom/android/internal/policy/impl/KeyguardViewMediator;->mShowingLockIcon:Z
+    iput-boolean v3, p0, Lcom/android/internal/policy/impl/KeyguardViewMediator;->mShowingLockIcon:Z
 
     .line 1150
     :cond_2
@@ -754,7 +764,7 @@
     if-nez v1, :cond_5
 
     :cond_3
-    move v0, v4
+    move v0, v3
 
     .line 1151
     .local v0, enable:Z
@@ -763,9 +773,20 @@
 
     if-eqz v0, :cond_6
 
-    move v2, v3
+    move v2, v4
 
     :goto_3
+    invoke-virtual {p0}, Lcom/android/internal/policy/impl/KeyguardViewMediator;->isShowingAndNotHidden()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_7
+
+    const/high16 v3, -0x8000
+
+    :goto_4
+    or-int/2addr v2, v3
+
     invoke-virtual {v1, v2}, Landroid/app/StatusBarManager;->disable(I)V
 
     goto :goto_0
@@ -785,22 +806,27 @@
     invoke-virtual {v1, v5}, Landroid/app/StatusBarManager;->removeIcon(Ljava/lang/String;)V
 
     .line 1143
-    iput-boolean v3, p0, Lcom/android/internal/policy/impl/KeyguardViewMediator;->mShowingLockIcon:Z
+    iput-boolean v4, p0, Lcom/android/internal/policy/impl/KeyguardViewMediator;->mShowingLockIcon:Z
 
     goto :goto_1
 
     :cond_5
-    move v0, v3
+    move v0, v4
 
     .line 1150
     goto :goto_2
 
     .restart local v0       #enable:Z
     :cond_6
-    move v2, v4
+    move v2, v3
 
     .line 1151
     goto :goto_3
+
+    :cond_7
+    move v3, v4
+
+    goto :goto_4
 .end method
 
 .method private adjustUserActivityLocked()V
@@ -2460,6 +2486,7 @@
     :try_start_0
     iput-boolean v4, p0, Lcom/android/internal/policy/impl/KeyguardViewMediator;->mScreenOn:Z
 
+    invoke-direct {p0}, Lcom/android/internal/policy/impl/KeyguardViewMediator;->notifyScreenOffLocked()V
     .line 363
     iget-object v4, p0, Lcom/android/internal/policy/impl/KeyguardViewMediator;->mExitSecureCallback:Landroid/view/WindowManagerPolicy$OnKeyguardExitResult;
 

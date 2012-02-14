@@ -30232,6 +30232,10 @@
 
     iput v7, v6, Landroid/content/res/Configuration;->fontScale:F
 
+    iget-object v6, p0, Lcom/android/server/WindowManagerService;->mTempConfiguration:Landroid/content/res/Configuration;
+
+    invoke-static {p1, v6}, Landroid/app/MiuiThemeHelper;->copyExtraConfigurations(Landroid/content/res/Configuration;Landroid/content/res/Configuration;)V
+
     .line 3197
     iget-object v6, p0, Lcom/android/server/WindowManagerService;->mTempConfiguration:Landroid/content/res/Configuration;
 

@@ -1588,6 +1588,7 @@
     .local v1, systemDir:Ljava/io/File;
     invoke-virtual {v1}, Ljava/io/File;->mkdirs()Z
 
+    invoke-static {v1}, Lmiui/os/Environment;->init(Ljava/io/File;)V
     .line 1471
     new-instance v3, Lcom/android/server/am/BatteryStatsService;
 
@@ -61793,7 +61794,7 @@
 
     .line 11685
     .local v26, kept:Z
-    if-eqz p1, :cond_7
+    if-eqz p1, :cond_8
 
     .line 11686
     new-instance v28, Landroid/content/res/Configuration;
@@ -61821,7 +61822,7 @@
     move-result v24
 
     .line 11688
-    if-eqz v24, :cond_7
+    if-eqz v24, :cond_8
 
     .line 11693
     const/16 v4, 0xa9f
@@ -62210,15 +62211,37 @@
 
     invoke-direct/range {v8 .. v21}, Lcom/android/server/am/ActivityManagerService;->broadcastIntentLocked(Lcom/android/server/am/ProcessRecord;Ljava/lang/String;Landroid/content/Intent;Ljava/lang/String;Landroid/content/IIntentReceiver;ILjava/lang/String;Landroid/os/Bundle;Ljava/lang/String;ZZII)I
 
-    .line 11745
+    :cond_7
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/server/am/ActivityManagerService;->mContext:Landroid/content/Context;
+
+    move-object v4, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/server/am/ActivityManagerService;->mHandler:Landroid/os/Handler;
+
+    move-object v5, v0
+
+    move/from16 v0, v24
+
+    move-object/from16 v1, v28
+
+    move-object v2, v4
+
+    move-object v3, v5
+
+    invoke-static {v0, v1, v2, v3}, Landroid/app/MiuiThemeHelper;->handleExtraConfigurationChanges(ILandroid/content/res/Configuration;Landroid/content/Context;Landroid/os/Handler;)V
+
     .end local v7           #intent:Landroid/content/Intent;
     .end local v22           #ac:Lcom/android/server/AttributeCache;
     .end local v25           #i:I
     .end local v28           #newConfig:Landroid/content/res/Configuration;
-    :cond_7
-    if-eqz v24, :cond_8
+    :cond_8
+    if-eqz v24, :cond_9
 
-    if-nez p2, :cond_8
+    if-nez p2, :cond_9
 
     .line 11749
     move-object/from16 v0, p0
@@ -62234,8 +62257,8 @@
     move-result-object p2
 
     .line 11752
-    :cond_8
-    if-eqz p2, :cond_9
+    :cond_9
+    if-eqz p2, :cond_a
 
     .line 11753
     move-object/from16 v0, p0
@@ -62255,7 +62278,7 @@
     move-result v26
 
     .line 11754
-    if-eqz v26, :cond_9
+    if-eqz v26, :cond_a
 
     .line 11760
     move-object/from16 v0, p0
@@ -62273,8 +62296,8 @@
     invoke-virtual {v0, v1, v2}, Lcom/android/server/am/ActivityStack;->ensureActivitiesVisibleLocked(Lcom/android/server/am/ActivityRecord;I)V
 
     .line 11764
-    :cond_9
-    if-eqz p1, :cond_a
+    :cond_a
+    if-eqz p1, :cond_b
 
     move-object/from16 v0, p0
 
@@ -62282,7 +62305,7 @@
 
     move-object v4, v0
 
-    if-eqz v4, :cond_a
+    if-eqz v4, :cond_b
 
     .line 11765
     move-object/from16 v0, p0
@@ -62300,7 +62323,7 @@
     invoke-virtual {v4, v5}, Lcom/android/server/WindowManagerService;->setNewConfiguration(Landroid/content/res/Configuration;)V
 
     .line 11768
-    :cond_a
+    :cond_b
     return v26
 
     .line 11728

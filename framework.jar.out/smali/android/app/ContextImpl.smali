@@ -1184,7 +1184,7 @@
 .end method
 
 .method private getDownloadManager()Landroid/app/DownloadManager;
-    .locals 4
+    .locals 3
 
     .prologue
     .line 1221
@@ -1199,17 +1199,17 @@
     if-nez v1, :cond_0
 
     .line 1223
-    new-instance v1, Landroid/app/DownloadManager;
-
     invoke-virtual {p0}, Landroid/app/ContextImpl;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v2
+    move-result-object v1
 
     invoke-virtual {p0}, Landroid/app/ContextImpl;->getPackageName()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v2
 
-    invoke-direct {v1, v2, v3}, Landroid/app/DownloadManager;-><init>(Landroid/content/ContentResolver;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Landroid/util/MiuiClassFactory;->createDownloadManager(Landroid/content/ContentResolver;Ljava/lang/String;)Landroid/app/DownloadManager;
+
+    move-result-object v1
 
     iput-object v1, p0, Landroid/app/ContextImpl;->mDownloadManager:Landroid/app/DownloadManager;
 
