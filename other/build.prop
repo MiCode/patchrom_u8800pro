@@ -33,8 +33,8 @@ ro.product.board=U8800Pro
 ro.product.cpu.abi=armeabi-v7a
 ro.product.cpu.abi2=armeabi
 ro.product.manufacturer=HUAWEI
-ro.product.locale.language=en
-ro.product.locale.region=US
+ro.product.locale.language=zh
+ro.product.locale.region=CN
 ro.wifi.channels=
 ro.board.platform=msm7k
 # ro.build.product is obsolete; use ro.product.device
@@ -397,7 +397,7 @@ ro.config.hw_pukTriedTenTimes=true
 ro.config.support_mpga=true
 #DTS2011110404490 cuixiang 20111116 add end
 
-ro.build.version.incremental=C00B540G001
+ro.build.version.incremental=U8800PRO-B540-CN-ADAPT
 ro.build.tags=ota-rel-keys,release-keys
 ro.build.description=U8800Pro-user 2.3.5 HuaweiU8800Pro C00B540G001 ota-rel-keys,release-keys
 ro.build.fingerprint=Huawei/U8800Pro/hwu8800Pro:2.3.5/HuaweiU8800Pro/C00B540G001:user/ota-rel-keys,release-keys
