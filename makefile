@@ -14,16 +14,17 @@ local-zip-file     := u8800pro_2.3.5_b540.zip
 local-out-zip-file := u8800pro_2.3.5_b540_miui.zip
 
 # All apps from original ZIP, but has smali files chanded
-local-modified-apps := 
+local-modified-apps := MediaProvider TelephonyProvider
 
-local-miui-modified-apps := 
+local-miui-modified-apps := Launcher2
 
 # All apks from MIUI execept MIUISystemUI and framework-miui-res.apk
-local-miui-apps     :=  Launcher2 Contacts ThemeManager ContactsProvider Mms  DownloadProvider \
-      TelocationProvider Notes Music Torch DownloadProviderUi Updater SideKick
+local-miui-apps     :=  Contacts ThemeManager ContactsProvider Mms  DownloadProvider \
+      TelocationProvider Notes Music Torch DownloadProviderUi Updater SideKick Provision
 
 # All apps need to be removed from original ZIP file
-local-remove-apps   := 
+local-remove-apps   := SetupWizard Service-MultiSNS DocumentToGo NotePad YouTube \
+GenieWidget ApkBatchInstall HuaweiLauncher3 MyRichpad MediaCenter SocialExt RichPad
 
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:
@@ -54,7 +55,9 @@ local-zip-misc:
 	cp other/invoke-as $(ZIP_DIR)/system/xbin/invoke-as
 
 local-test:
-	@echo push $(OUT_ZIP) to phone sdcard
-	adb shell mount sdcard
-	adb shell rm -f /sdcard/defy_2.3.4_cn_miui.zip
-	adb push $(OUT_ZIP) /sdcard/defy_2.3.4_cn_miui.zip
+	rm -f u8800pro_2.3.5_b540_miui.zip
+	cp .build/u8800pro_2.3.5_b540_miui.zip .
+#	@echo push $(OUT_ZIP) to phone sdcard
+#	adb shell mount sdcard
+#	adb shell rm -f /sdcard/$(local-out-zip-file)
+#	adb push $(OUT_ZIP) /sdcard/$(local-out-zip-file)
