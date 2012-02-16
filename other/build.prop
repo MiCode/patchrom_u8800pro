@@ -184,7 +184,7 @@ ril.subscription.types=NV,RUIM
 DEVICE_PROVISIONED=1
 debug.sf.hw=1
 # DTS2011070104586 wangzhenzhong 2011-07-01 begin
-dalvik.vm.heapsize=38m
+dalvik.vm.heapsize=64m
 # DTS2011070104586 wangzhenzhong 2011-07-01 end
 ro.dev.dmm=1
 dev.dmm.dpd.trigger_delay=30
