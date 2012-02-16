@@ -24,7 +24,7 @@ local-miui-apps     :=  Contacts ThemeManager ContactsProvider Mms  DownloadProv
 
 # All apps need to be removed from original ZIP file
 local-remove-apps   := SetupWizard Service-MultiSNS DocumentToGo NotePad YouTube \
-GenieWidget ApkBatchInstall HuaweiLauncher3 MyRichpad MediaCenter SocialExt RichPad
+GenieWidget ApkBatchInstall HuaweiLauncher3 MyRichpad MediaCenter SocialExt RichPad Email
 
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:
