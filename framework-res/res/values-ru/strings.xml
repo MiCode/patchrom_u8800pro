@@ -271,7 +271,7 @@
     <string name="global_actions">Параметры телефона</string>
     <string name="global_action_lock">Блокировка экрана</string>
     <string name="global_action_power_off">Отключить питание</string>
-    <string name="global_action_toggle_silent_mode">Режим без звука</string>
+    <string name="global_action_toggle_silent_mode">Режим Без звука</string>
     <string name="global_action_silent_mode_on_status">Звук ВЫКЛ</string>
     <string name="global_action_silent_mode_off_status">Звук ВКЛЮЧЕН</string>
     <string name="global_actions_toggle_airplane_mode">Режим полета</string>
@@ -588,7 +588,7 @@
     <string name="phoneTypeRadio">Радиотелефон</string>
     <string name="phoneTypeTelex">Телекс</string>
     <string name="phoneTypeTtyTdd">Телетайп</string>
-    <string name="phoneTypeWorkMobile">Рабочий моб.</string>
+    <string name="phoneTypeWorkMobile">Раб. мобильный</string>
     <string name="phoneTypeWorkPager">Раб. пейджер</string>
     <string name="phoneTypeAssistant">Секретарь</string>
     <string name="phoneTypeMms">MMS</string>
@@ -596,10 +596,10 @@
     <string name="eventTypeAnniversary">Юбилей</string>
     <string name="eventTypeOther">Мероприятие</string>
     <string name="emailTypeCustom">Создать свой ярлык</string>
-    <string name="emailTypeHome">Личный</string>
-    <string name="emailTypeWork">Рабочий</string>
+    <string name="emailTypeHome">Личная</string>
+    <string name="emailTypeWork">Рабочая</string>
     <string name="emailTypeOther">Другой</string>
-    <string name="emailTypeMobile">Моб.</string>
+    <string name="emailTypeMobile">Мобильная</string>
     <string name="postalTypeCustom">Создать свой ярлык</string>
     <string name="postalTypeHome">Домашний</string>
     <string name="postalTypeWork">Рабочий</string>

@@ -15,11 +15,13 @@
 
 
 # static fields
-.field public static final ffwd_potter:I = 0x2030010
+.field public static final cancel_red:I = 0x2030010
 
-.field public static final ffwd_potter_img:I = 0x2030011
+.field public static final ffwd_potter:I = 0x2030011
 
-.field public static final ffwd_press_potter:I = 0x2030012
+.field public static final ffwd_potter_img:I = 0x2030012
+
+.field public static final ffwd_press_potter:I = 0x2030013
 
 .field public static final hw_fullpopup_bottom_bright_five_notitle:I = 0x2030001
 
@@ -49,49 +51,57 @@
 
 .field public static final hw_screen_background_gray:I = 0x203000f
 
-.field public static final next_potter:I = 0x2030013
+.field public static final next_potter:I = 0x2030014
 
-.field public static final next_potter_img:I = 0x2030014
+.field public static final next_potter_img:I = 0x2030015
 
-.field public static final next_press_potter:I = 0x2030015
+.field public static final next_press_potter:I = 0x2030016
 
-.field public static final pause_potter:I = 0x2030016
+.field public static final ok_green:I = 0x2030017
 
-.field public static final pause_potter_img:I = 0x2030017
+.field public static final pause_potter:I = 0x2030018
 
-.field public static final pause_press_potter:I = 0x2030018
+.field public static final pause_potter_img:I = 0x2030019
 
-.field public static final play_potter:I = 0x2030019
+.field public static final pause_press_potter:I = 0x203001a
 
-.field public static final play_potter_img:I = 0x203001a
+.field public static final play_potter:I = 0x203001b
 
-.field public static final play_press_potter:I = 0x203001b
+.field public static final play_potter_img:I = 0x203001c
+
+.field public static final play_press_potter:I = 0x203001d
 
 .field public static final popup_bottom_animation:I = 0x203000d
 
 .field public static final popup_bottom_animation_notitle:I = 0x203000e
 
-.field public static final prev_potter:I = 0x203001c
+.field public static final press:I = 0x203001e
 
-.field public static final prev_potter_img:I = 0x203001d
+.field public static final prev_potter:I = 0x203001f
 
-.field public static final prev_press_potter:I = 0x203001e
+.field public static final prev_potter_img:I = 0x2030020
 
-.field public static final progress_horizontal_potter:I = 0x203001f
+.field public static final prev_press_potter:I = 0x2030021
 
-.field public static final rew_potter:I = 0x2030020
+.field public static final progress_horizontal_potter:I = 0x2030022
 
-.field public static final rew_potter_img:I = 0x2030021
+.field public static final rew_potter:I = 0x2030023
 
-.field public static final rew_press_potter:I = 0x2030022
+.field public static final rew_potter_img:I = 0x2030024
 
-.field public static final seek_thumb_potter:I = 0x2030023
+.field public static final rew_press_potter:I = 0x2030025
 
-.field public static final seekthumb_potter:I = 0x2030024
+.field public static final seek_thumb_potter:I = 0x2030026
 
-.field public static final video_bottom_potter:I = 0x2030025
+.field public static final seekthumb_potter:I = 0x2030027
 
-.field public static final video_top_potter:I = 0x2030026
+.field public static final twelve_key_entry_cancel:I = 0x2030028
+
+.field public static final twelve_key_entry_ok:I = 0x2030029
+
+.field public static final video_bottom_potter:I = 0x203002a
+
+.field public static final video_top_potter:I = 0x203002b
 
 
 # direct methods

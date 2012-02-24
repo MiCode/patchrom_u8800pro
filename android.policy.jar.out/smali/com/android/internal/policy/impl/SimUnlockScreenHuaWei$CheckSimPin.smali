@@ -29,20 +29,20 @@
     .parameter "pin"
 
     .prologue
-    .line 443
+    .line 447
     iput-object p1, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$CheckSimPin;->this$0:Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
-    .line 440
+    .line 444
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$CheckSimPin;->mresult:Z
 
-    .line 444
+    .line 448
     iput-object p2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$CheckSimPin;->mPin:Ljava/lang/String;
 
-    .line 445
+    .line 449
     return-void
 .end method
 
@@ -51,7 +51,7 @@
     .parameter "x0"
 
     .prologue
-    .line 436
+    .line 440
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$CheckSimPin;->mresult:Z
 
     return v0
@@ -72,7 +72,7 @@
 
     const-string v2, "PIN_PUK"
 
-    .line 455
+    .line 459
     :try_start_0
     const-string v2, "PIN_PUK"
 
@@ -98,7 +98,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 456
+    .line 460
     sget-object v2, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$2;->$SwitchMap$com$android$internal$policy$impl$SimUnlockScreenHuaWei$SimLockState:[I
 
     iget-object v3, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$CheckSimPin;->this$0:Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;
@@ -116,14 +116,14 @@
 
     packed-switch v2, :pswitch_data_0
 
-    .line 510
+    .line 514
     const-string v2, "PIN_PUK"
 
     const-string v3, "UNLOCKED STATE!"
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 513
+    .line 517
     :goto_0
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$CheckSimPin;->this$0:Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;
 
@@ -133,11 +133,11 @@
 
     invoke-virtual {v2, v3}, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->post(Ljava/lang/Runnable;)Z
 
-    .line 535
+    .line 539
     :goto_1
     return-void
 
-    .line 460
+    .line 464
     :pswitch_0
     const-string v2, "phone"
 
@@ -157,12 +157,12 @@
 
     iput-boolean v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$CheckSimPin;->mresult:Z
 
-    .line 463
+    .line 467
     iget-boolean v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$CheckSimPin;->mresult:Z
 
     if-ne v5, v2, :cond_0
 
-    .line 464
+    .line 468
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$CheckSimPin;->this$0:Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;
 
     sget-object v3, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$SimLockState;->SUCCESSFUL:Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$SimLockState;
@@ -173,13 +173,13 @@
 
     goto :goto_0
 
-    .line 528
+    .line 532
     :catch_0
     move-exception v2
 
     move-object v0, v2
 
-    .line 529
+    .line 533
     .local v0, e:Landroid/os/RemoteException;
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$CheckSimPin;->this$0:Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;
 
@@ -191,7 +191,7 @@
 
     goto :goto_1
 
-    .line 466
+    .line 470
     .end local v0           #e:Landroid/os/RemoteException;
     :cond_0
     :try_start_1
@@ -203,7 +203,7 @@
 
     goto :goto_0
 
-    .line 473
+    .line 477
     :pswitch_1
     const-string v2, "PIN_PUK"
 
@@ -211,7 +211,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 474
+    .line 478
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$CheckSimPin;->this$0:Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;
 
     iget-object v3, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$CheckSimPin;->mPin:Ljava/lang/String;
@@ -219,12 +219,12 @@
     #setter for: Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mPUKCode:Ljava/lang/String;
     invoke-static {v2, v3}, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->access$202(Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 475
+    .line 479
     const/4 v2, 0x0
 
     iput-boolean v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$CheckSimPin;->mresult:Z
 
-    .line 476
+    .line 480
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$CheckSimPin;->this$0:Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;
 
     sget-object v3, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$SimLockState;->REQUIRE_NEW_PIN:Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$SimLockState;
@@ -233,7 +233,7 @@
 
     goto :goto_0
 
-    .line 482
+    .line 486
     :pswitch_2
     const-string v2, "PIN_PUK"
 
@@ -241,7 +241,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 484
+    .line 488
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$CheckSimPin;->this$0:Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;
 
     iget-object v3, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$CheckSimPin;->mPin:Ljava/lang/String;
@@ -249,12 +249,12 @@
     #setter for: Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mNewPinCode:Ljava/lang/String;
     invoke-static {v2, v3}, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->access$302(Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 485
+    .line 489
     const/4 v2, 0x0
 
     iput-boolean v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$CheckSimPin;->mresult:Z
 
-    .line 486
+    .line 490
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$CheckSimPin;->this$0:Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;
 
     sget-object v3, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$SimLockState;->VERIFY_NEW_PIN:Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$SimLockState;
@@ -263,7 +263,7 @@
 
     goto :goto_0
 
-    .line 491
+    .line 495
     :pswitch_3
     const-string v2, "PIN_PUK"
 
@@ -271,7 +271,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 493
+    .line 497
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$CheckSimPin;->this$0:Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;
 
     iget-object v3, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$CheckSimPin;->mPin:Ljava/lang/String;
@@ -283,7 +283,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 495
+    .line 499
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$CheckSimPin;->this$0:Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;
 
     #getter for: Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mPUKCode:Ljava/lang/String;
@@ -308,7 +308,7 @@
 
     move-result-object v1
 
-    .line 496
+    .line 500
     .local v1, newCode:Ljava/lang/String;
     const-string v2, "phone"
 
@@ -326,12 +326,12 @@
 
     iput-boolean v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$CheckSimPin;->mresult:Z
 
-    .line 499
+    .line 503
     iget-boolean v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$CheckSimPin;->mresult:Z
 
     if-ne v5, v2, :cond_1
 
-    .line 500
+    .line 504
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$CheckSimPin;->this$0:Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;
 
     sget-object v3, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$SimLockState;->SUCCESSFUL:Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$SimLockState;
@@ -340,7 +340,7 @@
 
     goto/16 :goto_0
 
-    .line 502
+    .line 506
     :cond_1
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$CheckSimPin;->this$0:Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;
 
@@ -350,14 +350,14 @@
 
     goto/16 :goto_0
 
-    .line 504
+    .line 508
     .end local v1           #newCode:Ljava/lang/String;
     :cond_2
     const/4 v2, 0x0
 
     iput-boolean v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$CheckSimPin;->mresult:Z
 
-    .line 505
+    .line 509
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$CheckSimPin;->this$0:Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;
 
     sget-object v3, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$SimLockState;->VERIFY_NEW_PIN_FAILED:Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$SimLockState;
@@ -368,7 +368,7 @@
 
     goto/16 :goto_0
 
-    .line 456
+    .line 460
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0

@@ -2981,11 +2981,6 @@
 
     if-ne p4, v2, :cond_7
 
-    .line 843
-    const-string v2, "unmounted"
-
-    invoke-direct {p0, p2, v2}, Lcom/android/server/MountService;->updatePublicVolumeState(Ljava/lang/String;Ljava/lang/String;)V
-
     .line 844
     new-instance v0, Landroid/content/Intent;
 

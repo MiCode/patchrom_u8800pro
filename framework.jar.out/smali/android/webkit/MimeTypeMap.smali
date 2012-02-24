@@ -175,9 +175,9 @@
     .locals 8
 
     .prologue
-    const-string/jumbo v7, "text/plain"
+    const-string v7, "application/x-koan"
 
-    const-string v6, "audio/x-pn-realaudio"
+    const-string/jumbo v6, "text/plain"
 
     const-string v5, "audio/mpeg"
 
@@ -1156,36 +1156,36 @@
 
     const-string v1, "application/x-koan"
 
-    const-string/jumbo v2, "skp"
+    const-string/jumbo v1, "skp"
 
-    invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v7, v1}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 324
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "application/x-koan"
 
-    const-string/jumbo v2, "skd"
+    const-string/jumbo v1, "skd"
 
-    invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v7, v1}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 325
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "application/x-koan"
 
-    const-string/jumbo v2, "skt"
+    const-string/jumbo v1, "skt"
 
-    invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v7, v1}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 326
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "application/x-koan"
 
-    const-string/jumbo v2, "skm"
+    const-string/jumbo v1, "skm"
 
-    invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v7, v1}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 327
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
@@ -1858,29 +1858,29 @@
 
     const-string v1, "audio/x-pn-realaudio"
 
-    const-string v1, "ra"
+    const-string v2, "ra"
 
-    invoke-direct {v0, v6, v1}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 406
-    sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
-
-    const-string v1, "audio/x-pn-realaudio"
-
-    const-string v1, "rm"
-
-    invoke-direct {v0, v6, v1}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 407
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
+    const-string/jumbo v1, "video/x-pn-realvideo"
+
+    const-string v2, "rm"
+
+    invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 409
+    sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
+
     const-string v1, "audio/x-pn-realaudio"
 
-    const-string v1, "ram"
+    const-string v2, "ram"
 
-    invoke-direct {v0, v6, v1}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 408
+    .line 410
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "audio/x-realaudio"
@@ -1889,7 +1889,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 409
+    .line 411
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "audio/x-scpls"
@@ -1898,7 +1898,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 410
+    .line 412
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "audio/x-sd2"
@@ -1907,7 +1907,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 412
+    .line 414
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "audio/wav"
@@ -1916,7 +1916,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 413
+    .line 415
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "audio/x-wav"
@@ -1925,7 +1925,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 414
+    .line 416
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "audio/amr"
@@ -1934,7 +1934,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 415
+    .line 417
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "audio/amr-wb"
@@ -1943,7 +1943,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 416
+    .line 418
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "audio/3gpp"
@@ -1952,7 +1952,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 417
+    .line 419
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "audio/aac"
@@ -1961,7 +1961,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 418
+    .line 420
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "audio/imelody"
@@ -1970,7 +1970,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 420
+    .line 422
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/bmp"
@@ -1979,7 +1979,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 421
+    .line 423
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/gif"
@@ -1988,7 +1988,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 422
+    .line 424
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/ico"
@@ -1997,7 +1997,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 423
+    .line 425
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/ico"
@@ -2006,7 +2006,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 424
+    .line 426
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/ief"
@@ -2015,7 +2015,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 425
+    .line 427
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/jpeg"
@@ -2024,7 +2024,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 426
+    .line 428
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/jpeg"
@@ -2033,7 +2033,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 427
+    .line 429
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/jpeg"
@@ -2042,7 +2042,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 428
+    .line 430
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/pcx"
@@ -2051,7 +2051,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 429
+    .line 431
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/png"
@@ -2060,7 +2060,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 430
+    .line 432
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/svg+xml"
@@ -2069,7 +2069,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 431
+    .line 433
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/svg+xml"
@@ -2078,7 +2078,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 432
+    .line 434
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/tiff"
@@ -2087,7 +2087,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 433
+    .line 435
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/tiff"
@@ -2096,7 +2096,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 434
+    .line 436
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/vnd.djvu"
@@ -2105,7 +2105,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 435
+    .line 437
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/vnd.djvu"
@@ -2114,7 +2114,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 436
+    .line 438
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/vnd.wap.wbmp"
@@ -2123,7 +2123,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 437
+    .line 439
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/x-cmu-raster"
@@ -2132,7 +2132,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 438
+    .line 440
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/x-coreldraw"
@@ -2141,7 +2141,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 439
+    .line 441
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/x-coreldrawpattern"
@@ -2150,7 +2150,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 440
+    .line 442
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/x-coreldrawtemplate"
@@ -2159,7 +2159,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 441
+    .line 443
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/x-corelphotopaint"
@@ -2168,7 +2168,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 442
+    .line 444
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/x-icon"
@@ -2177,7 +2177,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 443
+    .line 445
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/x-jg"
@@ -2186,7 +2186,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 444
+    .line 446
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/x-jng"
@@ -2195,7 +2195,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 445
+    .line 447
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/x-ms-bmp"
@@ -2204,7 +2204,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 446
+    .line 448
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/x-photoshop"
@@ -2213,7 +2213,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 447
+    .line 449
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/x-portable-anymap"
@@ -2222,7 +2222,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 448
+    .line 450
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/x-portable-bitmap"
@@ -2231,7 +2231,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 449
+    .line 451
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/x-portable-graymap"
@@ -2240,7 +2240,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 450
+    .line 452
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/x-portable-pixmap"
@@ -2249,7 +2249,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 451
+    .line 453
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/x-rgb"
@@ -2258,7 +2258,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 452
+    .line 454
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/x-xbitmap"
@@ -2267,7 +2267,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 453
+    .line 455
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/x-xpixmap"
@@ -2276,7 +2276,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 454
+    .line 456
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "image/x-xwindowdump"
@@ -2285,7 +2285,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 455
+    .line 457
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "model/iges"
@@ -2294,7 +2294,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 456
+    .line 458
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "model/iges"
@@ -2303,7 +2303,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 457
+    .line 459
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "model/mesh"
@@ -2312,7 +2312,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 458
+    .line 460
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "model/mesh"
@@ -2321,7 +2321,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 459
+    .line 461
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "model/mesh"
@@ -2330,7 +2330,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 460
+    .line 462
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/calendar"
@@ -2339,7 +2339,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 461
+    .line 463
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/calendar"
@@ -2348,7 +2348,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 462
+    .line 464
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/comma-separated-values"
@@ -2357,7 +2357,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 463
+    .line 465
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/css"
@@ -2366,7 +2366,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 464
+    .line 466
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/html"
@@ -2375,7 +2375,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 465
+    .line 467
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/html"
@@ -2384,7 +2384,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 466
+    .line 468
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/h323"
@@ -2393,7 +2393,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 467
+    .line 469
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/iuls"
@@ -2402,7 +2402,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 468
+    .line 470
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/mathml"
@@ -2411,52 +2411,52 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 470
+    .line 472
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/plain"
 
     const-string/jumbo v1, "txt"
 
-    invoke-direct {v0, v7, v1}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 471
-    sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
-
-    const-string/jumbo v1, "text/plain"
-
-    const-string v1, "asc"
-
-    invoke-direct {v0, v7, v1}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 472
-    sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
-
-    const-string/jumbo v1, "text/plain"
-
-    const-string/jumbo v1, "text"
-
-    invoke-direct {v0, v7, v1}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v6, v1}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 473
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/plain"
 
-    const-string v1, "diff"
+    const-string v1, "asc"
 
-    invoke-direct {v0, v7, v1}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v6, v1}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 474
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/plain"
 
-    const-string v1, "po"
+    const-string/jumbo v1, "text"
 
-    invoke-direct {v0, v7, v1}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v6, v1}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 475
+    sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
+
+    const-string/jumbo v1, "text/plain"
+
+    const-string v1, "diff"
+
+    invoke-direct {v0, v6, v1}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 476
+    sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
+
+    const-string/jumbo v1, "text/plain"
+
+    const-string v1, "po"
+
+    invoke-direct {v0, v6, v1}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 477
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/richtext"
@@ -2465,7 +2465,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 476
+    .line 478
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/rtf"
@@ -2474,7 +2474,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 477
+    .line 479
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/texmacs"
@@ -2483,7 +2483,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 478
+    .line 480
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/text"
@@ -2492,7 +2492,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 479
+    .line 481
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/tab-separated-values"
@@ -2501,7 +2501,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 480
+    .line 482
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/xml"
@@ -2510,7 +2510,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 481
+    .line 483
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-bibtex"
@@ -2519,7 +2519,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 482
+    .line 484
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-boo"
@@ -2528,7 +2528,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 483
+    .line 485
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-c++hdr"
@@ -2537,7 +2537,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 484
+    .line 486
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-c++hdr"
@@ -2546,7 +2546,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 485
+    .line 487
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-c++hdr"
@@ -2555,7 +2555,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 486
+    .line 488
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-c++hdr"
@@ -2564,7 +2564,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 487
+    .line 489
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-c++src"
@@ -2573,7 +2573,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 488
+    .line 490
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-c++src"
@@ -2582,7 +2582,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 489
+    .line 491
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-c++src"
@@ -2591,7 +2591,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 490
+    .line 492
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-chdr"
@@ -2600,7 +2600,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 491
+    .line 493
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-component"
@@ -2609,7 +2609,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 492
+    .line 494
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-csh"
@@ -2618,7 +2618,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 493
+    .line 495
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-csrc"
@@ -2627,7 +2627,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 494
+    .line 496
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-dsrc"
@@ -2636,7 +2636,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 495
+    .line 497
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-haskell"
@@ -2645,7 +2645,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 496
+    .line 498
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-java"
@@ -2654,7 +2654,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 497
+    .line 499
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-literate-haskell"
@@ -2663,7 +2663,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 498
+    .line 500
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-moc"
@@ -2672,7 +2672,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 499
+    .line 501
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-pascal"
@@ -2681,7 +2681,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 500
+    .line 502
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-pascal"
@@ -2690,7 +2690,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 501
+    .line 503
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-pcs-gcd"
@@ -2699,7 +2699,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 502
+    .line 504
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-setext"
@@ -2708,7 +2708,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 503
+    .line 505
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-tcl"
@@ -2717,7 +2717,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 504
+    .line 506
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-tex"
@@ -2726,7 +2726,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 505
+    .line 507
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-tex"
@@ -2735,7 +2735,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 506
+    .line 508
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-tex"
@@ -2744,7 +2744,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 507
+    .line 509
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-tex"
@@ -2753,7 +2753,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 508
+    .line 510
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-vcalendar"
@@ -2762,7 +2762,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 509
+    .line 511
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "text/x-vcard"
@@ -2771,7 +2771,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 510
+    .line 512
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/3gpp"
@@ -2780,7 +2780,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 511
+    .line 513
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/3gpp"
@@ -2789,7 +2789,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 513
+    .line 515
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/3gpp2"
@@ -2798,7 +2798,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 515
+    .line 517
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/dl"
@@ -2807,7 +2807,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 516
+    .line 518
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/dv"
@@ -2816,7 +2816,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 517
+    .line 519
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/dv"
@@ -2825,7 +2825,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 518
+    .line 520
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/fli"
@@ -2834,7 +2834,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 519
+    .line 521
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/m4v"
@@ -2843,7 +2843,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 520
+    .line 522
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/mpeg"
@@ -2852,7 +2852,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 521
+    .line 523
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/mpeg"
@@ -2861,7 +2861,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 522
+    .line 524
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/mpeg"
@@ -2870,7 +2870,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 523
+    .line 525
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/mp4"
@@ -2879,7 +2879,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 524
+    .line 526
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/mpeg"
@@ -2888,7 +2888,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 525
+    .line 527
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/quicktime"
@@ -2897,7 +2897,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 526
+    .line 528
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/quicktime"
@@ -2906,7 +2906,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 527
+    .line 529
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/vnd.mpegurl"
@@ -2915,7 +2915,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 528
+    .line 530
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/x-la-asf"
@@ -2924,7 +2924,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 529
+    .line 531
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/x-la-asf"
@@ -2933,7 +2933,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 530
+    .line 532
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/x-mng"
@@ -2942,7 +2942,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 531
+    .line 533
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/x-ms-asf"
@@ -2951,7 +2951,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 532
+    .line 534
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/x-ms-asf"
@@ -2960,7 +2960,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 533
+    .line 535
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/x-ms-wm"
@@ -2969,7 +2969,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 534
+    .line 536
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/x-ms-wmv"
@@ -2978,7 +2978,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 535
+    .line 537
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/x-ms-wmx"
@@ -2987,7 +2987,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 536
+    .line 538
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/x-ms-wvx"
@@ -2996,7 +2996,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 537
+    .line 539
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/x-msvideo"
@@ -3005,7 +3005,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 538
+    .line 540
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/x-sgi-movie"
@@ -3014,7 +3014,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 540
+    .line 542
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/x-matroska"
@@ -3023,7 +3023,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 541
+    .line 543
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "video/vnd.rn-realvideo"
@@ -3032,7 +3032,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 543
+    .line 545
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "x-conference/x-cooltalk"
@@ -3041,7 +3041,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 544
+    .line 546
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string/jumbo v1, "x-epoc/x-sisx-app"
@@ -3050,7 +3050,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 546
+    .line 548
     const-string v0, "ro.config.hwdrm"
 
     const-string v1, "false"
@@ -3067,7 +3067,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 547
+    .line 549
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "application/vnd.oma.dd+xml"
@@ -3076,7 +3076,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 548
+    .line 550
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "application/vnd.oma.drm.message"
@@ -3085,7 +3085,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 549
+    .line 551
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "application/vnd.oma.drm.content"
@@ -3094,7 +3094,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 550
+    .line 552
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "application/vnd.oma.drm.rights+xml"
@@ -3103,7 +3103,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 551
+    .line 553
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "application/vnd.oma.drm.rights+wbxml"
@@ -3112,7 +3112,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 555
+    .line 557
     :cond_0
     const-string v0, "ro.config.ape_flac_enable"
 
@@ -3130,25 +3130,25 @@
 
     if-eqz v0, :cond_1
 
-    .line 556
+    .line 558
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "audio/x-pn-realaudio"
 
-    const-string v1, "ape"
+    const-string v2, "ape"
 
-    invoke-direct {v0, v6, v1}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 557
+    .line 559
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 
     const-string v1, "audio/x-pn-realaudio"
 
-    const-string v1, "flac"
+    const-string v2, "flac"
 
-    invoke-direct {v0, v6, v1}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2}, Landroid/webkit/MimeTypeMap;->loadEntry(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 562
+    .line 564
     :cond_1
     sget-object v0, Landroid/webkit/MimeTypeMap;->sMimeTypeMap:Landroid/webkit/MimeTypeMap;
 

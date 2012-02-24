@@ -8,10 +8,10 @@
 local-use-android-out := true
 
 # The original zip file, MUST be specified by each product
-local-zip-file     := u8800pro_2.3.5_b540.zip
+local-zip-file     := u8800pro_2.3.5_b565.zip
 
 # The output zip file of MIUI rom, the default is porting_miui.zip if not specified
-local-out-zip-file := u8800pro_2.3.5_b540_miui.zip
+local-out-zip-file := u8800pro_2.3.5_b565_miui.zip
 
 # All apps from original ZIP, but has smali files chanded
 local-modified-apps := MediaProvider TelephonyProvider
@@ -24,7 +24,7 @@ local-miui-apps     :=  Contacts ThemeManager ContactsProvider Mms  DownloadProv
 
 # All apps need to be removed from original ZIP file
 local-remove-apps   := SetupWizard Service-MultiSNS DocumentToGo NotePad YouTube \
-GenieWidget ApkBatchInstall HuaweiLauncher3 MyRichpad MediaCenter SocialExt RichPad Email
+GenieWidget ApkBatchInstall HuaweiLauncher3 MyRichpad MediaCenter SocialExt RichPad Email Music2
 
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:
@@ -53,10 +53,14 @@ local-zip-misc:
 	cp other/mv2sd $(ZIP_DIR)/system/xbin/mv2sd
 	@echo Add invoke-as
 	cp other/invoke-as $(ZIP_DIR)/system/xbin/invoke-as
+	@echo Unlock FPS
+	rm $(ZIP_DIR)/boot.img
+	cp other/boot.img $(ZIP_DIR)/boot.img
+	cp other/uncapfps.sh $(ZIP_DIR)/system/etc/uncapfps.sh
 
 local-test:
-	rm -f u8800pro_2.3.5_b540_miui.zip
-	cp .build/u8800pro_2.3.5_b540_miui.zip .
+	rm -f u8800pro_2.3.5_b565_miui.zip
+	cp .build/u8800pro_2.3.5_b565_miui.zip .
 #	@echo push $(OUT_ZIP) to phone sdcard
 #	adb shell mount sdcard
 #	adb shell rm -f /sdcard/$(local-out-zip-file)

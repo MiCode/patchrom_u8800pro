@@ -1886,7 +1886,7 @@
     .line 666
     iget-object v0, p0, Landroid/widget/MediaController;->mPauseButton:Landroid/widget/ImageButton;
 
-    const v1, 0x2030017
+    const v1, 0x2030019
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setBackgroundResource(I)V
 
@@ -1915,7 +1915,7 @@
     .line 672
     iget-object v0, p0, Landroid/widget/MediaController;->mPauseButton:Landroid/widget/ImageButton;
 
-    const v1, 0x203001a
+    const v1, 0x203001c
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setBackgroundResource(I)V
 

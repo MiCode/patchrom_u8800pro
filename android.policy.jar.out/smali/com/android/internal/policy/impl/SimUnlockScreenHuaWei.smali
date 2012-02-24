@@ -222,7 +222,7 @@
     .local v0, inflater:Landroid/view/LayoutInflater;
     iget v1, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mKeyboardHidden:I
 
-    if-ne v1, v3, :cond_1
+    if-ne v1, v3, :cond_2
 
     .line 135
     const v1, 0x1090034
@@ -313,7 +313,32 @@
 
     iput-object v1, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mOkButton:Landroid/widget/TextView;
 
-    .line 166
+    .line 163
+    const-string v1, "ro.config.twelve_key_button"
+
+    const-string v2, "false"
+
+    invoke-static {v1, v2}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "true"
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 164
+    iget-object v1, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mOkButton:Landroid/widget/TextView;
+
+    const v2, 0x2030029
+
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setBackgroundResource(I)V
+
+    .line 170
+    :cond_1
     const-string v1, "phone"
 
     invoke-virtual {p1, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -324,42 +349,42 @@
 
     iput-object v1, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mPhone:Landroid/telephony/TelephonyManager;
 
-    .line 167
+    .line 171
     invoke-virtual {p0}, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->updateState()V
 
-    .line 168
+    .line 172
     invoke-virtual {p0}, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->updateView()V
 
-    .line 174
+    .line 178
     iget-object v1, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mHeaderText:Landroid/widget/TextView;
 
     const v2, 0x1040286
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
-    .line 175
+    .line 179
     iget-object v1, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mPinText:Landroid/widget/TextView;
 
     invoke-virtual {v1, v4}, Landroid/widget/TextView;->setFocusable(Z)V
 
-    .line 177
+    .line 181
     iget-object v1, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mEmergencyCallButton:Landroid/widget/Button;
 
     invoke-virtual {v1, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 178
+    .line 182
     iget-object v1, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mOkButton:Landroid/widget/TextView;
 
     invoke-virtual {v1, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 180
+    .line 184
     invoke-virtual {p0, v3}, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->setFocusableInTouchMode(Z)V
 
-    .line 181
+    .line 185
     return-void
 
     .line 137
-    :cond_1
+    :cond_2
     const v1, 0x1090035
 
     invoke-virtual {v0, v1, p0, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
@@ -367,7 +392,7 @@
     .line 138
     sget-boolean v1, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->HW_SWITCH_PUK_TRIED_TEN_TIMES:Z
 
-    if-eqz v1, :cond_2
+    if-eqz v1, :cond_3
 
     .line 139
     new-instance v1, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$TouchInput;
@@ -379,7 +404,7 @@
     goto/16 :goto_0
 
     .line 141
-    :cond_2
+    :cond_3
     new-instance v1, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$TouchInput;
 
     invoke-direct {v1, p0, v2}, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$TouchInput;-><init>(Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$1;)V
@@ -545,42 +570,42 @@
     .locals 2
 
     .prologue
-    .line 579
+    .line 583
     iget v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mEnteredDigits:I
 
     const/4 v1, 0x4
 
     if-ge v0, v1, :cond_0
 
-    .line 581
+    .line 585
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mHeaderText:Landroid/widget/TextView;
 
     const v1, 0x10400c3
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
-    .line 582
+    .line 586
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mPinText:Landroid/widget/TextView;
 
     const-string v1, ""
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 583
+    .line 587
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mEnteredDigits:I
 
-    .line 584
+    .line 588
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mCallback:Lcom/android/internal/policy/impl/KeyguardScreenCallback;
 
     invoke-interface {v0}, Lcom/android/internal/policy/impl/KeyguardScreenCallback;->pokeWakelock()V
 
-    .line 614
+    .line 618
     :goto_0
     return-void
 
-    .line 587
+    .line 591
     :cond_0
     invoke-direct {p0}, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->getSimUnlockProgressDialog()Landroid/app/Dialog;
 
@@ -588,7 +613,7 @@
 
     invoke-virtual {v0}, Landroid/app/Dialog;->show()V
 
-    .line 589
+    .line 593
     new-instance v0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$1;
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mPinText:Landroid/widget/TextView;
@@ -615,21 +640,21 @@
     .prologue
     const-string v3, "PIN_PUK"
 
-    .line 239
+    .line 243
     const-string v0, ""
 
-    .line 240
+    .line 244
     .local v0, strPinPukRetryNum:Ljava/lang/String;
     packed-switch p1, :pswitch_data_0
 
-    .line 248
+    .line 252
     const-string v1, "PIN_PUK"
 
     const-string v1, "getPinPukRetries(): input error!"
 
     invoke-static {v3, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 251
+    .line 255
     :goto_0
     const-string v1, ""
 
@@ -663,7 +688,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 255
+    .line 259
     :cond_0
     sget-boolean v1, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->HW_SWITCH_PUK_TRIED_TEN_TIMES:Z
 
@@ -673,10 +698,10 @@
 
     if-ne v1, p1, :cond_1
 
-    .line 257
+    .line 261
     const-string v0, "PUK_TRIED_TEN_TIMES"
 
-    .line 263
+    .line 267
     :goto_1
     const-string v1, "PIN_PUK"
 
@@ -684,11 +709,11 @@
 
     invoke-static {v3, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 268
+    .line 272
     :goto_2
     return-object v0
 
-    .line 242
+    .line 246
     :pswitch_0
     const-string v1, "gsm.sim.num.pin"
 
@@ -696,10 +721,10 @@
 
     move-result-object v0
 
-    .line 243
+    .line 247
     goto :goto_0
 
-    .line 245
+    .line 249
     :pswitch_1
     const-string v1, "gsm.sim.num.puk"
 
@@ -707,16 +732,16 @@
 
     move-result-object v0
 
-    .line 246
+    .line 250
     goto :goto_0
 
-    .line 259
+    .line 263
     :cond_1
     const-string v0, ""
 
     goto :goto_1
 
-    .line 265
+    .line 269
     :cond_2
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -742,7 +767,7 @@
 
     move-result-object v0
 
-    .line 266
+    .line 270
     const-string v1, "PIN_PUK"
 
     const-string v1, "PinPuk retry num:show"
@@ -751,7 +776,7 @@
 
     goto :goto_2
 
-    .line 240
+    .line 244
     nop
 
     :pswitch_data_0
@@ -767,12 +792,12 @@
     .prologue
     const/4 v3, 0x4
 
-    .line 558
+    .line 562
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mSimUnlockProgressDialog:Landroid/app/ProgressDialog;
 
     if-nez v0, :cond_0
 
-    .line 559
+    .line 563
     new-instance v0, Landroid/app/ProgressDialog;
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mContext:Landroid/content/Context;
@@ -781,7 +806,7 @@
 
     iput-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mSimUnlockProgressDialog:Landroid/app/ProgressDialog;
 
-    .line 560
+    .line 564
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mSimUnlockProgressDialog:Landroid/app/ProgressDialog;
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mContext:Landroid/content/Context;
@@ -794,21 +819,21 @@
 
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    .line 562
+    .line 566
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mSimUnlockProgressDialog:Landroid/app/ProgressDialog;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setIndeterminate(Z)V
 
-    .line 563
+    .line 567
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mSimUnlockProgressDialog:Landroid/app/ProgressDialog;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
-    .line 564
+    .line 568
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mSimUnlockProgressDialog:Landroid/app/ProgressDialog;
 
     invoke-virtual {v0}, Landroid/app/ProgressDialog;->getWindow()Landroid/view/Window;
@@ -819,7 +844,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/Window;->setType(I)V
 
-    .line 566
+    .line 570
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -834,7 +859,7 @@
 
     if-nez v0, :cond_0
 
-    .line 568
+    .line 572
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mSimUnlockProgressDialog:Landroid/app/ProgressDialog;
 
     invoke-virtual {v0}, Landroid/app/ProgressDialog;->getWindow()Landroid/view/Window;
@@ -843,7 +868,7 @@
 
     invoke-virtual {v0, v3, v3}, Landroid/view/Window;->setFlags(II)V
 
-    .line 573
+    .line 577
     :cond_0
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mSimUnlockProgressDialog:Landroid/app/ProgressDialog;
 
@@ -855,19 +880,19 @@
     .parameter "digit"
 
     .prologue
-    .line 652
+    .line 656
     iget v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mEnteredDigits:I
 
     if-nez v0, :cond_0
 
-    .line 653
+    .line 657
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mPinText:Landroid/widget/TextView;
 
     const-string v1, ""
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 655
+    .line 659
     :cond_0
     iget v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mEnteredDigits:I
 
@@ -875,11 +900,11 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 660
+    .line 664
     :goto_0
     return-void
 
-    .line 658
+    .line 662
     :cond_1
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mPinText:Landroid/widget/TextView;
 
@@ -889,7 +914,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 
-    .line 659
+    .line 663
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mEnteredPin:[I
 
     iget v1, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mEnteredDigits:I
@@ -908,27 +933,27 @@
     .parameter "enable"
 
     .prologue
-    .line 372
+    .line 376
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mOkButton:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setEnabled(Z)V
 
-    .line 373
+    .line 377
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mBackSpaceButton:Landroid/view/View;
 
     invoke-virtual {v0, p1}, Landroid/view/View;->setEnabled(Z)V
 
-    .line 374
+    .line 378
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mTouchInput:Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$TouchInput;
 
     if-eqz v0, :cond_0
 
-    .line 375
+    .line 379
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mTouchInput:Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$TouchInput;
 
     invoke-virtual {v0, p1}, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$TouchInput;->setInputEnabled(Z)V
 
-    .line 377
+    .line 381
     :cond_0
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mPinText:Landroid/widget/TextView;
 
@@ -939,13 +964,13 @@
     :goto_0
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 378
+    .line 382
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mInputEnabled:Z
 
-    .line 379
+    .line 383
     return-void
 
-    .line 377
+    .line 381
     :cond_1
     const/4 v1, 0x4
 
@@ -957,7 +982,7 @@
     .parameter "pin2"
 
     .prologue
-    .line 383
+    .line 387
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mNewPinCode:Ljava/lang/String;
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -966,10 +991,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 384
+    .line 388
     const/4 v0, 0x1
 
-    .line 387
+    .line 391
     :goto_0
     return v0
 
@@ -985,23 +1010,23 @@
     .locals 1
 
     .prologue
-    .line 425
+    .line 429
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mSimUnlockProgressDialog:Landroid/app/ProgressDialog;
 
     if-eqz v0, :cond_0
 
-    .line 426
+    .line 430
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mSimUnlockProgressDialog:Landroid/app/ProgressDialog;
 
     invoke-virtual {v0}, Landroid/app/ProgressDialog;->hide()V
 
-    .line 428
+    .line 432
     :cond_0
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mUpdateMonitor:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
 
     invoke-virtual {v0, p0}, Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;->removeCallback(Ljava/lang/Object;)V
 
-    .line 429
+    .line 433
     return-void
 .end method
 
@@ -1009,7 +1034,7 @@
     .locals 1
 
     .prologue
-    .line 201
+    .line 205
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mState:Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$SimLockState;
 
     return-object v0
@@ -1019,7 +1044,7 @@
     .locals 1
 
     .prologue
-    .line 393
+    .line 397
     const/4 v0, 0x1
 
     return v0
@@ -1029,13 +1054,13 @@
     .locals 0
 
     .prologue
-    .line 678
+    .line 682
     invoke-super {p0}, Landroid/widget/LinearLayout;->onAttachedToWindow()V
 
-    .line 679
+    .line 683
     invoke-virtual {p0}, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->updateConfiguration()V
 
-    .line 680
+    .line 684
     return-void
 .end method
 
@@ -1046,78 +1071,78 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 539
+    .line 543
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mBackSpaceButton:Landroid/view/View;
 
     if-ne p1, v2, :cond_2
 
-    .line 540
+    .line 544
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mPinText:Landroid/widget/TextView;
 
     invoke-virtual {v2}, Landroid/widget/TextView;->getEditableText()Landroid/text/Editable;
 
     move-result-object v0
 
-    .line 541
+    .line 545
     .local v0, digits:Landroid/text/Editable;
     invoke-interface {v0}, Landroid/text/Editable;->length()I
 
     move-result v1
 
-    .line 542
+    .line 546
     .local v1, len:I
     if-lez v1, :cond_0
 
-    .line 543
+    .line 547
     sub-int v2, v1, v3
 
     invoke-interface {v0, v2, v1}, Landroid/text/Editable;->delete(II)Landroid/text/Editable;
 
-    .line 544
+    .line 548
     iget v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mEnteredDigits:I
 
     sub-int/2addr v2, v3
 
     iput v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mEnteredDigits:I
 
-    .line 546
+    .line 550
     :cond_0
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mCallback:Lcom/android/internal/policy/impl/KeyguardScreenCallback;
 
     invoke-interface {v2}, Lcom/android/internal/policy/impl/KeyguardScreenCallback;->pokeWakelock()V
 
-    .line 555
+    .line 559
     .end local v0           #digits:Landroid/text/Editable;
     .end local v1           #len:I
     :cond_1
     :goto_0
     return-void
 
-    .line 547
+    .line 551
     :cond_2
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mEmergencyCallButton:Landroid/widget/Button;
 
     if-ne p1, v2, :cond_3
 
-    .line 549
+    .line 553
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mCallback:Lcom/android/internal/policy/impl/KeyguardScreenCallback;
 
     invoke-interface {v2}, Lcom/android/internal/policy/impl/KeyguardScreenCallback;->pokeWakelock()V
 
-    .line 551
+    .line 555
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mCallback:Lcom/android/internal/policy/impl/KeyguardScreenCallback;
 
     invoke-interface {v2}, Lcom/android/internal/policy/impl/KeyguardScreenCallback;->takeEmergencyCallAction()V
 
     goto :goto_0
 
-    .line 552
+    .line 556
     :cond_3
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mOkButton:Landroid/widget/TextView;
 
     if-ne p1, v2, :cond_1
 
-    .line 553
+    .line 557
     invoke-direct {p0}, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->checkPin()V
 
     goto :goto_0
@@ -1128,13 +1153,13 @@
     .parameter "newConfig"
 
     .prologue
-    .line 685
+    .line 689
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 686
+    .line 690
     invoke-virtual {p0}, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->updateConfiguration()V
 
-    .line 687
+    .line 691
     return-void
 .end method
 
@@ -1148,23 +1173,23 @@
 
     const/4 v2, 0x1
 
-    .line 618
+    .line 622
     const/4 v1, 0x4
 
     if-ne p1, v1, :cond_0
 
-    .line 619
+    .line 623
     iget-object v1, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mCallback:Lcom/android/internal/policy/impl/KeyguardScreenCallback;
 
     invoke-interface {v1}, Lcom/android/internal/policy/impl/KeyguardScreenCallback;->goToLockScreen()V
 
     move v1, v2
 
-    .line 648
+    .line 652
     :goto_0
     return v1
 
-    .line 625
+    .line 629
     :cond_0
     sget-boolean v1, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->HW_SWITCH_PUK_TRIED_TEN_TIMES:Z
 
@@ -1176,10 +1201,10 @@
 
     move v1, v3
 
-    .line 626
+    .line 630
     goto :goto_0
 
-    .line 630
+    .line 634
     :cond_1
     sget-object v1, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->DIGITS:[C
 
@@ -1187,11 +1212,11 @@
 
     move-result v0
 
-    .line 631
+    .line 635
     .local v0, match:C
     if-eqz v0, :cond_2
 
-    .line 632
+    .line 636
     const/16 v1, 0x30
 
     sub-int v1, v0, v1
@@ -1200,26 +1225,26 @@
 
     move v1, v2
 
-    .line 633
+    .line 637
     goto :goto_0
 
-    .line 635
+    .line 639
     :cond_2
     const/16 v1, 0x43
 
     if-ne p1, v1, :cond_4
 
-    .line 636
+    .line 640
     iget v1, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mEnteredDigits:I
 
     if-lez v1, :cond_3
 
-    .line 637
+    .line 641
     iget-object v1, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mPinText:Landroid/widget/TextView;
 
     invoke-virtual {v1, p1, p2}, Landroid/widget/TextView;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
-    .line 638
+    .line 642
     iget v1, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mEnteredDigits:I
 
     sub-int/2addr v1, v2
@@ -1229,27 +1254,27 @@
     :cond_3
     move v1, v2
 
-    .line 640
+    .line 644
     goto :goto_0
 
-    .line 643
+    .line 647
     :cond_4
     const/16 v1, 0x42
 
     if-ne p1, v1, :cond_5
 
-    .line 644
+    .line 648
     invoke-direct {p0}, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->checkPin()V
 
     move v1, v2
 
-    .line 645
+    .line 649
     goto :goto_0
 
     :cond_5
     move v1, v3
 
-    .line 648
+    .line 652
     goto :goto_0
 .end method
 
@@ -1257,7 +1282,7 @@
     .locals 0
 
     .prologue
-    .line 399
+    .line 403
     return-void
 .end method
 
@@ -1266,14 +1291,14 @@
     .parameter "newState"
 
     .prologue
-    .line 806
+    .line 815
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mEmergencyCallButton:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Lcom/android/internal/widget/LockPatternUtils;->updateEmergencyCallButtonState(Landroid/widget/Button;)V
 
-    .line 807
+    .line 816
     return-void
 .end method
 
@@ -1284,7 +1309,7 @@
     .parameter "batteryLevel"
 
     .prologue
-    .line 811
+    .line 820
     return-void
 .end method
 
@@ -1294,7 +1319,7 @@
     .parameter "spn"
 
     .prologue
-    .line 815
+    .line 824
     return-void
 .end method
 
@@ -1302,32 +1327,32 @@
     .locals 2
 
     .prologue
-    .line 407
+    .line 411
     invoke-virtual {p0}, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->updateState()V
 
-    .line 408
+    .line 412
     invoke-virtual {p0}, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->updateView()V
 
-    .line 416
+    .line 420
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mPinText:Landroid/widget/TextView;
 
     const-string v1, ""
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 417
+    .line 421
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mEnteredDigits:I
 
-    .line 419
+    .line 423
     iget-object v0, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mEmergencyCallButton:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Lcom/android/internal/widget/LockPatternUtils;->updateEmergencyCallButtonState(Landroid/widget/Button;)V
 
-    .line 420
+    .line 424
     return-void
 .end method
 
@@ -1336,7 +1361,7 @@
     .parameter "state"
 
     .prologue
-    .line 819
+    .line 828
     return-void
 .end method
 
@@ -1344,7 +1369,7 @@
     .locals 0
 
     .prologue
-    .line 823
+    .line 832
     return-void
 .end method
 
@@ -1353,10 +1378,10 @@
     .parameter "state"
 
     .prologue
-    .line 190
+    .line 194
     iput-object p1, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mState:Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$SimLockState;
 
-    .line 193
+    .line 197
     const-string v0, "PIN_PUK"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1381,7 +1406,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 194
+    .line 198
     return-void
 .end method
 
@@ -1391,7 +1416,7 @@
     .prologue
     const/4 v4, 0x1
 
-    .line 663
+    .line 667
     invoke-virtual {p0}, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
@@ -1400,7 +1425,7 @@
 
     move-result-object v1
 
-    .line 664
+    .line 668
     .local v1, newConfig:Landroid/content/res/Configuration;
     iget v2, v1, Landroid/content/res/Configuration;->orientation:I
 
@@ -1408,17 +1433,17 @@
 
     if-eq v2, v3, :cond_1
 
-    .line 665
+    .line 669
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mCallback:Lcom/android/internal/policy/impl/KeyguardScreenCallback;
 
     invoke-interface {v2, v1}, Lcom/android/internal/policy/impl/KeyguardScreenCallback;->recreateMe(Landroid/content/res/Configuration;)V
 
-    .line 674
+    .line 678
     :cond_0
     :goto_0
     return-void
 
-    .line 666
+    .line 670
     :cond_1
     iget v2, v1, Landroid/content/res/Configuration;->hardKeyboardHidden:I
 
@@ -1426,19 +1451,19 @@
 
     if-eq v2, v3, :cond_0
 
-    .line 667
+    .line 671
     iget v2, v1, Landroid/content/res/Configuration;->hardKeyboardHidden:I
 
     iput v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mKeyboardHidden:I
 
-    .line 668
+    .line 672
     iget v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mKeyboardHidden:I
 
     if-ne v2, v4, :cond_2
 
     move v0, v4
 
-    .line 669
+    .line 673
     .local v0, isKeyboardOpen:Z
     :goto_1
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mUpdateMonitor:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
@@ -1451,14 +1476,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 670
+    .line 674
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mCallback:Lcom/android/internal/policy/impl/KeyguardScreenCallback;
 
     invoke-interface {v2}, Lcom/android/internal/policy/impl/KeyguardScreenCallback;->goToUnlockScreen()V
 
     goto :goto_0
 
-    .line 668
+    .line 672
     .end local v0           #isKeyboardOpen:Z
     :cond_2
     const/4 v2, 0x0
@@ -1472,7 +1497,7 @@
     .locals 4
 
     .prologue
-    .line 211
+    .line 215
     sget-object v1, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$SimLockState;->REQUIRE_NEW_PIN:Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$SimLockState;
 
     invoke-virtual {p0}, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->getState()Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$SimLockState;
@@ -1497,12 +1522,12 @@
 
     if-ne v1, v2, :cond_1
 
-    .line 231
+    .line 235
     :cond_0
     :goto_0
     return-void
 
-    .line 216
+    .line 220
     :cond_1
     iget-object v1, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mUpdateMonitor:Lcom/android/internal/policy/impl/KeyguardUpdateMonitor;
 
@@ -1510,33 +1535,33 @@
 
     move-result-object v0
 
-    .line 218
+    .line 222
     .local v0, simState:Lcom/android/internal/telephony/IccCard$State;
     sget-object v1, Lcom/android/internal/telephony/IccCard$State;->PIN_REQUIRED:Lcom/android/internal/telephony/IccCard$State;
 
     if-ne v1, v0, :cond_2
 
-    .line 220
+    .line 224
     sget-object v1, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$SimLockState;->REQUIRE_PIN:Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$SimLockState;
 
     invoke-virtual {p0, v1}, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->setState(Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$SimLockState;)V
 
     goto :goto_0
 
-    .line 222
+    .line 226
     :cond_2
     sget-object v1, Lcom/android/internal/telephony/IccCard$State;->PUK_REQUIRED:Lcom/android/internal/telephony/IccCard$State;
 
     if-ne v1, v0, :cond_3
 
-    .line 224
+    .line 228
     sget-object v1, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$SimLockState;->REQUIRE_PUK:Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$SimLockState;
 
     invoke-virtual {p0, v1}, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->setState(Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$SimLockState;)V
 
     goto :goto_0
 
-    .line 229
+    .line 233
     :cond_3
     const-string v1, "PIN_PUK"
 
@@ -1577,21 +1602,21 @@
 
     const-string v6, "PIN_PUK"
 
-    .line 276
+    .line 280
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mPinText:Landroid/widget/TextView;
 
     const-string v3, ""
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 277
+    .line 281
     const/4 v0, 0x0
 
-    .line 278
+    .line 282
     .local v0, pinRetry:Ljava/lang/String;
     const/4 v1, 0x0
 
-    .line 280
+    .line 284
     .local v1, pukRetry:Ljava/lang/String;
     sget-object v2, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei$2;->$SwitchMap$com$android$internal$policy$impl$SimUnlockScreenHuaWei$SimLockState:[I
 
@@ -1605,20 +1630,20 @@
 
     packed-switch v2, :pswitch_data_0
 
-    .line 348
+    .line 352
     const-string v2, "PIN_PUK"
 
     const-string v2, "UNLOCKED STATE!"
 
     invoke-static {v6, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 352
+    .line 356
     :goto_0
     sget-boolean v2, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->HW_SWITCH_PUK_TRIED_TEN_TIMES:Z
 
     if-eqz v2, :cond_0
 
-    .line 353
+    .line 357
     const-string v2, "PUK_TRIED_TEN_TIMES"
 
     invoke-virtual {v9, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -1627,27 +1652,27 @@
 
     if-eqz v2, :cond_5
 
-    .line 354
+    .line 358
     iget-boolean v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mInputEnabled:Z
 
     if-eqz v2, :cond_0
 
-    .line 355
+    .line 359
     const-string v2, "PIN_PUK"
 
     const-string v2, "disable all buttons when PUK is wrong for 10 times"
 
     invoke-static {v6, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 356
+    .line 360
     invoke-direct {p0, v7}, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->setInputEnabled(Z)V
 
-    .line 364
+    .line 368
     :cond_0
     :goto_1
     return-void
 
-    .line 285
+    .line 289
     :pswitch_0
     const-string v2, "PIN_PUK"
 
@@ -1655,12 +1680,12 @@
 
     invoke-static {v6, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 286
+    .line 290
     invoke-direct {p0, v7}, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->getPinPukRetries(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 287
+    .line 291
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mHeaderText:Landroid/widget/TextView;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -1691,7 +1716,7 @@
 
     goto :goto_0
 
-    .line 293
+    .line 297
     :pswitch_1
     const-string v2, "PIN_PUK"
 
@@ -1699,12 +1724,12 @@
 
     invoke-static {v6, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 294
+    .line 298
     invoke-direct {p0, v8}, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->getPinPukRetries(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 296
+    .line 300
     sget-boolean v2, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->HW_SWITCH_PUK_TRIED_TEN_TIMES:Z
 
     if-eqz v2, :cond_2
@@ -1717,7 +1742,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 297
+    .line 301
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mHeaderText:Landroid/widget/TextView;
 
     iget-object v3, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mContext:Landroid/content/Context;
@@ -1742,7 +1767,7 @@
 
     goto :goto_2
 
-    .line 299
+    .line 303
     :cond_2
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mHeaderText:Landroid/widget/TextView;
 
@@ -1774,7 +1799,7 @@
 
     goto/16 :goto_0
 
-    .line 307
+    .line 311
     :pswitch_2
     const-string v2, "PIN_PUK"
 
@@ -1782,7 +1807,7 @@
 
     invoke-static {v6, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 308
+    .line 312
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mHeaderText:Landroid/widget/TextView;
 
     const v3, 0x2020002
@@ -1791,7 +1816,7 @@
 
     goto/16 :goto_0
 
-    .line 314
+    .line 318
     :pswitch_3
     const-string v2, "PIN_PUK"
 
@@ -1799,7 +1824,7 @@
 
     invoke-static {v6, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 315
+    .line 319
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mHeaderText:Landroid/widget/TextView;
 
     const v3, 0x2020003
@@ -1808,7 +1833,7 @@
 
     goto/16 :goto_0
 
-    .line 321
+    .line 325
     :pswitch_4
     const-string v2, "PIN_PUK"
 
@@ -1816,12 +1841,12 @@
 
     invoke-static {v6, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 322
+    .line 326
     invoke-direct {p0, v7}, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->getPinPukRetries(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 323
+    .line 327
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mHeaderText:Landroid/widget/TextView;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -1852,7 +1877,7 @@
 
     goto/16 :goto_0
 
-    .line 329
+    .line 333
     :pswitch_5
     const-string v2, "PIN_PUK"
 
@@ -1860,12 +1885,12 @@
 
     invoke-static {v6, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 330
+    .line 334
     invoke-direct {p0, v8}, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->getPinPukRetries(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 332
+    .line 336
     sget-boolean v2, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->HW_SWITCH_PUK_TRIED_TEN_TIMES:Z
 
     if-eqz v2, :cond_4
@@ -1878,7 +1903,7 @@
 
     if-eqz v2, :cond_4
 
-    .line 333
+    .line 337
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mHeaderText:Landroid/widget/TextView;
 
     iget-object v3, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mContext:Landroid/content/Context;
@@ -1903,7 +1928,7 @@
 
     goto :goto_3
 
-    .line 335
+    .line 339
     :cond_4
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mHeaderText:Landroid/widget/TextView;
 
@@ -1935,7 +1960,7 @@
 
     goto/16 :goto_0
 
-    .line 343
+    .line 347
     :pswitch_6
     const-string v2, "PIN_PUK"
 
@@ -1943,7 +1968,7 @@
 
     invoke-static {v6, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 344
+    .line 348
     iget-object v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mHeaderText:Landroid/widget/TextView;
 
     const v3, 0x2020005
@@ -1952,25 +1977,25 @@
 
     goto/16 :goto_0
 
-    .line 358
+    .line 362
     :cond_5
     iget-boolean v2, p0, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->mInputEnabled:Z
 
     if-nez v2, :cond_0
 
-    .line 359
+    .line 363
     const-string v2, "PIN_PUK"
 
     const-string v2, "enable all buttons to input PIN or PUK"
 
     invoke-static {v6, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 360
+    .line 364
     invoke-direct {p0, v8}, Lcom/android/internal/policy/impl/SimUnlockScreenHuaWei;->setInputEnabled(Z)V
 
     goto/16 :goto_1
 
-    .line 280
+    .line 284
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0

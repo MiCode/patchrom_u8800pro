@@ -1,5 +1,5 @@
-ro.build.date=Fri Dec 23 20:18:17 CST 2011
-ro.build.date.utc=1324642697
+ro.build.date=Thu Feb  9 11:16:34 CST 2012
+ro.build.date.utc=1328757394
 # begin of volatile config
 # end of volatile config
 
@@ -102,7 +102,7 @@ ro.config.srs.default.type=1
 # /*DTS2011012502617 yangqinghua 20110125 End>*/ 
 # DTS2011062104723 renzhanmin 20110625 begin
 ro.config.helix_enable=true
-ro.config.ape_flac_enable=true
+ro.config.ape_flac_enable=false
 # DTS2011062104723 renzhanmin 20110625 end
 # <DTS2010111202622 mengxiaokun00172620 20101112 begin
 ro.config.hw_proximity=true
@@ -283,7 +283,7 @@ ro.config.cricket.drmringtone=true
 # DTS2011040804451 sunxianliang sKF24817 20110413 end
 # DTS2011092604896 zhangcanyan 20110927 begin
 # DTS2011062205075 renzhanmin&&zhudengkui 20110622 begin
-ro.config.hw_camera_hdr=true
+ro.config.hw_camera_hdr=false
 # DTS2011062205075 renzhanmin&&zhudengkui 20110622 end
 # DTS2011092604896 zhangcanyan 20110927 end
 # /*<DTS2010121704813 jinhui 20101228 begin */
@@ -351,7 +351,9 @@ media.stagefright.enable-rtsp=false
 media.stagefright.enable-scan=true
 # DTS2011072905380 tiandazhang 20110805 end
 #/* < DTS2011070802517 d00173029, 2011-07-08 begin*/
-ro.config.hw_fast_dormancy=3
+# DTS2012011001187  zhouyu 20120110 begin
+ro.config.hw_fast_dormancy=0
+# DTS2012011001187  zhouyu 20120110 end
 #ro.config.hw_fast_dormancy: 
 #bit 0: fast_dormancy, bit_1: smart_network_search
 #/*  DTS2011070802517 d00173029, 2011-07-08 end > */
@@ -397,12 +399,12 @@ ro.config.hw_pukTriedTenTimes=true
 ro.config.support_mpga=true
 #DTS2011110404490 cuixiang 20111116 add end
 
-ro.build.version.incremental=U8800PRO-B540-CN-ADAPT
+ro.build.version.incremental=U8800PRO-B565-CN-ADAPT
 ro.build.tags=ota-rel-keys,release-keys
-ro.build.description=U8800Pro-user 2.3.5 HuaweiU8800Pro C00B540G001 ota-rel-keys,release-keys
-ro.build.fingerprint=Huawei/U8800Pro/hwu8800Pro:2.3.5/HuaweiU8800Pro/C00B540G001:user/ota-rel-keys,release-keys
-ro.build.display.id=U8800PV100R001C00B540G001
-ro.confg.hw_appsbootversion=U8800PV100R001C00B540G001_APPSBOOT
-ro.confg.hw_appversion=U8800PV100R001C00B540G001_KERNEL
-ro.confg.hw_appfsversion=U8800PV100R001C00B540G001_SYSIMG
+ro.build.description=U8800Pro-user 2.3.5 HuaweiU8800Pro C00B565G001 ota-rel-keys,release-keys
+ro.build.fingerprint=Huawei/U8800Pro/hwu8800Pro:2.3.5/HuaweiU8800Pro/C00B565G001:user/ota-rel-keys,release-keys
+ro.build.display.id=U8800PV100R001C00B565G001
+ro.confg.hw_appsbootversion=U8800PV100R001C00B565G001_APPSBOOT
+ro.confg.hw_appversion=U8800PV100R001C00B565G001_KERNEL
+ro.confg.hw_appfsversion=U8800PV100R001C00B565G001_SYSIMG
 ro.config.hw_lockscreen_tip=true

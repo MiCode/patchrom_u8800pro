@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="num_seconds_ago">
+        <item quantity="other">%dsaat lepas</item>
+        <item quantity="one">1 saat lepas</item>
+    </plurals>
+    <plurals name="num_minutes_ago">
+        <item quantity="other">%dmin lepas</item>
+        <item quantity="one">1 minit lepas</item>
+    </plurals>
+    <plurals name="num_hours_ago">
+        <item quantity="other">%djam lepas</item>
+        <item quantity="one">1 jam lepas</item>
+    </plurals>
+    <plurals name="last_num_days">
+        <item quantity="other">Hari%dakhir</item>
+    </plurals>
+    <plurals name="num_days_ago">
+        <item quantity="other">%dhari lepas</item>
+        <item quantity="one">semalam</item>
+    </plurals>
+    <plurals name="in_num_seconds">
+        <item quantity="other">dalam masa%dsaat</item>
+        <item quantity="one">dalam 1 saat</item>
+    </plurals>
+    <plurals name="in_num_minutes">
+        <item quantity="other">dalam masa%dminit</item>
+        <item quantity="one">dalam 1 minit</item>
+    </plurals>
+    <plurals name="in_num_hours">
+        <item quantity="other">dalam masa%djam</item>
+        <item quantity="one">dalam 1 jam</item>
+    </plurals>
+    <plurals name="in_num_days">
+        <item quantity="other">dalam masa%dhari</item>
+        <item quantity="one">esok</item>
+    </plurals>
+    <plurals name="abbrev_num_seconds_ago">
+        <item quantity="other">%dsaat lepas</item>
+        <item quantity="one">1 saat lepas</item>
+    </plurals>
+    <plurals name="abbrev_num_minutes_ago">
+        <item quantity="other">%dmin lepas</item>
+        <item quantity="one">1 min lepas</item>
+    </plurals>
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="other">%djam lepas</item>
+        <item quantity="one">1 jam lepas</item>
+    </plurals>
+    <plurals name="abbrev_num_days_ago">
+        <item quantity="other">%dhari lepas</item>
+        <item quantity="one">semalam</item>
+    </plurals>
+    <plurals name="abbrev_in_num_seconds">
+        <item quantity="other">dalam masa%dsaat</item>
+        <item quantity="one">dalam 1 saat</item>
+    </plurals>
+    <plurals name="abbrev_in_num_minutes">
+        <item quantity="other">dalam masa%dmin</item>
+        <item quantity="one">dalam 1 min</item>
+    </plurals>
+    <plurals name="abbrev_in_num_hours">
+        <item quantity="other">dalam masa%djam</item>
+        <item quantity="one">dalam 1 jam</item>
+    </plurals>
+    <plurals name="abbrev_in_num_days">
+        <item quantity="other">dalam masa%dhari</item>
+        <item quantity="one">esok</item>
+    </plurals>
+    <plurals name="wifi_available">
+        <item quantity="other">Rangkaian Wi-Fi tersedia</item>
+        <item quantity="one">Rangkaian Wi-Fi tersedia</item>
+    </plurals>
+    <plurals name="wifi_available_detailed">
+        <item quantity="other">Buka rangkaian Wi-Fi tersedia</item>
+        <item quantity="one">Buka rangkaian Wi-Fi tersedia</item>
+    </plurals>
+</resources>
